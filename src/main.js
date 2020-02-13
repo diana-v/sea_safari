@@ -7,9 +7,11 @@ import vuetify from './plugins/vuetify';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import BootstrapVue from 'bootstrap-vue'
+import toolbar from './components/toolbar'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue);
+Vue.component("app-toolbar", toolbar)
 
 new Vue({
   router,

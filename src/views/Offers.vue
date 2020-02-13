@@ -1,85 +1,82 @@
 <template>
-<div class="container">
+<div class="offers">
+    <app-toolbar></app-toolbar>
   <div class="row display-flex">
     <div class="col-md-6">
-        <div class="card">
+        <div class="card offer-card">
         <div class="card-img-body">
             <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
         </div>
         <div class="card-body">
             <h4 class="card-title">Ekstremali išvyka į jūrą</h4>
             <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę, greitį, vėją ir vandens purslus.</p>
-            <div class="col-sm offer-details"><i class="fas fa-clock"></i> 30min</div>
+            <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
             <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
-            <div class="col-sm offer-details"><a href="#" class="btn btn-outline-primary offer-button">Daugiau</a></div>
         </div>
         </div>
     </div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card offer-card">
                                 <div class="card-img-body">
                                     <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
                                 </div>
                                 <div class="card-body">
                                     <h4 class="card-title">Išvyka į Mingės kaimą</h4>
                                     <p class="card-text offer-text">Išvykos metu, pamatysite Lietuvos Venecija vadinamą kaimą, kuris yra ypač gražus ir unikalus, o gatvę jame atstoja upė. Tai Mingės kaimas, vieta kurią kiekvienas privalo aplankyti!</p>
-                                    <div class="col-sm offer-details"><i class="fas fa-clock"></i> 4-6val</div>
+                                    <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 4-6val</div>
                                     <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 400</div>
-                                    <div class="col-sm offer-details"><a href="#" class="btn btn-outline-primary offer-button">Daugiau</a></div>
                                 </div>
                             </div>
                         </div>
                       </div>
                       <div class="row">
-                        <div class="col-md-6 display-flex"><div class="card">
+                        <div class="col-md-6 display-flex">
+                            <div class="card offer-card">
                             <div class="card-img-body">
                                 <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Išvyka į Juodkrantę</h4>
                                 <p class="card-text offer-text">Išplaukę iš Klaipėdos apiplauksite uosto akvatorija, grožėsities unikaliu Kuršių nerijos kraštovaizdžiu, vėju supūstytomis kopomis. Neveltui šis nedidelis, ramus ir tvarkingas kurortas yra istorinis - urbanistinis draustinis. Kelionė laivu leis grožėtis Juodkrante iš vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių.</p>
-                                <div class="col-sm offer-details"><i class="fas fa-clock"></i> 2-4val</div>
+                                <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 2-4val</div>
                                 <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 200</div>
-                                <div class="col-sm offer-details"><a href="#" class="btn btn-outline-primary offer-button">Daugiau</a></div>
                             </div>
                         </div></div>
-                        <div class="col-md-6"><div class="card">
+                        <div class="col-md-6">
+                            <div class="card offer-card">
                             <div class="card-img-body">
                                 <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Ekstremali išvyka į jūrą</h4>
                                 <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę, greitį, vėją ir vandens purslus.</p>
-                                <div class="col-sm offer-details"><i class="fas fa-clock"></i> 30min</div>
+                                <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
                                 <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
-                                <div class="col-sm offer-details"><a href="#" class="btn btn-outline-primary offer-button">Daugiau</a></div>
                             </div>
                         </div></div>
                       </div>
                       <div class="row display-flex">
-                        <div class="col-md-6"><div class="card">
+                        <div class="col-md-6"><div class="card offer-card">
                             <div class="card-img-body">
                                 <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Ekstremali išvyka į jūrą</h4>
                                 <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę, greitį, vėją ir vandens purslus.</p>
-                                <div class="col-sm offer-details"><i class="fas fa-clock"></i> 30min</div>
+                                <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
                                 <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
-                                <div class="col-sm offer-details"><a href="#" class="btn btn-outline-primary offer-button">Daugiau</a></div>
                             </div>
                         </div></div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <div class="card offer-card">
                             <div class="card-img-body">
                                 <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title">Ekstremali išvyka į jūrą</h4>
                                 <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę, greitį, vėją ir vandens purslus.</p>
-                                <div class="col-sm offer-details"><i class="fas fa-clock"></i> 30min</div>
+                                <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
                                 <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
-                                <div class="col-sm offer-details"><a href="#" class="btn btn-outline-primary offer-button">Daugiau</a></div>
                             </div>
                         </div></div>
                       </div>
@@ -89,9 +86,18 @@
 <style>
     .offer-text {
         text-align: start;
+        min-height: 55%;
     }
-    .offer-button {
-        float: right;
+
+    .offer-card {
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px, rgba(0, 0, 0, 0.05) 0px 0.5px 1px;
+        transition: all .3s ease-in-out;
+    }
+
+    .offer-card:hover {
+        box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px, rgba(0, 0, 0, 0.18) 0px 4px 11px;
+
     }
 
     div.col-sm:nth-child(5) {
@@ -99,7 +105,7 @@
     }
 
     .offer-details {
-        max-width: 30%;
+        max-width: 50%;
         float: left;
     }
     .row.display-flex {
@@ -109,6 +115,12 @@
     .row.display-flex > [class*='col-'] {
         display: flex;
         flex-direction: column;
+    }
+
+    @media screen and (max-width: 990px) {
+        .offer-text {
+            min-height: 70%;
+        }
     }
 </style>
                     <!--<template>-->
