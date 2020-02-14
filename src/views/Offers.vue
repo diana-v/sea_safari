@@ -1,89 +1,132 @@
 <template>
-<div class="offers">
-    <app-toolbar></app-toolbar>
-  <div class="row display-flex">
-    <div class="col-md-6">
-        <div class="card offer-card">
-        <div class="card-img-body">
-            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
-        </div>
-        <div class="card-body">
-            <h4 class="card-title">Ekstremali išvyka į jūrą</h4>
-            <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę, greitį, vėją ir vandens purslus.</p>
-            <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
-            <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
-        </div>
+    <div class="contact">
+        <app-toolbar></app-toolbar>
+        <div class="container">
+            <div class="row display-flex">
+                <div class="col-md-6">
+                    <div class="card offer-card">
+                        <div class="card-img-body">
+                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title offer-title">Ekstremali išvyka į jūrą</h4>
+                            <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins
+                                ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio
+                                adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti
+                                Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę,
+                                greitį, vėją ir vandens purslus.</p>
+                            <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
+                            <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card offer-card">
+                        <div class="card-img-body">
+                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title offer-title">Išvyka į Mingės kaimą</h4>
+                            <p class="card-text offer-text">Išvykos metu, pamatysite Lietuvos Venecija vadinamą kaimą,
+                                kuris yra ypač gražus ir unikalus, o gatvę jame atstoja upė. Tai Mingės kaimas, vieta
+                                kurią kiekvienas privalo aplankyti!</p>
+                            <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 4-6val</div>
+                            <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 400</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 display-flex">
+                    <div class="card offer-card">
+                        <div class="card-img-body">
+                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title offer-title">Išvyka į Juodkrantę</h4>
+                            <p class="card-text offer-text">Išplaukę iš Klaipėdos apiplauksite uosto akvatorija,
+                                grožėsities unikaliu Kuršių nerijos kraštovaizdžiu, vėju supūstytomis kopomis. Neveltui
+                                šis nedidelis, ramus ir tvarkingas kurortas yra istorinis - urbanistinis draustinis.
+                                Kelionė laivu leis grožėtis Juodkrante iš vandens, o tai paliks tik dar daugiau
+                                neišdildomų įspūdžių.</p>
+                            <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 2-4val</div>
+                            <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 200</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card offer-card">
+                        <div class="card-img-body">
+                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title offer-title">Ekstremali išvyka į jūrą</h4>
+                            <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins
+                                ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio
+                                adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti
+                                Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę,
+                                greitį, vėją ir vandens purslus.</p>
+                            <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
+                            <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row display-flex">
+                <div class="col-md-6">
+                    <div class="card offer-card">
+                        <div class="card-img-body">
+                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title offer-title">Ekstremali išvyka į jūrą</h4>
+                            <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins
+                                ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio
+                                adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti
+                                Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę,
+                                greitį, vėją ir vandens purslus.</p>
+                            <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
+                            <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card offer-card">
+                        <div class="card-img-body">
+                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title offer-title">Ekstremali išvyka į jūrą</h4>
+                            <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins
+                                ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio
+                                adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti
+                                Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę,
+                                greitį, vėją ir vandens purslus.</p>
+                            <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
+                            <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-                        <div class="col-md-6">
-                            <div class="card offer-card">
-                                <div class="card-img-body">
-                                    <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Išvyka į Mingės kaimą</h4>
-                                    <p class="card-text offer-text">Išvykos metu, pamatysite Lietuvos Venecija vadinamą kaimą, kuris yra ypač gražus ir unikalus, o gatvę jame atstoja upė. Tai Mingės kaimas, vieta kurią kiekvienas privalo aplankyti!</p>
-                                    <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 4-6val</div>
-                                    <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 400</div>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6 display-flex">
-                            <div class="card offer-card">
-                            <div class="card-img-body">
-                                <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Išvyka į Juodkrantę</h4>
-                                <p class="card-text offer-text">Išplaukę iš Klaipėdos apiplauksite uosto akvatorija, grožėsities unikaliu Kuršių nerijos kraštovaizdžiu, vėju supūstytomis kopomis. Neveltui šis nedidelis, ramus ir tvarkingas kurortas yra istorinis - urbanistinis draustinis. Kelionė laivu leis grožėtis Juodkrante iš vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių.</p>
-                                <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 2-4val</div>
-                                <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 200</div>
-                            </div>
-                        </div></div>
-                        <div class="col-md-6">
-                            <div class="card offer-card">
-                            <div class="card-img-body">
-                                <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Ekstremali išvyka į jūrą</h4>
-                                <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę, greitį, vėją ir vandens purslus.</p>
-                                <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
-                                <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
-                            </div>
-                        </div></div>
-                      </div>
-                      <div class="row display-flex">
-                        <div class="col-md-6"><div class="card offer-card">
-                            <div class="card-img-body">
-                                <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Ekstremali išvyka į jūrą</h4>
-                                <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę, greitį, vėją ir vandens purslus.</p>
-                                <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
-                                <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
-                            </div>
-                        </div></div>
-                        <div class="col-md-6">
-                            <div class="card offer-card">
-                            <div class="card-img-body">
-                                <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title">Ekstremali išvyka į jūrą</h4>
-                                <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros galybę, greitį, vėją ir vandens purslus.</p>
-                                <div class="col-sm offer-details">Trukmė: <i class="fas fa-clock"></i> 30min</div>
-                                <div class="col-sm offer-details">Nuo: <i class="fas fa-euro-sign"></i> 15</div>
-                            </div>
-                        </div></div>
-                      </div>
-  </div>
 </template>
 
 <style>
+    .contact {
+        background-color: #013A6B;
+        background-image: -webkit-linear-gradient(70deg, #0c3c60 50%, #a8d0e3 50%);
+    }
+
+    .card:hover .offer-title {
+        color: red;
+    }
+
+    .card:hover .offer-details {
+        font-weight: bold;
+        color: black;
+    }
+
     .offer-text {
         text-align: start;
         min-height: 55%;
@@ -107,11 +150,14 @@
     .offer-details {
         max-width: 50%;
         float: left;
+        font-size: 17px;
     }
+
     .row.display-flex {
         display: flex;
         flex-wrap: wrap;
     }
+
     .row.display-flex > [class*='col-'] {
         display: flex;
         flex-direction: column;
@@ -123,7 +169,7 @@
         }
     }
 </style>
-                    <!--<template>-->
+<!--<template>-->
 <!--  <div class="offers">-->
 <!--    <div class="blog-wrap">-->
 <!--      <div class="blog-container">-->
