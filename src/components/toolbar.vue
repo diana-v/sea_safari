@@ -1,24 +1,40 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-none">
-    <a class="navbar-brand" href="/">Sea Safari</a>
+    <b-link class="navbar-brand" to="/">Sea Safari</b-link>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav nav ml-auto">
+        <ul @mouseover="show_active = false" @mouseleave="show_active = true" class="navbar-nav nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link toolbar-link" href="/apie-mus">Apie Mus</a>
+                <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/apie-mus')" to="/apie-mus">Apie Mus</b-link>
+            </li>
+            <li class="nav-item" >
+                <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/pasiulymai')" to="/pasiulymai">Pasiūlymai</b-link>
             </li>
             <li class="nav-item">
-                <a class="nav-link toolbar-link" href="/pasiulymai">Pasiūlymai</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link toolbar-link" href="/kontaktai">Kontaktai</a>
+                <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/kontaktai')" to="/kontaktai">Kontaktai</b-link>
             </li>
         </ul>
     </div>
 </nav>
 </template>
+
+<script>
+    export default {
+        data: () => ({
+            show_active : true
+        }),
+        methods: {
+            activeLink: function (expectedLink) {
+                if (this.$route.fullPath == expectedLink && this.show_active == true) {
+                    console.log("showing active for", expectedLink)
+                    return 'active'
+                }
+            }
+        }
+    };
+</script>
 
 <style>
     .toolbar-link {
@@ -37,7 +53,7 @@
         height: 3px;
         left: 50%;
         position: absolute;
-        background: red;
+        background: rgb(145, 22, 13);
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
@@ -45,6 +61,21 @@
         width: 100%;
         left: 0;
     }
+
+    .toolbar-link.active:after {
+        width: 100%;
+        left: 0;
+    }
+
+    /*li.active {*/
+    /*    bottom: 8px;*/
+    /*    !*content: "";*!*/
+    /*    height: 3px;*/
+    /*    !*left: 0;*!*/
+    /*    !*position: absolute;*!*/
+    /*    background: rgb(145, 22, 13);*/
+    /*    width: auto;*/
+    /*}*/
 </style>
 <!--<template>-->
 <!--    <v-toolbar flat class="transparent">-->

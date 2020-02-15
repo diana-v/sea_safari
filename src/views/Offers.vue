@@ -1,12 +1,14 @@
 <template>
-    <div class="contact">
+    <div class="offer">
         <app-toolbar></app-toolbar>
+        <h3 class="offer-header">Lorem Ipsum</h3>
+        <p class="offer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class="container">
             <div class="row display-flex">
                 <div class="col-md-6">
                     <div class="card offer-card">
-                        <div class="card-img-body">
-                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        <div class="card-img-body offer-image">
+                            <img class="card-img" src="https://scontent.fvno2-1.fna.fbcdn.net/v/t1.0-9/67624347_1137823643084264_5637304018070929408_n.jpg?_nc_cat=108&_nc_ohc=KvR-PYZNJrEAX_aGk1p&_nc_ht=scontent.fvno2-1.fna&oh=298d0b00f90ee4d44e52dfc2bb8e8355&oe=5EC6834E">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title offer-title">Ekstremali išvyka į jūrą</h4>
@@ -22,8 +24,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card offer-card">
-                        <div class="card-img-body">
-                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        <div class="card-img-body offer-image">
+                            <img class="card-img" src="https://g4.dcdn.lt/images/pix/minges-kaimas-78722285.jpg">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title offer-title">Išvyka į Mingės kaimą</h4>
@@ -39,8 +41,8 @@
             <div class="row">
                 <div class="col-md-6 display-flex">
                     <div class="card offer-card">
-                        <div class="card-img-body">
-                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        <div class="card-img-body offer-image">
+                            <img class="card-img" src="@/assets/juodkrante.jpg">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title offer-title">Išvyka į Juodkrantę</h4>
@@ -56,8 +58,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card offer-card">
-                        <div class="card-img-body">
-                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        <div class="card-img-body offer-image">
+                            <img class="card-img" src="https://picsum.photos/500/230">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title offer-title">Ekstremali išvyka į jūrą</h4>
@@ -75,8 +77,8 @@
             <div class="row display-flex">
                 <div class="col-md-6">
                     <div class="card offer-card">
-                        <div class="card-img-body">
-                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        <div class="card-img-body offer-image">
+                            <img class="card-img" src="https://picsum.photos/500/230">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title offer-title">Ekstremali išvyka į jūrą</h4>
@@ -92,8 +94,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card offer-card">
-                        <div class="card-img-body">
-                            <img class="card-img" src="https://picsum.photos/500/230" alt="Card image cap">
+                        <div class="card-img-body offer-image">
+                            <img class="card-img" src="https://picsum.photos/500/230">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title offer-title">Ekstremali išvyka į jūrą</h4>
@@ -113,23 +115,38 @@
 </template>
 
 <style>
-    .contact {
+    .offer-header {
+        padding-top: 10px;
+    }
+
+    .offer-paragraph {
+        padding: 15px 50px 5px 50px;
+        text-align: start;
+    }
+
+    .offer-image {
+        max-height: 247px;
+        overflow: hidden;
+    }
+
+    .offer {
         background-color: #013A6B;
-        background-image: -webkit-linear-gradient(70deg, #0c3c60 50%, #a8d0e3 50%);
+        background-image: -webkit-linear-gradient(60deg, #0c3c60 50%, #a8d0e3 50%);
     }
 
     .card:hover .offer-title {
-        color: red;
+        font-weight: bold;
+        color: rgb(145, 22, 13);
     }
 
     .card:hover .offer-details {
         font-weight: bold;
-        color: black;
     }
 
     .offer-text {
         text-align: start;
         min-height: 55%;
+        color: #0c3c60;
     }
 
     .offer-card {
