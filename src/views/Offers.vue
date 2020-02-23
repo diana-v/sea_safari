@@ -48,7 +48,7 @@
                 <div class="col-md-6 display-flex">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
-                            <img class="card-img" src="@/assets/juodkrante.jpg">
+                            <img class="card-img" src="@/assets/juodkrante-blur.jpg">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title offer-title">Išvyka į Juodkrantę</h4>
