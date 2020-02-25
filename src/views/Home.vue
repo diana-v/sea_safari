@@ -42,37 +42,18 @@
         <div class="offers-container" id="offers">
             <div class="offers-content">
                 <h2 class="offers-header">Pasiūlymai</h2>
-                <div class="row">
-                    <div class="col-sm-4" v-for="(card, index) in cards" v-bind:key="index">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <v-card
-                                            class="mx-auto"
-                                            max-width="344px"
-                                            max-height="230px"
-                                    >
-
-                                        <v-img
-                                                v-bind:src="card.img"
-                                                height="170px"
-                                        ></v-img>
-                                        <v-card-title class="offers-title">
-                                            {{card.title}}
-                                        </v-card-title>
-                                    </v-card>
+                <p>Pasirinkite iš mūsų siūlomų išvykų, skirtų smagiai praleisti laiką su šeima, pasilinksminti per darbo išvyką ar patirti nepamirštamą bernvakarį/mergvakarį.</p>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-4 card-container" v-for="(card, index) in cards" v-bind:key="index">
+                            <div class="card card-flip">
+                                <div class="front card-block offer-image"
+                                     v-bind:style="{ backgroundImage:  'url(' + card.img + ')' }">
+                                    <h4 class="card-title offers-title">{{card.title}}</h4>
                                 </div>
-
-                                <div class="flip-card-back">
-                                    <v-card
-                                            class="mx-auto"
-                                            max-width="344"
-                                            max-height="230px"
-                                    >
-                                        <v-card-subtitle class="offers-description">
-                                            {{card.description}}
-                                        </v-card-subtitle>
-                                    </v-card>
+                                <div class="back card-block d-flex offers-description">
+                                    <p class="justify-content-center align-self-center">{{card.description}}</p>
+<!--                                    <a href="#" class="btn btn-outline-primary">Daugiau</a>-->
                                 </div>
                             </div>
                         </div>
@@ -81,21 +62,23 @@
             </div>
         </div>
 
-        <div class="safety-container" id="safety">
-            <div class="safety-content">
-                <h2 class="safety-header">Saugumas</h2>
-                <p>RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai atsakingai atsižvelgia į jūsų
-                    asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo priemones:</p>
-                <div class="row safety-row">
-                    <div class="col-sm-4">
-                        <img class="safety-image">
+                <div class="safety-container" id="safety">
+                    <div class="safety-content">
+                        <h2 class="safety-header">Saugumas</h2>
+                        <p>RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai atsakingai atsižvelgia į jūsų
+                            asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
+                            priemones:</p>
+                        <div class="row safety-row">
+                            <div class="col-sm-4">
+                                <img class="safety-image">
+                            </div>
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-4"></div>
+                        </div>
                     </div>
-                    <div class="col-sm-4"></div>
-                    <div class="col-sm-4"></div>
                 </div>
             </div>
-        </div>
-    </div>
+
 </template>
 
 <script>
@@ -104,42 +87,36 @@
             cards: [
                 {
                     title: 'Ekstremali išvyka į jūrą',
-                    span_no: '01 | ',
                     description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
                     img: require('@/assets/jura.jpg')
                 },
                 {
                     title: 'Išvyka į Mingės kaimą',
-                    span_no: '02 | ',
                     description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
                     img: require('@/assets/minges-kaimas.jpg')
                 },
                 {
                     title: 'Išvyka į Juodkrantę',
-                    span_no: '03 | ',
                     description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
                     img: require('@/assets/juodkrante.jpg')
                 },
                 {
                     title: 'Ekstremali išvyka į jūrą',
-                    span_no: '04 | ',
                     description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
                     img: require('@/assets/jura.jpg')
                 },
                 {
                     title: 'Išvyka į Mingės kaimą',
-                    span_no: '05 | ',
                     description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
                     img: require('@/assets/minges-kaimas.jpg')
                 },
                 {
                     title: 'Išvyka į Juodkrantę',
-                    span_no: '06 | ',
                     description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
                     img: require('@/assets/juodkrante.jpg')
                 },
             ],
-        }),
+        })
     }
 </script>
 
@@ -216,57 +193,121 @@
         padding: 10% 10%;
     }
 
+    .offer-image {
+        height: 130px;
+        background-size: cover;
+        border-radius: 0.25rem;
+    }
+
     .offers-title {
-      font-size: 1rem !important;
+        font-size: 17px !important;
+        line-height: 40px;
+        color: black;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        /*margin: 0 !important;*/
     }
 
     .offers-description {
-      font-size: 1rem !important;
-      height: 230px;
-      color: black !important;
-      padding-top: 25% !important;
+        font-size: 1rem !important;
+        color: black !important;
+        padding: 0 10px;
     }
 
-    .flip-card {
-        background-color: transparent;
-        width: 300px;
-        height: 230px;
-        perspective: 1000px;
+    @media screen and (max-width: 990px) {
+        .offers-description {
+            font-size: 0.8rem !important;
+        }
+
+        .btn-outline-primary {
+            font-size: 0.8rem !important;
+        }
     }
 
-    .flip-card-inner {
+    @media screen and (max-width: 765px) {
+        .offers-description {
+            font-size: 1rem !important;
+        }
+
+        .btn-outline-primary {
+            font-size: 1rem !important;
+        }
+    }
+
+    .card-container {
+        perspective: 700px;
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+        padding-top: 0 !important;
+    }
+
+    .card-flip {
         position: relative;
         width: 100%;
-        height: 100%;
-        text-align: center;
-        transition: transform 0.6s;
         transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease-out;
+        background: white;
+        border: none;
+        height: 200px;
     }
 
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    .flip-card-front, .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
+    .card-flip div {
         backface-visibility: hidden;
+        transform-style: preserve-3d;
+        height: 100%;
+        width: 100%;
+        border: none;
     }
 
-    .flip-card-front {
-        background-color: #bbb;
-        color: black;
+    .card-flip .front {
+        position: relative;
+        z-index: 1;
     }
 
-    .flip-card-back {
-        background-color: #2980b9;
-        color: white;
+    .card-flip .back {
+        position: absolute;
+        z-index: 0;
+        transform: rotateY(-180deg);
+    }
+
+    .card-container:hover .card-flip {
         transform: rotateY(180deg);
     }
 
+    .card-block .btn-outline-primary {
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .card {
+        margin-bottom: 10px;
+        border: 1px solid #eee;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+        transition: all .3s ease-in-out;
+        min-width: 200px !important;
+    }
+
+    .card:hover {
+        box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+        transform: translate3d(0px, -1px, 0px);
+    }
+
+    .btn-outline-primary:hover {
+        background-color: rgb(145, 22, 13) !important;
+        border-color: rgb(145, 22, 13) !important;
+    }
+
+    .card-block .btn-outline-primary {
+        border: 1px solid rgb(145, 22, 13);
+        color: rgb(145, 22, 13);
+    }
 
     /* SAFETY */
     .safety-container {

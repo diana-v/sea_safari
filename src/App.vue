@@ -57,10 +57,6 @@
     box-shadow: none !important;
   }
 
-  /*.v-toolbar__content {*/
-  /*  background: rgba(255,255,255, 0) !important;*/
-  /*}*/
-
   .v-btn__content {
     color: #0c3c60 !important;
   }
