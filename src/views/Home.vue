@@ -1,84 +1,149 @@
 <template>
-    <div class="snapper">
+    <div>
         <app-toolbar></app-toolbar>
+        <vue-scroll-snap fullscreen>
 
-        <div class="home-container">
-            <div>
-                <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i
-                        class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i
-                        class="fab fa-facebook-f fa-2x"></i></a>
+            <!--            <div id="pp-nav" class="right eut-dark" style="color: rgb(0, 0, 0); margin-top: -53.5px;">-->
+            <!--                <ul>-->
+            <!--                    <li data-tooltip="">-->
+            <!--                        <a class="nav-btn active" href="#home">-->
+            <!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+            <!--                        </a>-->
+            <!--                    </li>-->
+            <!--                    <li data-tooltip="">-->
+            <!--                        <a class="nav-btn" href="#about">-->
+            <!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+            <!--                        </a>-->
+            <!--                    </li>-->
+            <!--                    <li data-tooltip="">-->
+            <!--                        <a class="nav-btn" href="#offers">-->
+            <!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+            <!--                        </a>-->
+            <!--                    </li>-->
+            <!--                    <li data-tooltip="">-->
+            <!--                        <a class="nav-btn" href="#safety">-->
+            <!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+            <!--                        </a>-->
+            <!--                    </li>-->
+            <!--                </ul>-->
+            <!--            </div>-->
+
+            <div class="item home-container" id="home">
+                <div>
+                    <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i
+                            class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i
+                            class="fab fa-facebook-f fa-2x"></i></a>
+                </div>
+                <h1 class="home-header">R.I.B. Charter Experience</h1>
             </div>
-            <h1 class="home-header">R.I.B. Charter Experience</h1>
-        </div>
 
-        <div class="about-container" id="about">
-            <div class="about-content">
-                <h2 class="about-header"> Apie Mus</h2>
-                <div class="row about-row">
-                    <div class="col-sm-5">
-                        <p>Pasinaudokite proga apžiūrėti Lietuvos pajūrio kraštovaizdį ir uosto akvatoriją adrenalino
-                            pripildytu ir jaudinančiu būdu. Mūsų RIB „Sea Safari“ laive jūs priartėsite prie gamtos ir
-                            patirsite nepamirštamus įspūdžius.</p>
-                        <p>„Sea Safari“ turi du RIB laivus, varomus 300 AG ir 600 AG varikliais, kurių maksimalus
-                            greitis siekia iki 60 mazgų. Atstumas Klaipėda - Juodkrantė įveikiamas per 20 min., o
-                            Klaipėda - Nida per 45 min. ,,Sea Safari" veikia ir kaip vandens taksi. Tai puiki galimybė
-                            išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į Nidą ar
-                            Juodkrantę.</p>
-                    </div>
-                    <div class="col-sm-5">
-                        <p>RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai atsakingai atsižvelgia į jūsų
-                            asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
-                            priemones:</p>
-                        <p>Mes teikiame paslaugas įmonių šventėms ir privatiems vakarėliams - gimtadieniai,
-                            bernvakariai, mergvakariai. Renkame grupes išvykoms į jūrą. Siūlome turiningas išvykas į
-                            populiariausias Lietuvos pajūrio vietas - Juodkrantė, Nida, Mingės kaimas ir kiti Jūsų
-                            pasirinkti maršrutai.</p>
+            <div class="item about-container" id="about">
+                <div class="about-content">
+                    <h2 class="about-header"> Apie Mus</h2>
+                    <div class="row about-row">
+                        <div class="col-sm-5">
+                            <p>Pasinaudokite proga apžiūrėti Lietuvos pajūrio kraštovaizdį ir uosto akvatoriją
+                                adrenalino
+                                pripildytu ir jaudinančiu būdu. Mūsų RIB „Sea Safari“ laive jūs priartėsite prie gamtos
+                                ir
+                                patirsite nepamirštamus įspūdžius.</p>
+                            <p>„Sea Safari“ turi du RIB laivus, varomus 300 AG ir 600 AG varikliais, kurių maksimalus
+                                greitis siekia iki 60 mazgų. Atstumas Klaipėda - Juodkrantė įveikiamas per 20 min., o
+                                Klaipėda - Nida per 45 min. ,,Sea Safari" veikia ir kaip vandens taksi. Tai puiki
+                                galimybė
+                                išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į Nidą ar
+                                Juodkrantę.</p>
+                        </div>
+                        <div class="col-sm-5">
+                            <p>RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai atsakingai atsižvelgia į
+                                jūsų
+                                asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
+                                priemones:</p>
+                            <p>Mes teikiame paslaugas įmonių šventėms ir privatiems vakarėliams - gimtadieniai,
+                                bernvakariai, mergvakariai. Renkame grupes išvykoms į jūrą. Siūlome turiningas išvykas į
+                                populiariausias Lietuvos pajūrio vietas - Juodkrantė, Nida, Mingės kaimas ir kiti Jūsų
+                                pasirinkti maršrutai.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="offers-container" id="offers">
-            <div class="offers-content">
-                <h2 class="offers-header">Pasiūlymai</h2>
-                <p>Pasirinkite iš mūsų siūlomų išvykų, skirtų smagiai praleisti laiką su šeima, pasilinksminti per darbo išvyką ar patirti nepamirštamą bernvakarį/mergvakarį.</p>
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-4 card-container" v-for="(card, index) in cards" v-bind:key="index">
-                            <div class="card card-flip">
-                                <div class="front card-block offer-image"
-                                     v-bind:style="{ backgroundImage:  'url(' + card.img + ')' }">
-                                    <h4 class="card-title offers-title">{{card.title}}</h4>
-                                </div>
-                                <div class="back card-block d-flex offers-description">
-                                    <p class="justify-content-center align-self-center">{{card.description}}</p>
+            <div class="item offers-container" id="offers">
+                <div class="offers-content">
+                    <h2 class="offers-header">Pasiūlymai</h2>
+                    <p>Pasirinkite iš mūsų siūlomų išvykų, skirtų smagiai praleisti laiką su šeima, pasilinksminti per
+                        darbo
+                        išvyką ar patirti nepamirštamą bernvakarį/mergvakarį.</p>
+
+                    <v-carousel
+                            cycle
+                            height="400"
+                            hide-delimiter-background
+                    >
+                        <v-carousel-item
+                                v-for="(card, i) in cards"
+                                :key="i"
+                        >
+                            <v-img
+                                    v-bind:src=card.img
+                                    height="100%"
+                            >
+                                <v-row
+                                        class="fill-height"
+                                        align="center"
+                                        justify="center"
+                                >
+                                    <!--                                    <div class="display-3">{{ card.title }}</div>-->
+
+<!--                                    <h4 class="" style="height: 75%; background: rgba(255, 255, 255, 0.8)">{{card.description}}</h4>-->
 <!--                                    <a href="#" class="btn btn-outline-primary">Daugiau</a>-->
-                                </div>
-                            </div>
+                                    <h4 class="card-title offers-title">{{card.title}}</h4>
+
+                                </v-row>
+                            </v-img>
+                        </v-carousel-item>
+                    </v-carousel>
+                    <!--                    <h2 class="offers-header">Pasiūlymai</h2>-->
+                    <!--                    <p>Pasirinkite iš mūsų siūlomų išvykų, skirtų smagiai praleisti laiką su šeima, pasilinksminti per-->
+                    <!--                        darbo-->
+                    <!--                        išvyką ar patirti nepamirštamą bernvakarį/mergvakarį.</p>-->
+                    <!--                    <div class="container">-->
+                    <!--                        <div class="row text-center">-->
+                    <!--                            <div class="col-md-4 card-container" v-for="(card, index) in cards" v-bind:key="index">-->
+                    <!--                                <div class="card card-flip">-->
+                    <!--                                    <div class="front card-block offer-image"-->
+                    <!--                                         v-bind:style="{ backgroundImage:  'url(' + card.img + ')' }">-->
+                    <!--                                        <h4 class="card-title offers-title">{{card.title}}</h4>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="back card-block d-flex offers-description">-->
+                    <!--                                        <p class="justify-content-center align-self-center">{{card.description}}</p>-->
+                    <!--                                        &lt;!&ndash;                                    <a href="#" class="btn btn-outline-primary">Daugiau</a>&ndash;&gt;-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                </div>
+            </div>
+
+            <div class="item safety-container" id="safety">
+                <div class="safety-content">
+                    <h2 class="safety-header">Saugumas</h2>
+                    <p>RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai atsakingai atsižvelgia į jūsų
+                        asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
+                        priemones:</p>
+                    <div class="row safety-row">
+                        <div class="col-sm-4">
+                            <img class="safety-image">
                         </div>
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4"></div>
                     </div>
                 </div>
             </div>
-        </div>
-
-                <div class="safety-container" id="safety">
-                    <div class="safety-content">
-                        <h2 class="safety-header">Saugumas</h2>
-                        <p>RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai atsakingai atsižvelgia į jūsų
-                            asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
-                            priemones:</p>
-                        <div class="row safety-row">
-                            <div class="col-sm-4">
-                                <img class="safety-image">
-                            </div>
-                            <div class="col-sm-4"></div>
-                            <div class="col-sm-4"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        </vue-scroll-snap>
+    </div>
 </template>
 
 <script>
@@ -116,19 +181,95 @@
                     img: require('@/assets/juodkrante.jpg')
                 },
             ],
-        })
+        }),
+        mounted() {
+            // var header = document.getElementById("pp-nav");
+            // var btns = header.getElementsByClassName("nav-btn");
+            // for (var i = 0; i < btns.length; i++) {
+            //     btns[i].addEventListener("click", function () {
+            //         var current = document.getElementsByClassName("active");
+            //         current[0].className = current[0].className.replace(" active", "");
+            //         this.className += " active";
+            //     });
+            // }
+        }
     }
+
+
 </script>
 
 <style>
-    .snapper {
-        scroll-snap-type: y proximity;
-        /*overflow-y: scroll;*/
-    }
+    /*.snapper {*/
+    /*    scroll-snap-type: y proximity;*/
+    /*    !*overflow-y: scroll;*!*/
+    /*}*/
 
-    .snapper * {
-        scroll-snap-align: start;
-    }
+    /*.snapper * {*/
+    /*    scroll-snap-align: start;*/
+    /*}*/
+
+    /*#pp-nav.right {*/
+    /*    right: 17px;*/
+    /*}*/
+
+    /*#pp-nav {*/
+    /*    position: fixed;*/
+    /*    z-index: 100;*/
+    /*    margin-top: -32px;*/
+    /*    top: 50%;*/
+    /*    opacity: 1;*/
+    /*}*/
+
+    /*#pp-nav li, .pp-slidesNav li {*/
+    /*    display: block;*/
+    /*    width: 14px;*/
+    /*    height: 13px;*/
+    /*    margin: 7px;*/
+    /*    position: relative;*/
+    /*}*/
+
+    /*#pp-nav li a, .pp-slidesNav li a {*/
+    /*    display: block;*/
+    /*    position: relative;*/
+    /*    z-index: 1;*/
+    /*    width: 100%;*/
+    /*    height: 100%;*/
+    /*    cursor: pointer;*/
+    /*    text-decoration: none;*/
+    /*}*/
+
+    /*#pp-nav span, .pp-slidesNav span {*/
+    /*    border-radius: 50%;*/
+    /*    position: absolute;*/
+    /*    z-index: 1;*/
+    /*    height: 4px;*/
+    /*    width: 4px;*/
+    /*    border: 0;*/
+    /*    border-top-color: currentcolor;*/
+    /*    border-right-color: currentcolor;*/
+    /*    border-bottom-color: currentcolor;*/
+    /*    border-left-color: currentcolor;*/
+    /*    background: #000000;*/
+    /*    background-color: rgb(0, 0, 0);*/
+    /*    left: 50%;*/
+    /*    top: 50%;*/
+    /*    margin: -2px 0 0 -2px;*/
+    /*    -webkit-transition: all 0.1s ease-in-out;*/
+    /*    -moz-transition: all 0.1s ease-in-out;*/
+    /*    -o-transition: all 0.1s ease-in-out;*/
+    /*    transition: all 0.1s ease-in-out;*/
+    /*}*/
+
+    /*#pp-nav.eut-dark li span {*/
+    /*    background-color: #000000;*/
+    /*}*/
+
+    /*#pp-nav li .active span, .pp-slidesNav .active span {*/
+    /*    height: 12px;*/
+    /*    width: 12px;*/
+    /*    margin: -6px 0 0 -6px;*/
+    /*    border-radius: 100%;*/
+    /*}*/
 
     /* HOME */
     .home-header {
@@ -167,7 +308,7 @@
     }
 
     .about-content {
-        padding: 10% 0;
+        padding: 10% 5%;
     }
 
     .about-row {
@@ -190,13 +331,7 @@
     }
 
     .offers-content {
-        padding: 10% 10%;
-    }
-
-    .offer-image {
-        height: 130px;
-        background-size: cover;
-        border-radius: 0.25rem;
+        padding: 10% 5%;
     }
 
     .offers-title {
@@ -206,13 +341,20 @@
         font-weight: bold;
         background-color: rgba(255, 255, 255, 0.8);
         position: absolute;
-        bottom: 0;
+        bottom: 38px;
         width: 100%;
         /*margin: 0 !important;*/
     }
 
+    .v-carousel__controls {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
     .offers-description {
         font-size: 1rem !important;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        width: 100%;
         color: black !important;
         padding: 0 10px;
     }
@@ -322,6 +464,6 @@
     }
 
     .safety-content {
-        padding: 10% 10%;
+        padding: 10% 5%;
     }
 </style>

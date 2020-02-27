@@ -57,7 +57,4 @@
     box-shadow: none !important;
   }
 
-  .v-btn__content {
-    color: #0c3c60 !important;
-  }
 </style>
