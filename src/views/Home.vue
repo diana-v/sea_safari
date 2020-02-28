@@ -3,30 +3,30 @@
         <app-toolbar></app-toolbar>
         <vue-scroll-snap fullscreen>
 
-                        <div id="pp-nav" class="right eut-dark" style="color: rgb(0, 0, 0); margin-top: -53.5px;">
-                            <ul>
-                                <li data-tooltip="">
-                                    <a class="nav-btn active" href="#home">
-                                        <span style="border-color: rgb(0, 0, 0);"> </span>
-                                    </a>
-                                </li>
-                                <li data-tooltip="">
-                                    <a class="nav-btn" href="#about">
-                                        <span style="border-color: rgb(0, 0, 0);"> </span>
-                                    </a>
-                                </li>
-                                <li data-tooltip="">
-                                    <a class="nav-btn" href="#offers">
-                                        <span style="border-color: rgb(0, 0, 0);"> </span>
-                                    </a>
-                                </li>
-                                <li data-tooltip="">
-                                    <a class="nav-btn" href="#safety">
-                                        <span style="border-color: rgb(0, 0, 0);"> </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+            <div id="pp-nav" class="right eut-dark" style="color: rgb(0, 0, 0); margin-top: -53.5px;">
+                <ul>
+                    <li data-tooltip="">
+                        <a class="nav-btn active" href="#home">
+                            <span style="border-color: rgb(0, 0, 0);"> </span>
+                        </a>
+                    </li>
+                    <li data-tooltip="">
+                        <a class="nav-btn" href="#about">
+                            <span style="border-color: rgb(0, 0, 0);"> </span>
+                        </a>
+                    </li>
+                    <li data-tooltip="">
+                        <a class="nav-btn" href="#offers">
+                            <span style="border-color: rgb(0, 0, 0);"> </span>
+                        </a>
+                    </li>
+                    <li data-tooltip="">
+                        <a class="nav-btn" href="#safety">
+                            <span style="border-color: rgb(0, 0, 0);"> </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
             <div class="item home-container" id="home">
                 <div>
@@ -41,20 +41,23 @@
             <div class="item about-container" id="about">
                 <div class="about-content">
                     <div class="about-hp">
-                    <h2 class="about-header"> Apie Mus</h2>
-                    <p class="about-paragraph">Pasinaudokite proga apžiūrėti Lietuvos pajūrio kraštovaizdį ir uosto akvatoriją
-                        adrenalino pripildytu ir jaudinančiu būdu.</p>
+                        <h2 class="about-header"> Apie Mus</h2>
+                        <p class="about-paragraph">Pasinaudokite proga apžiūrėti Lietuvos pajūrio kraštovaizdį ir uosto
+                            akvatoriją
+                            adrenalino pripildytu ir jaudinančiu būdu.</p>
                     </div>
                     <div class="row about-row">
                         <div class="col-sm-5">
                             <p> Mūsų RIB „Sea Safari“ laive jūs priartėsite prie gamtos
-                                ir patirsite nepamirštamus įspūdžius.„Sea Safari“ turi du RIB laivus, varomus 300 AG ir 600 AG varikliais, kurių maksimalus
-                                greitis siekia iki 60 mazgų.</p>
+                                ir patirsite nepamirštamus įspūdžius. "Sea Safari" turi du RIB laivus, varomus 300 AG ir
+                                600 AG varikliais, kurių maksimalus
+                                greitis siekia net iki 60 mazgų.</p>
                         </div>
                         <div class="col-sm-5">
                             <p> Atstumas Klaipėda - Juodkrantė įveikiamas per 20 min., o
-                                Klaipėda - Nida per 45 min. ,,Sea Safari" veikia ir kaip vandens taksi. Tai puiki
-                                galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į Nidą/Juodkrantę.</p>
+                                Klaipėda - Nida per 45 min. "Sea Safari" veikia ir kaip vandens taksi. Tai puiki
+                                galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į
+                                Nidą/Juodkrantę.</p>
                         </div>
                     </div>
                 </div>
@@ -63,54 +66,85 @@
             <div class="item offers-container" id="offers">
                 <div class="offers-content">
                     <h2 class="offers-header">Pasiūlymai</h2>
-                    <p>Mes teikiame paslaugas įmonių šventėms ir privatiems vakarėliams - gimtadieniai,
+                    <p class="offers-paragraph">Mes teikiame paslaugas įmonių šventėms ir privatiems vakarėliams -
+                        gimtadieniai,
                         bernvakariai, mergvakariai. Renkame grupes išvykoms į jūrą. Siūlome turiningas išvykas į
                         populiariausias Lietuvos pajūrio vietas - Juodkrantė, Nida, Mingės kaimas ir kiti Jūsų
                         pasirinkti maršrutai.</p>
-
-                    <v-carousel
-                            cycle
-                            height="400"
-                            hide-delimiter-background
-                    >
-                        <v-carousel-item
-                                v-for="(card, i) in cards"
-                                :key="i"
+                    <div>
+                        <v-carousel
+                                cycle
+                                height="400"
+                                hide-delimiter-background
                         >
-                            <v-img
-                                    v-bind:src=card.img
-                                    height="100%"
+                            <v-carousel-item
+                                    v-for="(card, i) in cards"
+                                    :key="i"
                             >
-                                <v-row
-                                        class="fill-height"
-                                        align="center"
-                                        justify="center"
+                                <v-img
+                                        v-bind:src=card.img
+                                        height="100%"
+                                        gradient="to top right, rgba(64,64,64,.5), rgba(64,64,64,.5)"
                                 >
-                                    <h4 class="card-title offers-title">{{card.title}}</h4>
+                                    <v-row
+                                            class="fill-height"
+                                            align="center"
+                                            justify="center"
+                                    >
+                                        <h4 class="card-title offers-title">{{card.title}}</h4>
 
-                                </v-row>
-                            </v-img>
-                        </v-carousel-item>
-                    </v-carousel>
+                                    </v-row>
+                                </v-img>
+                            </v-carousel-item>
+                        </v-carousel>
+                    </div>
                 </div>
             </div>
 
             <div class="item safety-container" id="safety">
                 <div class="safety-content">
                     <h2 class="safety-header">Saugumas</h2>
-                    <p>RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai atsakingai atsižvelgia į jūsų
+                    <p class="safety-paragraph">RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai
+                        atsakingai atsižvelgia į jūsų
                         asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
                         priemones:</p>
-                    <div class="row safety-row">
-                        <div class="col-sm-4">
-                            <img class="safety-image">
-                        </div>
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4"></div>
-                    </div>
+                </div>
+                <div class="container">
+                                        <div class="row">
+<!--                                            <div class="col-sm-4">-->
+                    <!--                        <div class="col-sm-4 safety-item">-->
+                    <!--                            <i class="far fa-life-ring fa-9x" style="color:rgb(145, 22, 13);"></i>-->
+                    <!--                            <h5 class="p-4">Gelbėjimo ratas</h5>-->
+                    <!--                        <div class="col-sm-4 safety-item"></div>-->
+                    <!--                        <div class="col-sm-4 safety-item"></div>-->
+
+
+                    <v-card
+                            v-for="(safety, i) in safeties"
+                            :key="i"
+                            class="mx-auto safety-item"
+                            max-width="300px"
+                            max-height="200px"
+                    >
+                        <v-img
+                                v-bind:src="safety.img"
+                                max-height="150px"
+                        ></v-img>
+
+                        <v-card-title
+                                max-height="50px"
+                                style="padding: 3%;">
+                            {{safety.title}}
+                        </v-card-title>
+                        <!--                            <v-card-subtitle>-->
+                        <!--                                1,000 miles of wonder-->
+                        <!--                            </v-card-subtitle>-->
+                    </v-card>
+<!--                                        </div>-->
+                                        </div>
                 </div>
             </div>
-        </vue-scroll-snap>
+    </vue-scroll-snap>
     </div>
 </template>
 
@@ -149,6 +183,21 @@
                     img: require('@/assets/juodkrante.jpg')
                 },
             ],
+
+            safeties: [
+                {
+                    img: require('@/assets/lifebuoys.jpg'),
+                    title: 'Gelbėjimo ratas'
+                },
+                {
+                    img: require('@/assets/lifevest.jpg'),
+                    title: 'Gelbėjimosi liemenė'
+                },
+                {
+                    img: require('@/assets/medical-kit.jpg'),
+                    title: 'Vaistinėlė'
+                }
+            ]
         }),
         mounted() {
             var header = document.getElementById("pp-nav");
@@ -167,6 +216,12 @@
 </script>
 
 <style>
+    @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
+    html, body {
+        font-family: 'Hind', 'Roboto';
+    }
+
     #pp-nav.right {
         right: 2%;
     }
@@ -236,6 +291,7 @@
         padding: 15px;
         margin-top: 2%;
         font-size: 250%;
+        font-weight: 900;
     }
 
     .home-container {
@@ -264,6 +320,7 @@
         font-size: 48px;
         letter-spacing: -2px;
         padding: 20px 0 5% 0;
+        font-weight: 900;
     }
 
     .about-content {
@@ -276,12 +333,14 @@
         display: flex;
         justify-content: center;
         text-align: start;
+        font-size: 17px;
     }
 
     .about-paragraph {
         color: rgb(145, 22, 13);
-        padding: 0 5%;
+        padding: 0 8%;
         font-style: italic;
+        font-size: 17px !important;
     }
 
     .about-hp {
@@ -304,7 +363,8 @@
     .offers-header {
         font-size: 48px;
         letter-spacing: -2px;
-        padding-bottom: 20px;
+        /*padding-bottom: 5px;*/
+        font-weight: 900;
     }
 
     .offers-content {
@@ -312,120 +372,21 @@
     }
 
     .offers-title {
-        font-size: 17px !important;
+        font-size: 20px !important;
         line-height: 40px;
-        color: black;
+        /*color: white;*/
+        color: rgb(145, 22, 13);
         font-weight: bold;
-        background-color: rgba(255, 255, 255, 0.8);
+        /*background-color: rgba(12, 60, 96, 0.6);*/
         position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
         bottom: 38px;
         width: 100%;
     }
 
-    /*.v-carousel__controls {*/
-    /*    background: rgba(255, 255, 255, 0.8);*/
-    /*}*/
-
-    /*.offers-description {*/
-    /*    font-size: 1rem !important;*/
-    /*    background-color: rgba(255, 255, 255, 0.8);*/
-    /*    position: absolute;*/
-    /*    width: 100%;*/
-    /*    color: black !important;*/
-    /*    padding: 0 10px;*/
-    /*}*/
-
-    /*@media screen and (max-width: 990px) {*/
-    /*    .offers-description {*/
-    /*        font-size: 0.8rem !important;*/
-    /*    }*/
-
-    /*    .btn-outline-primary {*/
-    /*        font-size: 0.8rem !important;*/
-    /*    }*/
-    /*}*/
-
-    /*@media screen and (max-width: 765px) {*/
-    /*    .offers-description {*/
-    /*        font-size: 1rem !important;*/
-    /*    }*/
-
-    /*    .btn-outline-primary {*/
-    /*        font-size: 1rem !important;*/
-    /*    }*/
-    /*}*/
-
-    /*.card-container {*/
-    /*    perspective: 700px;*/
-    /*    padding-right: 5px !important;*/
-    /*    padding-left: 5px !important;*/
-    /*    padding-top: 0 !important;*/
-    /*}*/
-
-    /*.card-flip {*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    transform-style: preserve-3d;*/
-    /*    transition: all 0.5s ease-out;*/
-    /*    background: white;*/
-    /*    border: none;*/
-    /*    height: 200px;*/
-    /*}*/
-
-    /*.card-flip div {*/
-    /*    backface-visibility: hidden;*/
-    /*    transform-style: preserve-3d;*/
-    /*    height: 100%;*/
-    /*    width: 100%;*/
-    /*    border: none;*/
-    /*}*/
-
-    /*.card-flip .front {*/
-    /*    position: relative;*/
-    /*    z-index: 1;*/
-    /*}*/
-
-    /*.card-flip .back {*/
-    /*    position: absolute;*/
-    /*    z-index: 0;*/
-    /*    transform: rotateY(-180deg);*/
-    /*}*/
-
-    /*.card-container:hover .card-flip {*/
-    /*    transform: rotateY(180deg);*/
-    /*}*/
-
-    /*.card-block .btn-outline-primary {*/
-    /*    width: 100%;*/
-    /*    border-top-left-radius: 0;*/
-    /*    border-top-right-radius: 0;*/
-    /*    bottom: 0;*/
-    /*    left: 0;*/
-    /*    position: absolute;*/
-    /*}*/
-
-    /*.card {*/
-    /*    margin-bottom: 10px;*/
-    /*    border: 1px solid #eee;*/
-    /*    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;*/
-    /*    transition: all .3s ease-in-out;*/
-    /*    min-width: 200px !important;*/
-    /*}*/
-
-    /*.card:hover {*/
-    /*    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;*/
-    /*    transform: translate3d(0px, -1px, 0px);*/
-    /*}*/
-
-    /*.btn-outline-primary:hover {*/
-    /*    background-color: rgb(145, 22, 13) !important;*/
-    /*    border-color: rgb(145, 22, 13) !important;*/
-    /*}*/
-
-    /*.card-block .btn-outline-primary {*/
-    /*    border: 1px solid rgb(145, 22, 13);*/
-    /*    color: rgb(145, 22, 13);*/
-    /*}*/
+    .offers-paragraph {
+        font-size: 17px !important;
+    }
 
     /* SAFETY */
     .safety-container {
@@ -437,9 +398,20 @@
         font-size: 48px;
         letter-spacing: -2px;
         padding-bottom: 20px;
+        font-weight: 900;
     }
 
     .safety-content {
-        padding: 5% 10%;
+        padding: 5% 10% 1% 10%;
     }
+
+    .safety-paragraph {
+        font-size: 17px !important;
+    }
+
+    .safety-items {
+        padding: 0 7%;
+        margin: 0;
+    }
+
 </style>

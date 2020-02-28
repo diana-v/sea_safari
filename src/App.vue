@@ -15,7 +15,7 @@
 
 <style lang="scss">
   #app {
-    font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+    font-family:"Hind", tahoma, verdana, arial;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
