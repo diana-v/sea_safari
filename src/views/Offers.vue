@@ -4,14 +4,14 @@
             <app-toolbar></app-toolbar>
         <h3 class="offer-header">Mūsų pasiūlymai</h3>
         </div>
-        <div class="offer-paragraph-container">
-            <p class="offer-paragraph">Jei niekada nebandėte plaukti RIB laivu, maloniai kviečiame išbandyti. Tai suteiks ne tik švelnų adrenalino pojūtį, bet kartu ir neišdildomus įspūdžius, kurių galbūt jau senai nepatyrėte.</p>
-            <p class="offer-paragraph">,,Sea Safari” - nauja ir vienintelė tokia pramoga Lietuvos rinkoje. Mes stengėmės šią pramogą pateikti įdomiai ir turiningai. Tai tikrai pasiteisino. Žmonės mėgsta mūsų rengiamus tolimesnius turus, greitaeigį plaukimo derinį su sustojimais strateginėse vietose. Anot klientų, laiką jie praleidžia nepakartojamai. Taip pat, nemažiau emocijų suteikia ir trumpesnės išvykos į Baltijos jūrą.</p>
-            <p class="offer-paragraph">- ,,Sea Safari” laivavedys</p>
-        </div>
+<!--        <div class="offer-paragraph-container">-->
+<!--            <p class="offer-paragraph">Jei niekada nebandėte plaukti RIB laivu, maloniai kviečiame išbandyti. Tai suteiks ne tik švelnų adrenalino pojūtį, bet kartu ir neišdildomus įspūdžius, kurių galbūt jau senai nepatyrėte.</p>-->
+<!--            <p class="offer-paragraph">,,Sea Safari” - nauja ir vienintelė tokia pramoga Lietuvos rinkoje. Mes stengėmės šią pramogą pateikti įdomiai ir turiningai. Tai tikrai pasiteisino. Žmonės mėgsta mūsų rengiamus tolimesnius turus, greitaeigį plaukimo derinį su sustojimais strateginėse vietose. Anot klientų, laiką jie praleidžia nepakartojamai. Taip pat, nemažiau emocijų suteikia ir trumpesnės išvykos į Baltijos jūrą.</p>-->
+<!--            <p class="offer-paragraph">- ,,Sea Safari” laivavedys</p>-->
+<!--        </div>-->
         <div class="container">
             <div class="row display-flex">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://scontent.fvno2-1.fna.fbcdn.net/v/t1.0-9/67624347_1137823643084264_5637304018070929408_n.jpg?_nc_cat=108&_nc_ohc=KvR-PYZNJrEAX_aGk1p&_nc_ht=scontent.fvno2-1.fna&oh=298d0b00f90ee4d44e52dfc2bb8e8355&oe=5EC6834E">
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://g4.dcdn.lt/images/pix/minges-kaimas-78722285.jpg">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 display-flex">
+                <div class="col-md-4 display-flex">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="@/assets/juodkrante-blur.jpg">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://picsum.photos/500/230">
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="row display-flex">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://picsum.photos/500/230">
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://picsum.photos/500/230">

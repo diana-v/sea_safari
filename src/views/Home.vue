@@ -25,6 +25,11 @@
                             <span style="border-color: rgb(0, 0, 0);"> </span>
                         </a>
                     </li>
+                    <li data-tooltip="">
+                        <a class="nav-btn" href="#contact">
+                            <span style="border-color: rgb(0, 0, 0);"> </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -65,86 +70,72 @@
 
             <div class="item offers-container" id="offers">
                 <div class="offers-content">
-                    <h2 class="offers-header">Pasiūlymai</h2>
-                    <p class="offers-paragraph">Mes teikiame paslaugas įmonių šventėms ir privatiems vakarėliams -
-                        gimtadieniai,
-                        bernvakariai, mergvakariai. Renkame grupes išvykoms į jūrą. Siūlome turiningas išvykas į
-                        populiariausias Lietuvos pajūrio vietas - Juodkrantė, Nida, Mingės kaimas ir kiti Jūsų
-                        pasirinkti maršrutai.</p>
-                    <div>
-                        <v-carousel
-                                cycle
-                                height="400"
-                                hide-delimiter-background
-                        >
-                            <v-carousel-item
-                                    v-for="(card, i) in cards"
-                                    :key="i"
-                            >
-                                <v-img
-                                        v-bind:src=card.img
-                                        height="100%"
-                                        gradient="to top right, rgba(64,64,64,.5), rgba(64,64,64,.5)"
-                                >
-                                    <v-row
-                                            class="fill-height"
-                                            align="center"
-                                            justify="center"
-                                    >
-                                        <h4 class="card-title offers-title">{{card.title}}</h4>
-
-                                    </v-row>
-                                </v-img>
-                            </v-carousel-item>
-                        </v-carousel>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h2 class="offers-header">Pasiūlymai</h2>
+                            </div>
+                            <div class="col-sm-12">
+                                <p class="offers-paragraph">Mes teikiame paslaugas įmonių šventėms ir privatiems
+                                    vakarėliams -
+                                    gimtadieniai,
+                                    bernvakariai, mergvakariai. Renkame grupes išvykoms į jūrą. Siūlome turiningas
+                                    išvykas į
+                                    populiariausias Lietuvos pajūri o vietas - Juodkrantė, Nida, Mingės kaimas ir kiti
+                                    Jūsų
+                                    pasirinkti maršrutai.</p>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="my-2">
+                                    <v-btn large color="rgb(145, 22, 13)" class="offer-button" href="/pasiulymai">Mūsų
+                                        pasiūlymai
+                                    </v-btn>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="item safety-container" id="safety">
                 <div class="safety-content">
-                    <h2 class="safety-header">Saugumas</h2>
-                    <p class="safety-paragraph">RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai
-                        atsakingai atsižvelgia į jūsų
-                        asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
-                        priemones:</p>
-                </div>
-                <div class="container">
-                                        <div class="row">
-<!--                                            <div class="col-sm-4">-->
-                    <!--                        <div class="col-sm-4 safety-item">-->
-                    <!--                            <i class="far fa-life-ring fa-9x" style="color:rgb(145, 22, 13);"></i>-->
-                    <!--                            <h5 class="p-4">Gelbėjimo ratas</h5>-->
-                    <!--                        <div class="col-sm-4 safety-item"></div>-->
-                    <!--                        <div class="col-sm-4 safety-item"></div>-->
-
-
-                    <v-card
-                            v-for="(safety, i) in safeties"
-                            :key="i"
-                            class="mx-auto safety-item"
-                            max-width="300px"
-                            max-height="200px"
-                    >
-                        <v-img
-                                v-bind:src="safety.img"
-                                max-height="150px"
-                        ></v-img>
-
-                        <v-card-title
-                                max-height="50px"
-                                style="padding: 3%;">
-                            {{safety.title}}
-                        </v-card-title>
-                        <!--                            <v-card-subtitle>-->
-                        <!--                                1,000 miles of wonder-->
-                        <!--                            </v-card-subtitle>-->
-                    </v-card>
-<!--                                        </div>-->
-                                        </div>
+                    <div>
+                        <h2 class="safety-header">Saugumas</h2>
+                        <p class="safety-paragraph">RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai
+                            atsakingai atsižvelgia į jūsų
+                            asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
+                            priemones:</p>
+                        <div class="card-columns safety-column">
+                            <div class="card bg-light shadow p-3 mb-5 safety-card">
+                                <div class="card-body text-center safety-card-content">
+                                    <img src="@/assets/lifebouy.png" class="safety-image">
+                                    <p class="card-text">Gelbėjimo ratas</p>
+                                </div>
+                            </div>
+                            <div class="card bg-light shadow p-3 mb-5 safety-card">
+                                <div class="card-body text-center safety-card-content">
+                                    <img src="@/assets/lifevest.png" class="safety-image">
+                                    <p class="card-text">Gelbėjimosi liemenė</p>
+                                </div>
+                            </div>
+                            <div class="card bg-light shadow p-3 mb-5 safety-card">
+                                <div class="card-body text-center safety-card-content">
+                                    <img src="@/assets/medkit.png" class="safety-image">
+                                    <p class="card-text">Vaistinėlė</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    </vue-scroll-snap>
+
+            <div class="item contact-container" id="contact">
+                <div class="contact-content">
+                    <h2 class="contact-header">Kontaktai</h2>
+
+                </div>
+            </div>
+        </vue-scroll-snap>
     </div>
 </template>
 
@@ -182,21 +173,6 @@
                     description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
                     img: require('@/assets/juodkrante.jpg')
                 },
-            ],
-
-            safeties: [
-                {
-                    img: require('@/assets/lifebuoys.jpg'),
-                    title: 'Gelbėjimo ratas'
-                },
-                {
-                    img: require('@/assets/lifevest.jpg'),
-                    title: 'Gelbėjimosi liemenė'
-                },
-                {
-                    img: require('@/assets/medical-kit.jpg'),
-                    title: 'Vaistinėlė'
-                }
             ]
         }),
         mounted() {
@@ -229,7 +205,6 @@
     #pp-nav {
         position: fixed;
         z-index: 100;
-        /*margin-top: -32px;*/
         top: 50%;
         opacity: 1;
     }
@@ -258,13 +233,6 @@
         z-index: 1;
         height: 4px;
         width: 4px;
-        border: 0;
-        border-top-color: currentcolor;
-        border-right-color: currentcolor;
-        border-bottom-color: currentcolor;
-        border-left-color: currentcolor;
-        background: #000000;
-        background-color: rgb(0, 0, 0);
         left: 50%;
         top: 50%;
         margin: -2px 0 0 -2px;
@@ -285,7 +253,9 @@
         border-radius: 100%;
     }
 
+    /* */
     /* HOME */
+    /* */
     .home-header {
         background-color: rgba(255, 255, 255, 0.5);
         padding: 15px;
@@ -309,8 +279,9 @@
         padding-right: 10px;
     }
 
-
+    /* */
     /* ABOUT */
+    /* */
     .about-container {
         height: 100vh;
         background-color: white;
@@ -327,6 +298,9 @@
         padding: 10% 10%;
         align-items: center;
         display: grid;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
     }
 
     .about-row {
@@ -344,7 +318,7 @@
     }
 
     .about-hp {
-        height: 200px;
+        padding-bottom: 2px;
     }
 
     @media screen and (max-width: 480px) {
@@ -354,7 +328,9 @@
         }
     }
 
+    /* */
     /* OFFERS */
+    /* */
     .offers-container {
         height: 100vh;
         background-color: white;
@@ -363,32 +339,31 @@
     .offers-header {
         font-size: 48px;
         letter-spacing: -2px;
-        /*padding-bottom: 5px;*/
         font-weight: 900;
     }
 
     .offers-content {
         padding: 5% 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
     }
 
-    .offers-title {
-        font-size: 20px !important;
-        line-height: 40px;
-        /*color: white;*/
-        color: rgb(145, 22, 13);
-        font-weight: bold;
-        /*background-color: rgba(12, 60, 96, 0.6);*/
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.8);
-        bottom: 38px;
-        width: 100%;
+    .offer-button {
+        color: white !important;
+        text-decoration: none !important;
     }
 
     .offers-paragraph {
         font-size: 17px !important;
+        padding: 0 3%;
     }
 
+    /* */
     /* SAFETY */
+    /* */
     .safety-container {
         height: 100vh;
         background-color: white;
@@ -403,15 +378,59 @@
 
     .safety-content {
         padding: 5% 10% 1% 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 
     .safety-paragraph {
         font-size: 17px !important;
+        padding: 0 8%;
     }
 
-    .safety-items {
-        padding: 0 7%;
-        margin: 0;
+    .safety-card-content {
+        padding: 0 !important;
     }
 
+    .safety-card {
+        border: none !important;
+    }
+
+    .safety-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .safety-column {
+        padding: 0 5%;
+    }
+
+    @media screen and (max-width: 787px) {
+        .safety-card {
+            height: 130px;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        .safety-card {
+            height: 116px;
+        }
+    }
+
+    /* */
+    /* CONTACT */
+    /* */
+    .contact-container {
+        height: 100vh;
+        background-image: linear-gradient(to top right, rgba(64, 64, 64, .5), rgba(64, 64, 64, .5)), url("../assets/map.png");
+        background-size: cover;
+    }
+
+    .contact-header {
+        font-size: 48px;
+        letter-spacing: -2px;
+        padding: 20px 0 5% 0;
+        font-weight: 900;
+    }
 </style>
