@@ -541,6 +541,10 @@
         .safety-content {
             padding: 0 10% 0 10%;
         }
+
+        .safety-paragraph {
+            padding: 0;
+        }
     }
 
     /* */
@@ -620,7 +624,8 @@
         }
 
         .contact-paragraph {
-            margin-bottom: 0;
+            margin-bottom: 0 !important;
+            padding: 0;
         }
 
         div.container:nth-child(3) {
@@ -636,7 +641,6 @@
         }
 
         .contact-button {
-            padding-top: ;
             margin-top: 0;
         }
 
