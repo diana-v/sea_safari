@@ -1,22 +1,22 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-light bg-none">
     <b-link class="navbar-brand" to="/">Sea Safari</b-link>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul @mouseover="show_active = false" @mouseleave="show_active = true" class="navbar-nav nav ml-auto">
-            <li class="nav-item">
-                <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/apie-mus')" to="/apie-mus">Apie Mus</b-link>
-            </li>
-            <li class="nav-item" >
-                <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/pasiulymai')" to="/pasiulymai">Pasiūlymai</b-link>
-            </li>
-            <li class="nav-item">
-                <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/kontaktai')" to="/kontaktai">Kontaktai</b-link>
-            </li>
-        </ul>
-    </div>
+<!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--        <span class="navbar-toggler-icon"></span>-->
+<!--    </button>-->
+<!--    <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--        <ul @mouseover="show_active = false" @mouseleave="show_active = true" class="navbar-nav nav ml-auto">-->
+<!--            <li class="nav-item">-->
+<!--                <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/apie-mus')" to="/apie-mus">Apie Mus</b-link>-->
+<!--            </li>-->
+<!--            <li class="nav-item" >-->
+<!--                <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/pasiulymai')" to="/pasiulymai">Pasiūlymai</b-link>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/kontaktai')" to="/kontaktai">Kontaktai</b-link>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
 </nav>
 </template>
 
@@ -37,6 +37,7 @@
 </script>
 
 <style>
+
     .toolbar-link {
         font-size: 24px;
         padding: 15px 20px !important;

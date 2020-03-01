@@ -1,14 +1,14 @@
 <template>
     <div class="offer">
-        <div class="header-background">
+        <div>
             <app-toolbar></app-toolbar>
         <h3 class="offer-header">Mūsų pasiūlymai</h3>
         </div>
-<!--        <div class="offer-paragraph-container">-->
-<!--            <p class="offer-paragraph">Jei niekada nebandėte plaukti RIB laivu, maloniai kviečiame išbandyti. Tai suteiks ne tik švelnų adrenalino pojūtį, bet kartu ir neišdildomus įspūdžius, kurių galbūt jau senai nepatyrėte.</p>-->
-<!--            <p class="offer-paragraph">,,Sea Safari” - nauja ir vienintelė tokia pramoga Lietuvos rinkoje. Mes stengėmės šią pramogą pateikti įdomiai ir turiningai. Tai tikrai pasiteisino. Žmonės mėgsta mūsų rengiamus tolimesnius turus, greitaeigį plaukimo derinį su sustojimais strateginėse vietose. Anot klientų, laiką jie praleidžia nepakartojamai. Taip pat, nemažiau emocijų suteikia ir trumpesnės išvykos į Baltijos jūrą.</p>-->
-<!--            <p class="offer-paragraph">- ,,Sea Safari” laivavedys</p>-->
-<!--        </div>-->
+        <div class="offer-paragraph-container">
+            <p class="offer-paragraph">Jei niekada nebandėte plaukti RIB laivu, maloniai kviečiame išbandyti. Tai suteiks ne tik švelnų adrenalino pojūtį, bet kartu ir neišdildomus įspūdžius, kurių galbūt jau senai nepatyrėte.</p>
+            <p class="offer-paragraph">,,Sea Safari” - nauja ir vienintelė tokia pramoga Lietuvos rinkoje. Mes stengėmės šią pramogą pateikti įdomiai ir turiningai. Tai tikrai pasiteisino. Žmonės mėgsta mūsų rengiamus tolimesnius turus, greitaeigį plaukimo derinį su sustojimais strateginėse vietose. Anot klientų, laiką jie praleidžia nepakartojamai. Taip pat, nemažiau emocijų suteikia ir trumpesnės išvykos į Baltijos jūrą.</p>
+            <p class="offer-paragraph">- ,,Sea Safari” laivavedys</p>
+        </div>
         <div class="container">
             <div class="row display-flex">
                 <div class="col-md-4">
@@ -121,16 +121,16 @@
 </template>
 
 <style>
-    .header-background {
-        background-image: linear-gradient(to bottom, rgba(168, 208, 227, 0.1), #a8d0e3), url("https://www.publicdomainpictures.net/download-picture.php?id=243974&check=07a4265dfac217debd08a50d33a573db");
-        height: 400px;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+    /*.header-background {*/
+    /*    background-image: linear-gradient(to bottom, rgba(168, 208, 227, 0.1), #a8d0e3), url("https://www.publicdomainpictures.net/download-picture.php?id=243974&check=07a4265dfac217debd08a50d33a573db");*/
+    /*    height: 400px;*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-size: 100%;*/
+    /*}*/
 
-    .offer-header {
-        padding-top: 100px;
-    }
+    /*.offer-header {*/
+    /*    padding-top: 100px;*/
+    /*}*/
 
     .offer-paragraph-container {
         padding: 0;

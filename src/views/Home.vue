@@ -45,24 +45,28 @@
 
             <div class="item about-container" id="about">
                 <div class="about-content">
-                    <div class="about-hp">
-                        <h2 class="about-header"> Apie Mus</h2>
-                        <p class="about-paragraph">Pasinaudokite proga apžiūrėti Lietuvos pajūrio kraštovaizdį ir uosto
-                            akvatoriją
-                            adrenalino pripildytu ir jaudinančiu būdu.</p>
-                    </div>
-                    <div class="row about-row">
-                        <div class="col-sm-5">
-                            <p> Mūsų RIB „Sea Safari“ laive jūs priartėsite prie gamtos
-                                ir patirsite nepamirštamus įspūdžius. "Sea Safari" turi du RIB laivus, varomus 300 AG ir
-                                600 AG varikliais, kurių maksimalus
-                                greitis siekia net iki 60 mazgų.</p>
+                    <div>
+                        <div class="about-hp">
+                            <h2 class="about-header"> Apie Mus</h2>
+                            <p class="about-paragraph">Pasinaudokite proga apžiūrėti Lietuvos pajūrio kraštovaizdį ir
+                                uosto
+                                akvatoriją
+                                adrenalino pripildytu ir jaudinančiu būdu.</p>
                         </div>
-                        <div class="col-sm-5">
-                            <p> Atstumas Klaipėda - Juodkrantė įveikiamas per 20 min., o
-                                Klaipėda - Nida per 45 min. "Sea Safari" veikia ir kaip vandens taksi. Tai puiki
-                                galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į
-                                Nidą/Juodkrantę.</p>
+                        <div class="row about-row">
+                            <div class="col-sm-5">
+                                <p> Mūsų RIB „Sea Safari“ laive jūs priartėsite prie gamtos
+                                    ir patirsite nepamirštamus įspūdžius. "Sea Safari" turi du RIB laivus, varomus 300
+                                    AG ir
+                                    600 AG varikliais, kurių maksimalus
+                                    greitis siekia net iki 60 mazgų.</p>
+                            </div>
+                            <div class="col-sm-5">
+                                <p> Atstumas Klaipėda - Juodkrantė įveikiamas per 20 min., o
+                                    Klaipėda - Nida per 45 min. "Sea Safari" veikia ir kaip vandens taksi. Tai puiki
+                                    galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į
+                                    Nidą/Juodkrantę.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,8 +135,66 @@
 
             <div class="item contact-container" id="contact">
                 <div class="contact-content">
-                    <h2 class="contact-header">Kontaktai</h2>
+                    <div class="contact-border">
+                        <h2 class="contact-header">Kontaktai</h2>
+                        <p class="contact-paragraph">Rezervacijos priimamos el. paštu, telefonu arba susisiekus per
+                            Facebook.</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 contact-column">
+                                    <div>
+                                        <h5 class="contact-details-header">Adresas:</h5>
+                                        <p class="contact-details-paragraph">Danės g. 5, Klaipėda</p>
+                                        <p class="contact-details-paragraph">Palangos Tiltas, Palanga</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="contact-details-header">El. Paštas:</h5>
+                                        <p class="contact-details-paragraph">seasafari.lietuva@gmail.com</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="contact-details-header">Telefonas:</h5>
+                                        <p class="contact-details-paragraph">+37067572133</p>
+                                    </div>
+                                    <div class="social-media-container">
+                                        <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i
+                                                class="fab fa-instagram fa-2x"></i></a>
+                                        <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i
+                                                class="fab fa-facebook-f fa-2x"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 contact-column">
+                                    <form>
+                                        <v-text-field
+                                                v-model="name"
+                                                :error-messages="nameErrors"
+                                                :counter="10"
+                                                label="Vardas"
+                                                required
+                                                @input="$v.name.$touch()"
+                                                @blur="$v.name.$touch()"
+                                        ></v-text-field>
+                                        <v-text-field
+                                                v-model="email"
+                                                :error-messages="emailErrors"
+                                                label="El. Paštas"
+                                                required
+                                                @input="$v.email.$touch()"
+                                                @blur="$v.email.$touch()"
+                                        ></v-text-field>
+                                        <v-text-field
+                                                    :rules="rules"
+                                                    :counter="250"
+                                                    required
+                                                    rows="1"
+                                                    label="Žinutė"
+                                        ></v-text-field>
 
+                                        <v-btn color="rgb(145, 22, 13)" class="contact-button mr-4" @click="submit">Pateikti</v-btn>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </vue-scroll-snap>
@@ -140,41 +202,49 @@
 </template>
 
 <script>
+    import {validationMixin} from 'vuelidate'
+    import {required, maxLength, email} from 'vuelidate/lib/validators'
+
+
     export default {
+        mixins: [validationMixin],
+
+        validations: {
+            name: {required, maxLength: maxLength(10)},
+            email: {required, email},
+        },
+
         data: () => ({
-            cards: [
-                {
-                    title: 'Ekstremali išvyka į jūrą',
-                    description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
-                    img: require('@/assets/jura.jpg')
-                },
-                {
-                    title: 'Išvyka į Mingės kaimą',
-                    description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
-                    img: require('@/assets/minges-kaimas.jpg')
-                },
-                {
-                    title: 'Išvyka į Juodkrantę',
-                    description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
-                    img: require('@/assets/juodkrante.jpg')
-                },
-                {
-                    title: 'Ekstremali išvyka į jūrą',
-                    description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
-                    img: require('@/assets/jura.jpg')
-                },
-                {
-                    title: 'Išvyka į Mingės kaimą',
-                    description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
-                    img: require('@/assets/minges-kaimas.jpg')
-                },
-                {
-                    title: 'Išvyka į Juodkrantę',
-                    description: 'Skrodžianti Baltijos jūros bangas pajausite visą jūros galyb, greitį, vėją ir vandens purslus.',
-                    img: require('@/assets/juodkrante.jpg')
-                },
+            name: '',
+            email: '',
+            rules: [
+                value => !!value || 'Privaloma įvesti.',
+                value => (value || '').length >= 20 || 'Min 20 characters',
             ]
+
         }),
+        methods: {
+            submit() {
+                this.$v.$touch()
+            }
+        },
+        computed: {
+            nameErrors() {
+                const errors = []
+                if (!this.$v.name.$dirty) return errors
+                !this.$v.name.maxLength && errors.push('Vardas negali viršyti 10 raidžių.')
+                !this.$v.name.required && errors.push('Privaloma įvesti.')
+                return errors
+            },
+            emailErrors() {
+                const errors = []
+                if (!this.$v.email.$dirty) return errors
+                !this.$v.email.email && errors.push('Įveskite teisingą el. pašto adresą.')
+                !this.$v.email.required && errors.push('Privaloma įvesti.')
+                return errors
+            },
+        },
+
         mounted() {
             var header = document.getElementById("pp-nav");
             var btns = header.getElementsByClassName("nav-btn");
@@ -190,7 +260,43 @@
 
 
 </script>
+<style scoped>
 
+    /*.v-label {*/
+    /*    color: white !important;*/
+    /*}*/
+    /*div.v-messages__message {*/
+    /*    color: white !important;*/
+    /*}*/
+
+    /*.v-application .info--text {*/
+    /*    color: white !important;*/
+    /*}*/
+
+    /*.v-application .primary--text {*/
+    /*    color: white !important;*/
+    /*    caret-color: white !important;*/
+    /*}*/
+
+    .theme--light.v-input input,
+    .theme--light.v-input textarea {
+        color: white !important;
+    }
+
+    div.v-input:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > label:nth-child(1) {
+        color: white !important;
+    }
+
+    .theme--light .v-input {
+        color: white !important;
+        caret-color: white !important;
+    }
+    .v-application .error--text {
+        color: rgb(145, 22, 13) !important;
+        caret-color: rgb(145, 22, 13) !important;
+    }
+
+</style>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
@@ -262,6 +368,7 @@
         margin-top: 2%;
         font-size: 250%;
         font-weight: 900;
+        color: rgb(145, 22, 13);
     }
 
     .home-container {
@@ -269,13 +376,18 @@
         height: 100vh;
     }
 
+    .social-media-container {
+        padding-top: 10%;
+        width: 70px;
+    }
+
     .fa-facebook-f {
-        color: #0c3c60;
+        color: rgb(145, 22, 13);
         padding-left: 10px;
     }
 
     .fa-instagram {
-        color: #0c3c60;
+        color: rgb(145, 22, 13);
         padding-right: 10px;
     }
 
@@ -290,7 +402,7 @@
     .about-header {
         font-size: 48px;
         letter-spacing: -2px;
-        padding: 20px 0 5% 0;
+        padding: 0 0 2% 0;
         font-weight: 900;
     }
 
@@ -315,6 +427,7 @@
         padding: 0 8%;
         font-style: italic;
         font-size: 17px !important;
+        margin-bottom: 0;
     }
 
     .about-hp {
@@ -340,6 +453,7 @@
         font-size: 48px;
         letter-spacing: -2px;
         font-weight: 900;
+        margin-bottom: 0;
     }
 
     .offers-content {
@@ -359,6 +473,7 @@
     .offers-paragraph {
         font-size: 17px !important;
         padding: 0 3%;
+        margin-bottom: 0;
     }
 
     /* */
@@ -372,7 +487,7 @@
     .safety-header {
         font-size: 48px;
         letter-spacing: -2px;
-        padding-bottom: 20px;
+        padding-bottom: 2%;
         font-weight: 900;
     }
 
@@ -423,14 +538,106 @@
     /* */
     .contact-container {
         height: 100vh;
-        background-image: linear-gradient(to top right, rgba(64, 64, 64, .5), rgba(64, 64, 64, .5)), url("../assets/map.png");
+        background-image: linear-gradient(to top right, rgba(64, 64, 64, .7), rgba(64, 64, 64, .7)), url("../assets/map.png");
         background-size: cover;
     }
 
     .contact-header {
+        color: white;
         font-size: 48px;
         letter-spacing: -2px;
-        padding: 20px 0 5% 0;
+        padding: 5% 0 2% 0;
         font-weight: 900;
+    }
+
+    .contact-content {
+        padding: 5% 10% 1% 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .contact-border {
+        border: 3px solid white;
+    }
+
+    .contact-paragraph {
+        font-size: 17px !important;
+        padding: 0 8%;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    .contact-details-paragraph {
+        margin-bottom: 0 !important;
+        text-align: start;
+        color: white;
+    }
+
+    .contact-details-header {
+        color: rgb(145, 22, 13);
+        text-align: start;
+        margin-top: 5%;
+        font-weight: bold;
+    }
+
+    .contact-column {
+        padding: 2% 8% !important;
+    }
+
+    .contact-button {
+        color: white !important;
+        text-decoration: none !important;
+        margin-top: 10%;
+    }
+
+    div.v-input:nth-child(1) {
+        padding-top: 0;
+    }
+
+    div.v-input:nth-child(2) {
+        padding-top: 22px;
+    }
+
+    @media screen and (max-width: 575px) {
+        .contact-details-header {
+            margin-top: 2%;
+        }
+
+        .social-media-container {
+            padding-top: 3%;
+        }
+
+        .contact-paragraph {
+            margin-bottom: 0;
+        }
+
+        div.container:nth-child(3) {
+            padding-top: 0;
+        }
+
+        div.col-sm-6:nth-child(2) {
+            padding-top: 0;
+        }
+
+        div.v-input:nth-child(2) {
+            padding-top: 0;
+        }
+
+        .contact-button {
+            padding-top: ;
+            margin-top: 0;
+        }
+
+        div.v-input:nth-child(3) {
+            padding-top: 0;
+        }
+
+        .contact-header {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            padding-top: 2%;
+        }
     }
 </style>
