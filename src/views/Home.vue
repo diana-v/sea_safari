@@ -434,6 +434,12 @@
         padding-bottom: 2px;
     }
 
+    @media screen and (max-width: 575px) {
+        .contact-content {
+            padding: 0 10% 0 10%;
+        }
+    }
+
     @media screen and (max-width: 480px) {
         .about-paragraph {
             text-align: start;
@@ -530,6 +536,10 @@
     @media screen and (max-width: 575px) {
         .safety-card {
             height: 116px;
+        }
+
+        .safety-content {
+            padding: 0 10% 0 10%;
         }
     }
 
@@ -638,6 +648,10 @@
             padding-bottom: 0;
             margin-bottom: 0;
             padding-top: 2%;
+        }
+
+        .contact-content {
+            padding: 0 10% 0 10%;
         }
     }
 </style>
