@@ -1,6 +1,5 @@
 <template>
     <div>
-        <app-toolbar></app-toolbar>
         <vue-scroll-snap fullscreen>
 
             <div id="pp-nav" class="right eut-dark" style="color: rgb(0, 0, 0); margin-top: -53.5px;">
@@ -34,11 +33,12 @@
             </div>
 
             <div class="item home-container" id="home">
-                <div>
-                    <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i
-                            class="fab fa-instagram fa-2x"></i></a>
-                    <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i
-                            class="fab fa-facebook-f fa-2x"></i></a>
+                <app-toolbar></app-toolbar>
+                <div class="home-content">
+<!--                    <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i-->
+<!--                            class="fab fa-instagram fa-2x"></i></a>-->
+<!--                    <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i-->
+<!--                            class="fab fa-facebook-f fa-2x"></i></a>-->
                 </div>
                 <h1 class="home-header">R.I.B. Charter Experience</h1>
             </div>
@@ -163,8 +163,11 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6 contact-column">
-                                    <form>
+                                    <form
+                                        style="--v-error-base: #b71c1c">
                                         <v-text-field
+                                                dark
+                                                color="red darken-4"
                                                 v-model="name"
                                                 :error-messages="nameErrors"
                                                 :counter="10"
@@ -174,6 +177,8 @@
                                                 @blur="$v.name.$touch()"
                                         ></v-text-field>
                                         <v-text-field
+                                                dark
+                                                color="red darken-4"
                                                 v-model="email"
                                                 :error-messages="emailErrors"
                                                 label="El. Paštas"
@@ -182,14 +187,18 @@
                                                 @blur="$v.email.$touch()"
                                         ></v-text-field>
                                         <v-text-field
-                                                    :rules="rules"
-                                                    :counter="250"
-                                                    required
-                                                    rows="1"
-                                                    label="Žinutė"
+                                                dark
+                                                color="red darken-4"
+                                                :rules="rules"
+                                                :counter="250"
+                                                required
+                                                rows="1"
+                                                label="Žinutė"
                                         ></v-text-field>
 
-                                        <v-btn color="rgb(145, 22, 13)" class="contact-button mr-4" @click="submit">Pateikti</v-btn>
+                                        <v-btn color="rgb(145, 22, 13)" class="contact-button mr-4" @click="submit">
+                                            Pateikti
+                                        </v-btn>
                                     </form>
                                 </div>
                             </div>
@@ -261,40 +270,6 @@
 
 </script>
 <style scoped>
-
-    /*.v-label {*/
-    /*    color: white !important;*/
-    /*}*/
-    /*div.v-messages__message {*/
-    /*    color: white !important;*/
-    /*}*/
-
-    /*.v-application .info--text {*/
-    /*    color: white !important;*/
-    /*}*/
-
-    /*.v-application .primary--text {*/
-    /*    color: white !important;*/
-    /*    caret-color: white !important;*/
-    /*}*/
-
-    .theme--light.v-input input,
-    .theme--light.v-input textarea {
-        color: white !important;
-    }
-
-    div.v-input:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > label:nth-child(1) {
-        color: white !important;
-    }
-
-    .theme--light .v-input {
-        color: white !important;
-        caret-color: white !important;
-    }
-    .v-application .error--text {
-        color: rgb(145, 22, 13) !important;
-        caret-color: rgb(145, 22, 13) !important;
-    }
 
 </style>
 <style>
@@ -368,12 +343,16 @@
         margin-top: 2%;
         font-size: 250%;
         font-weight: 900;
-        color: rgb(145, 22, 13);
+        /*color: rgb(145, 22, 13);*/
+        color: #17486b;
     }
 
     .home-container {
+        min-height: 100%;
+    }
+
+    .home-content {
         padding-top: 50vh;
-        height: 100vh;
     }
 
     .social-media-container {
@@ -395,7 +374,7 @@
     /* ABOUT */
     /* */
     .about-container {
-        height: 100vh;
+        min-height: 100%;
         background-color: white;
     }
 
@@ -451,7 +430,7 @@
     /* OFFERS */
     /* */
     .offers-container {
-        height: 100vh;
+        min-height: 100%;
         background-color: white;
     }
 
@@ -486,7 +465,7 @@
     /* SAFETY */
     /* */
     .safety-container {
-        height: 100vh;
+        min-height: 100%;
         background-color: white;
     }
 
@@ -551,7 +530,7 @@
     /* CONTACT */
     /* */
     .contact-container {
-        height: 100vh;
+        min-height: 100%;
         background-image: linear-gradient(to top right, rgba(64, 64, 64, .7), rgba(64, 64, 64, .7)), url("../assets/map.png");
         background-size: cover;
     }

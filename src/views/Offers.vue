@@ -9,9 +9,9 @@
             <p class="offer-paragraph">,,Sea Safari” - nauja ir vienintelė tokia pramoga Lietuvos rinkoje. Mes stengėmės šią pramogą pateikti įdomiai ir turiningai. Tai tikrai pasiteisino. Žmonės mėgsta mūsų rengiamus tolimesnius turus, greitaeigį plaukimo derinį su sustojimais strateginėse vietose. Anot klientų, laiką jie praleidžia nepakartojamai. Taip pat, nemažiau emocijų suteikia ir trumpesnės išvykos į Baltijos jūrą.</p>
             <p class="offer-paragraph">- ,,Sea Safari” laivavedys</p>
         </div>
-        <div class="container">
+        <div class="container offer-container">
             <div class="row display-flex">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://scontent.fvno2-1.fna.fbcdn.net/v/t1.0-9/67624347_1137823643084264_5637304018070929408_n.jpg?_nc_cat=108&_nc_ohc=KvR-PYZNJrEAX_aGk1p&_nc_ht=scontent.fvno2-1.fna&oh=298d0b00f90ee4d44e52dfc2bb8e8355&oe=5EC6834E">
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://g4.dcdn.lt/images/pix/minges-kaimas-78722285.jpg">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 display-flex">
+                <div class="col-md-6 display-flex">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="@/assets/juodkrante-blur.jpg">
@@ -62,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://picsum.photos/500/230">
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="row display-flex">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://picsum.photos/500/230">
@@ -98,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="card offer-card">
                         <div class="card-img-body offer-image">
                             <img class="card-img" src="https://picsum.photos/500/230">
@@ -121,26 +121,36 @@
 </template>
 
 <style>
-    /*.header-background {*/
-    /*    background-image: linear-gradient(to bottom, rgba(168, 208, 227, 0.1), #a8d0e3), url("https://www.publicdomainpictures.net/download-picture.php?id=243974&check=07a4265dfac217debd08a50d33a573db");*/
-    /*    height: 400px;*/
-    /*    background-repeat: no-repeat;*/
-    /*    background-size: 100%;*/
-    /*}*/
+    @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
-    /*.offer-header {*/
-    /*    padding-top: 100px;*/
-    /*}*/
+    html, body {
+        font-family: 'Hind', 'Roboto';
+    }
+
+    .offer-header {
+        font-size: 48px;
+        letter-spacing: -2px;
+        padding: 5% 5% 2% 5%;
+        font-weight: 900;
+    }
+
+    @media screen and (max-width: 575px) {
+        .offer-header {
+            padding: 0 7% 5% 7%;
+        }
+    }
 
     .offer-paragraph-container {
-        padding: 0;
-        margin-bottom: 80px;
+        padding: 0 10% 0 10%;
+    }
+
+    .offer-container {
+        padding-bottom: 7%;
     }
 
     .offer-paragraph {
-        padding: 0 50px 0 50px;
         text-align: start;
-        margin-bottom: 0;
+        font-size: 17px;
     }
 
     .offer-image {
@@ -150,7 +160,7 @@
 
     .offer {
         background-color: #013A6B;
-        background-image: -webkit-linear-gradient(70deg, #0c3c60 50%, #a8d0e3 50%);
+        background-image: -webkit-linear-gradient(70deg, #0c3c60 65%, white 35%);
     }
 
     .card:hover .offer-title {
@@ -205,119 +215,3 @@
         }
     }
 </style>
-<!--<template>-->
-<!--  <div class="offers">-->
-<!--    <div class="blog-wrap">-->
-<!--      <div class="blog-container">-->
-<!--        <v-card link hover-->
-<!--                class="blog-card">-->
-<!--          <v-img-->
-<!--                  src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"-->
-<!--                  class="white&#45;&#45;text align-end"-->
-<!--                  height="200px"-->
-<!--          >-->
-<!--          </v-img>-->
-<!--          <v-card-title class="blog-card-title">Ekstremali išvyka į jūrą</v-card-title>-->
-<!--          <v-card-text class="text&#45;&#45;primary">-->
-<!--            <div>Šis ekstremalus plaukimas Baltijos jūra su kateriu įsimins ilgam! Greitaeigis R.I.B. kateris ir-->
-<!--              audringa Baltijos jūra nenuvils ir didžiausio adrenalino fanatiko. Kelionės metu turėsite galimybe-->
-<!--              praplaukti Danės upe, pamatyti Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą-->
-<!--              jūros galybę, greitį, vėją ir vandens purslus.</div>-->
-<!--          </v-card-text>-->
-<!--          <div class="time-cost-wrapper">-->
-<!--            <div class="column">-->
-<!--              <v-card-text class="offers-time-cost">Laikas:</v-card-text>-->
-<!--              <v-card-text class="offers-time-cost"><i class="fas fa-clock"></i> 30min</v-card-text>-->
-<!--            </div>-->
-<!--            <div class="column">-->
-<!--              <v-card-text class="offers-time-cost">Nuo:</v-card-text>-->
-<!--              <v-card-text class="offers-time-cost"><i class="fas fa-euro-sign"></i> 15</v-card-text>-->
-<!--            </div>-->
-<!--            <div class="column">-->
-<!--              <v-btn>Daugiau</v-btn>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </v-card>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</template>-->
-
-
-<!--<style>-->
-<!--  .time-cost-wrapper {-->
-<!--    display: grid;-->
-<!--    grid-template-rows: 1fr 1fr;-->
-<!--    grid-template-columns: 1fr 1fr 1fr;-->
-<!--    height: 125px;-->
-<!--  }-->
-<!--  .column {-->
-<!--    float: left;-->
-<!--    grid-column: 1fr;-->
-<!--    padding: 10px;-->
-<!--  }-->
-
-<!--  .offers-time-cost {-->
-<!--    padding-bottom: 0px;-->
-<!--    font-size: 1.25rem;-->
-<!--  }-->
-
-<!--  .offers {-->
-<!--    text-align: start;-->
-<!--  }-->
-
-<!--  .blog-container {-->
-<!--    float: left;-->
-<!--    margin: 20px 5%;-->
-<!--    width: 40%;-->
-<!--  }-->
-
-<!--  @media screen and (max-width: 825px) {-->
-<!--    .blog-container {-->
-<!--      width: 80%;-->
-<!--      margin: 0 auto;-->
-<!--      padding: 20px;-->
-<!--      float: unset;-->
-<!--    }-->
-<!--  }-->
-
-<!--  @media screen and (min-width: 1300px) {-->
-<!--    .blog-container {-->
-<!--      width: 30%;-->
-<!--      margin: 0 20px;-->
-<!--      padding: 20px;-->
-<!--      /*float: unset;*/-->
-<!--    }-->
-<!--  }-->
-
-<!--  .blog-card {-->
-<!--    text-decoration: none !important;-->
-<!--    width: 600px;-->
-<!--  }-->
-
-<!--  .blog-card-title {-->
-<!--    color: #0c3c60;-->
-<!--  }-->
-
-<!--  .blog-card-title:hover {-->
-<!--    color: #7f244b !important;-->
-<!--  }-->
-
-<!--  .blog-card-subtitle {-->
-<!--    border-bottom: 3px solid #7f244b;-->
-<!--    width: 150px;-->
-<!--  }-->
-
-<!--  .blog-wrap:hover .blog-card {-->
-<!--    opacity: .3;-->
-<!--  }-->
-
-<!--  .blog-wrap .blog-card:hover {-->
-<!--    opacity: 1;-->
-<!--  }-->
-
-<!--  .offers-cost-time {-->
-<!--    padding: none !important;-->
-<!--  }-->
-<!--</style>-->
-
