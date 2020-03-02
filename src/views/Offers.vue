@@ -7,7 +7,7 @@
         <div class="offer-paragraph-container">
             <p class="offer-paragraph">Jei niekada nebandėte plaukti RIB laivu, maloniai kviečiame išbandyti. Tai suteiks ne tik švelnų adrenalino pojūtį, bet kartu ir neišdildomus įspūdžius, kurių galbūt jau senai nepatyrėte.</p>
             <p class="offer-paragraph">,,Sea Safari” - nauja ir vienintelė tokia pramoga Lietuvos rinkoje. Mes stengėmės šią pramogą pateikti įdomiai ir turiningai. Tai tikrai pasiteisino. Žmonės mėgsta mūsų rengiamus tolimesnius turus, greitaeigį plaukimo derinį su sustojimais strateginėse vietose. Anot klientų, laiką jie praleidžia nepakartojamai. Taip pat, nemažiau emocijų suteikia ir trumpesnės išvykos į Baltijos jūrą.</p>
-            <p class="offer-paragraph">- ,,Sea Safari” laivavedys</p>
+            <p class="offer-paragraph"><i>- ,,Sea Safari” laivavedys</i></p>
         </div>
         <div class="container offer-container">
             <div class="row display-flex">

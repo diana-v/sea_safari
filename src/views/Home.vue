@@ -110,19 +110,48 @@
                             asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
                             priemones:</p>
                         <div class="card-columns safety-column">
-                            <div class="card bg-light shadow p-3 mb-5 safety-card">
+                            <div class="card bg-light shadow p-3 mb-3 safety-card">
                                 <div class="card-body text-center safety-card-content">
                                     <img src="@/assets/lifebouy.png" class="safety-image">
                                     <p class="card-text">Gelbėjimo ratas</p>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow p-3 mb-5 safety-card">
+                            <div class="card bg-light shadow p-3 mb-3 safety-card">
                                 <div class="card-body text-center safety-card-content">
                                     <img src="@/assets/lifevest.png" class="safety-image">
                                     <p class="card-text">Gelbėjimosi liemenė</p>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow p-3 mb-5 safety-card">
+                            <div class="card bg-light shadow p-3 mb-3 safety-card">
+                                <div class="card-body text-center safety-card-content">
+
+                                    <v-dialog
+                                            v-model="dialog"
+                                    >
+                                        <template v-slot:activator="{ on }">
+                                            <div v-on="on">
+                                                <img src="@/assets/wetsuit.png" class="safety-image">
+                                                <p class="card-text">Neperšlampama apranga</p>
+                                            </div>
+                                        </template>
+
+                                        <v-card>
+                                            <v-img :src="safety_img" max-height="560px" contain></v-img>
+                                            <v-card-actions>
+                                                <v-spacer></v-spacer>
+                                                <v-btn
+                                                        color="red darken-4"
+                                                        text
+                                                        @click="dialog = false"
+                                                >
+                                                    Uždaryti
+                                                </v-btn>
+                                            </v-card-actions>
+                                        </v-card>
+                                    </v-dialog>
+                                </div>
+                            </div>
+                            <div class="card bg-light shadow p-3 mb-3 safety-card">
                                 <div class="card-body text-center safety-card-content">
                                     <img src="@/assets/medkit.png" class="safety-image">
                                     <p class="card-text">Vaistinėlė</p>
@@ -224,13 +253,14 @@
         },
 
         data: () => ({
+            safety_img: require('@/assets/aprangos.png'),
+            dialog: false,
             name: '',
             email: '',
             rules: [
                 value => !!value || 'Privaloma įvesti.',
                 value => (value || '').length >= 20 || 'Min 20 characters',
             ]
-
         }),
         methods: {
             submit() {
@@ -264,14 +294,18 @@
                     this.className += " active";
                 });
             }
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            window.addEventListener('resize', () => {
+                let vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', `${vh}px`);
+            });
         }
     }
 
 
 </script>
-<style scoped>
 
-</style>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
@@ -343,12 +377,12 @@
         margin-top: 2%;
         font-size: 250%;
         font-weight: 900;
-        /*color: rgb(145, 22, 13);*/
         color: #17486b;
     }
 
     .home-container {
-        min-height: 100%;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
     }
 
     .home-content {
@@ -374,7 +408,8 @@
     /* ABOUT */
     /* */
     .about-container {
-        min-height: 100%;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         background-color: white;
     }
 
@@ -430,7 +465,8 @@
     /* OFFERS */
     /* */
     .offers-container {
-        min-height: 100%;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         background-color: white;
     }
 
@@ -465,7 +501,8 @@
     /* SAFETY */
     /* */
     .safety-container {
-        min-height: 100%;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         background-color: white;
     }
 
@@ -504,6 +541,7 @@
 
     .safety-column {
         padding: 0 5%;
+        column-count: 2 !important;
     }
 
     @media screen and (max-width: 787px) {
@@ -513,8 +551,16 @@
     }
 
     @media screen and (max-width: 575px) {
+        .safety-column {
+            padding: 0;
+        }
+
+        .p-3 {
+            padding: 1rem 0 !important;
+        }
+
         .safety-card {
-            height: 116px;
+            height: 130px;
         }
 
         .safety-content {
@@ -526,11 +572,17 @@
         }
     }
 
+    .safety-clothing {
+        text-decoration: none !important;
+        color: black !important;
+    }
+
     /* */
     /* CONTACT */
     /* */
     .contact-container {
-        min-height: 100%;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         background-image: linear-gradient(to top right, rgba(64, 64, 64, .7), rgba(64, 64, 64, .7)), url("../assets/map.png");
         background-size: cover;
     }

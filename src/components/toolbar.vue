@@ -6,8 +6,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <div class="nav-wrapper">
-        </div>
-        <ul @mouseover="show_active = false" @mouseleave="show_active = true" class="navbar-nav nav ml-auto">
+        <ul class="navbar-nav nav ml-auto" @mouseover="show_active = false" @mouseleave="show_active = true" >
             <li class="nav-item">
                 <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/apie-mus')" href="/#about">Apie Mus</b-link>
             </li>
@@ -21,6 +20,7 @@
                 <b-link class="nav-link toolbar-link" v-bind:class="activeLink('/kontaktai')" href="/#contact" >Kontaktai</b-link>
             </li>
         </ul>
+        </div>
     </div>
 </nav>
 </template>
@@ -28,7 +28,8 @@
 <script>
     export default {
         data: () => ({
-            show_active : true
+            show_active : true,
+            collapse : true
         }),
         methods: {
             activeLink: function (expectedLink) {
