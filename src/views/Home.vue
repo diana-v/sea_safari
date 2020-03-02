@@ -122,7 +122,7 @@
                                     <p class="card-text">Gelbėjimosi liemenė</p>
                                 </div>
                             </div>
-                            <div class="card bg-light shadow p-3 mb-3 safety-card">
+                            <div class="card bg-light shadow p-3 mb-3 safety-card hover-safety-card">
                                 <div class="card-body text-center safety-card-content">
 
                                     <v-dialog
@@ -575,6 +575,11 @@
     .safety-clothing {
         text-decoration: none !important;
         color: black !important;
+    }
+
+    .hover-safety-card:hover {
+        color: #91160d;
+        cursor: pointer;
     }
 
     /* */
