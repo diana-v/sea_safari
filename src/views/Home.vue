@@ -35,10 +35,10 @@
             <div class="item home-container" id="home">
                 <app-toolbar></app-toolbar>
                 <div class="home-content">
-<!--                    <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i-->
-<!--                            class="fab fa-instagram fa-2x"></i></a>-->
-<!--                    <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i-->
-<!--                            class="fab fa-facebook-f fa-2x"></i></a>-->
+                    <!--                    <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i-->
+                    <!--                            class="fab fa-instagram fa-2x"></i></a>-->
+                    <!--                    <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i-->
+                    <!--                            class="fab fa-facebook-f fa-2x"></i></a>-->
                 </div>
                 <h1 class="home-header">R.I.B. Charter Experience</h1>
             </div>
@@ -88,8 +88,10 @@
                                     populiariausias Lietuvos pajūri o vietas - Juodkrantė, Nida, Mingės kaimas ir kiti
                                     Jūsų
                                     pasirinkti maršrutai.</p>
+                                <p class="offers-paragraph">Jeigu nesugalvojate ką dovanoti artimam žmogui arba dvėjojate ar parinkta dovana
+                                    suteiks džiaugsmo, mes siūlome SeaSafari dovanų kuponus. <a href="#" class="offers-gift">Juos galite įsigyti čia.</a></p>
                             </div>
-                            <div class="col-sm-12">
+                            <div class="col-sm-12 offer-button-container">
                                 <div class="my-2">
                                     <v-btn large color="rgb(145, 22, 13)" class="offer-button" href="/pasiulymai">Mūsų
                                         pasiūlymai
@@ -193,7 +195,7 @@
                                 </div>
                                 <div class="col-sm-6 contact-column">
                                     <form
-                                        style="--v-error-base: #b71c1c">
+                                            style="--v-error-base: #b71c1c">
                                         <v-text-field
                                                 dark
                                                 color="red darken-4"
@@ -215,15 +217,16 @@
                                                 @input="$v.email.$touch()"
                                                 @blur="$v.email.$touch()"
                                         ></v-text-field>
-                                        <v-text-field
+                                        <v-textarea
                                                 dark
                                                 color="red darken-4"
                                                 :rules="rules"
                                                 :counter="250"
                                                 required
-                                                rows="1"
+                                                rows="3"
+                                                no-resize
                                                 label="Žinutė"
-                                        ></v-text-field>
+                                        ></v-textarea>
 
                                         <v-btn color="rgb(145, 22, 13)" class="contact-button mr-4" @click="submit">
                                             Pateikti
@@ -491,10 +494,18 @@
         text-decoration: none !important;
     }
 
+    .offer-button-container {
+        padding-top: 0 !important;
+    }
+
     .offers-paragraph {
         font-size: 17px !important;
         padding: 0 3%;
         margin-bottom: 0;
+    }
+
+    .offers-gift {
+        color: #91160d !important;
     }
 
     /* */

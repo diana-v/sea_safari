@@ -75,17 +75,18 @@
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title offer-title">Išvyka į Mingės kaimą</h4>
-                                <p class="card-text offer-text">Išvykos metu, pamatysite Lietuvos Venecija vadinamą
-                                    kaimą,
-                                    kuris yra ypač gražus ir unikalus, o gatvę jame atstoja upė. Tai Mingės kaimas,
-                                    vieta
-                                    kurią kiekvienas privalo aplankyti!</p>
+                                <p class="card-text offer-text">Tai pažintinė kelionė laivu po Nemuno deltos parką,
+                                    aplankant Uostadvarį ir Rusnės salą. Išvykos metu, aplankysite unikalų Lietuvos Venecija vadinamą kaimą, išvysite
+                                    Vilhelmo kanalą ir Ventės ragą. Iš Mingės kaimo Minijos upe nuplauksite iki upeivių
+                                    gyvenvietės Uostadvario, garsėjančio savo bokštu ir vandens kėlimo stoties
+                                    muziejumi. Išlipus porai valandų į krantą, yra galimybė papietauti Kintuose, žuvies
+                                    restorane. </p>
                             </div>
                             <div class="container-fluid row">
                                 <div class="col-6 col-sm-6 offer-details">
                                     <img class="offer-icon" src="@/assets/time.png">
                                     <div>
-                                        <p>Trukmė: 4-6val</p>
+                                        <p>Trukmė: 3-4val</p>
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-6 offer-details">
@@ -130,65 +131,59 @@
                                     neišdildomų įspūdžių.</p>
                             </div>
                             <div class="container-fluid row">
-                                    <div class="col-6 col-sm-6 offer-details">
-                                        <img class="offer-icon" src="@/assets/time.png">
-                                        <div>
-                                            <p>Trukmė: 2-4val</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-6 offer-details">
-                                        <img class="offer-icon" src="@/assets/price.png">
-                                        <div>
-                                            <p>Kaina nuo: €200</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-4 offer-details">
-                                        <img class="offer-icon" src="@/assets/shirt.png">
-                                        <div>
-                                            <p>Apranga suteikiama</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-4 offer-details">
-                                        <img class="offer-icon" src="@/assets/season.png">
-                                        <div>
-                                            <p>Šiltuoju metų laiku</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-4 offer-details">
-                                        <img class="offer-icon" src="@/assets/info.png">
-                                        <div>
-                                            <p>Būtina rezervacija</p>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card offer-card">
-                            <div class="card-img-body offer-image">
-                                <img class="card-img" src="@/assets/juodkrante.jpg">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title offer-title">Ekstremali išvyka į jūrą</h4>
-                                <p class="card-text offer-text">Šis ekstremalus plaukimas Baltijos jūra su kateriu
-                                    įsimins
-                                    ilgam! Greitaeigis R.I.B. kateris ir audringa Baltijos jūra nenuvils ir didžiausio
-                                    adrenalino fanatiko. Kelionės metu turėsite galimybe praplaukti Danės upe, pamatyti
-                                    Baltijos jūros vartus. Skrodžianti Baltijos jūros bangas pajausite visą jūros
-                                    galybę,
-                                    greitį, vėją ir vandens purslus.</p>
-                            </div>
-                            <div class="container-fluid row">
                                 <div class="col-6 col-sm-6 offer-details">
                                     <img class="offer-icon" src="@/assets/time.png">
                                     <div>
-                                        <p>Trukmė: 30min</p>
+                                        <p>Trukmė: 2-4val</p>
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-6 offer-details">
                                     <img class="offer-icon" src="@/assets/price.png">
                                     <div>
-                                        <p>Kaina nuo: €15</p>
+                                        <p>Kaina nuo: €200</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 offer-details">
+                                    <img class="offer-icon" src="@/assets/shirt.png">
+                                    <div>
+                                        <p>Apranga suteikiama</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 offer-details">
+                                    <img class="offer-icon" src="@/assets/season.png">
+                                    <div>
+                                        <p>Šiltuoju metų laiku</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 offer-details">
+                                    <img class="offer-icon" src="@/assets/info.png">
+                                    <div>
+                                        <p>Būtina rezervacija</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card offer-card">
+                            <div class="card-img-body offer-image">
+                                <img class="card-img" src="@/assets/nida.jpg">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title offer-title">Išvyka į Nidą</h4>
+                                <p class="card-text offer-text">Plaukdami Nidos pakrante pamatysite ne tik šį nuostabų gamtos kampelį, tačiau ir kitas savo grožiu stebinančias vietas: Nerijos krantus, Preilą, Didžiąsias Nidos kopas. Tai pasiplaukiojimas po Kuršių marias, stebint plačiai atsiveriantį Kuršių nerijos kraštovaizdį, išskirtinę augmeniją, žvejų gyvenvietes. Išlipus porai valandų į krantą, siūlytume paskanauti šviežios žuvies patiekalų, pėsčiomis pasivaikščioti gyvenvietėje ar aplankyti Raganų kalną. </p>
+                            </div>
+                            <div class="container-fluid row">
+                                <div class="col-6 col-sm-6 offer-details">
+                                    <img class="offer-icon" src="@/assets/time.png">
+                                    <div>
+                                        <p>Trukmė: 3-4val</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 offer-details">
+                                    <img class="offer-icon" src="@/assets/price.png">
+                                    <div>
+                                        <p>Kaina nuo: €300</p>
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-4 offer-details">
@@ -232,36 +227,36 @@
                                     greitį, vėją ir vandens purslus.</p>
                             </div>
                             <div class="container-fluid row">
-                                    <div class="col-6 col-sm-6 offer-details">
-                                        <img class="offer-icon" src="@/assets/time.png">
-                                        <div>
-                                            <p>Trukmė: 30min</p>
-                                        </div>
+                                <div class="col-6 col-sm-6 offer-details">
+                                    <img class="offer-icon" src="@/assets/time.png">
+                                    <div>
+                                        <p>Trukmė: 30min</p>
                                     </div>
-                                    <div class="col-6 col-sm-6 offer-details">
-                                        <img class="offer-icon" src="@/assets/price.png">
-                                        <div>
-                                            <p>Kaina nuo: €15</p>
-                                        </div>
+                                </div>
+                                <div class="col-6 col-sm-6 offer-details">
+                                    <img class="offer-icon" src="@/assets/price.png">
+                                    <div>
+                                        <p>Kaina nuo: €15</p>
                                     </div>
-                                    <div class="col-6 col-sm-4 offer-details">
-                                        <img class="offer-icon" src="@/assets/shirt.png">
-                                        <div>
-                                            <p>Apranga suteikiama</p>
-                                        </div>
+                                </div>
+                                <div class="col-6 col-sm-4 offer-details">
+                                    <img class="offer-icon" src="@/assets/shirt.png">
+                                    <div>
+                                        <p>Apranga suteikiama</p>
                                     </div>
-                                    <div class="col-6 col-sm-4 offer-details">
-                                        <img class="offer-icon" src="@/assets/season.png">
-                                        <div>
-                                            <p>Šiltuoju metų laiku</p>
-                                        </div>
+                                </div>
+                                <div class="col-6 col-sm-4 offer-details">
+                                    <img class="offer-icon" src="@/assets/season.png">
+                                    <div>
+                                        <p>Šiltuoju metų laiku</p>
                                     </div>
-                                    <div class="col-6 col-sm-4 offer-details">
-                                        <img class="offer-icon" src="@/assets/info.png">
-                                        <div>
-                                            <p>Būtina rezervacija</p>
-                                        </div>
+                                </div>
+                                <div class="col-6 col-sm-4 offer-details">
+                                    <img class="offer-icon" src="@/assets/info.png">
+                                    <div>
+                                        <p>Būtina rezervacija</p>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -301,7 +296,8 @@
                                         <p>Apranga suteikiama</p>
                                     </div>
                                 </div>
-                                <div class="col-6 col-sm-4 offer-details"><img class="offer-icon" src="@/assets/season.png">
+                                <div class="col-6 col-sm-4 offer-details"><img class="offer-icon"
+                                                                               src="@/assets/season.png">
                                     <div>
                                         <p>Šiltuoju metų laiku</p>
                                     </div>
@@ -377,7 +373,7 @@
 
     .offer-text {
         text-align: start;
-        min-height: 144px;
+        min-height: 200px;
     }
 
     .offer-card {
