@@ -18,8 +18,10 @@
                     <template v-slot:activator="{ on }">
                         <v-btn class="d-block d-md-none toolbar-link"
                                v-on="on"
-                               color="transparent" elevation="0">
-                            <v-icon class="material-icons">menu</v-icon>
+                               text
+                               color="transparent"
+                               elevation="0">
+                            <v-icon class="material-icons collapsed-btn">menu</v-icon>
                         </v-btn>
                     </template>
                     <v-list>
@@ -89,7 +91,8 @@
     a.nav-btn:nth-child(1) > span:nth-child(1),
     a.nav-btn:nth-child(2) > span:nth-child(1),
     a.nav-btn:nth-child(3) > span:nth-child(1),
-    a.nav-btn:nth-child(4) > span:nth-child(1) {
+    a.nav-btn:nth-child(4) > span:nth-child(1),
+    .collapsed-btn {
         color: #17486b !important;
     }
     .toolbar-link:hover:after {

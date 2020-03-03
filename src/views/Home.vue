@@ -223,7 +223,7 @@
                                                 :rules="rules"
                                                 :counter="250"
                                                 required
-                                                rows="3"
+                                                rows="2"
                                                 no-resize
                                                 label="Žinutė"
                                         ></v-textarea>
@@ -515,6 +515,7 @@
         height: 100vh;
         height: calc(var(--vh, 1vh) * 100);
         background-color: white;
+        overflow: scroll;
     }
 
     .safety-header {
