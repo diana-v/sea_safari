@@ -48,6 +48,7 @@
                 {title: 'Apie Mus', link: '/#about'},
                 {title: 'Pasiūlymai', link: '/#offers'},
                 {title: 'Saugumas', link: '/#safety'},
+                {title: 'Atsiliepimai', link: '/#review'},
                 {title: 'Kontaktai', link: '/#contact'},
             ]
         }),
@@ -62,7 +63,6 @@
 </script>
 
 <style>
-
     @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
     html, body {
@@ -92,6 +92,7 @@
     a.nav-btn:nth-child(2) > span:nth-child(1),
     a.nav-btn:nth-child(3) > span:nth-child(1),
     a.nav-btn:nth-child(4) > span:nth-child(1),
+    a.nav-btn:nth-child(5) > span:nth-child(1),
     .collapsed-btn {
         color: #17486b !important;
     }

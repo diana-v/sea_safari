@@ -7,13 +7,16 @@ import vuetify from './plugins/vuetify';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import BootstrapVue from 'bootstrap-vue'
-import toolbar from './components/toolbar'
-import VueScrollSnap from "vue-scroll-snap";
+import axios from "axios";
+
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue);
-Vue.component("app-toolbar", toolbar)
-Vue.component("vue-scroll-snap", VueScrollSnap)
+
+Vue.prototype.$http = axios;
+Vue.prototype.$FB_KEY = process.env.VUE_APP_FB_API_KEY;
+Vue.prototype.$FB_HOST = process.env.VUE_APP_FB_API_HOST;
+Vue.prototype.$FB_PAGE = process.env.VUE_APP_FB_PAGE;
 
 new Vue({
   router,

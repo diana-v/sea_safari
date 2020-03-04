@@ -317,6 +317,15 @@
     </div>
 </template>
 
+<script>
+    import toolbar from '../components/toolbar'
+
+    export default {
+        components: {
+            'app-toolbar': toolbar
+        },
+    }
+</script>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
 
