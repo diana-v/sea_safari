@@ -15,6 +15,7 @@
                             populiariausias Lietuvos pajūri o vietas - Juodkrantė, Nida, Mingės kaimas ir kiti
                             Jūsų
                             pasirinkti maršrutai.</p>
+                        <br>
                         <p class="offers-paragraph">Ieškote dovanos idėjos, kuri paliktų neišdildomus įspūdžius visus metus? ,,Sea Safari” siūlo įsigyti dovanų kuponus, pradžiuginančius kiekvieną! Juos galite įsigyti <a href="https://www.geradovana.lt/sea-safari" target="_blank" class="offers-gift">Gera Dovana</a> arba <a href="https://www.dovanusala.lt/lt/s/1510-sea-safari?gclid=EAIaIQobChMItsP97M-B6AIVGaqaCh11owdtEAAYAiAAEgKEZfD_BwE" target="_blank" class="offers-gift">Dovanu Sala</a>.</p>
                     </div>
                     <div class="col-sm-12 offer-button-container">
