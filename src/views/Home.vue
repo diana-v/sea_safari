@@ -124,12 +124,6 @@
                     this.className += " active";
                 });
             }
-            let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
-            window.addEventListener('resize', () => {
-                let vh = window.innerHeight * 0.01;
-                document.documentElement.style.setProperty('--vh', `${vh}px`);
-            });
         }
     }
 </script>
@@ -210,12 +204,13 @@
     }
 
     .home-container {
-        height: 100vh;
+        min-height: 100vh;
         /*height: calc(var(--vh, 1vh) * 100);*/
+        overflow: auto;
     }
 
-    .home-content {
-        padding-top: 50vh;
-    }
+    /*.home-content {*/
+    /*    padding-top: 50vh;*/
+    /*}*/
 
 </style>

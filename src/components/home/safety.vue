@@ -75,8 +75,8 @@
     /* SAFETY */
     /* */
     .safety-container {
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
+        min-height: 100vh;
+        overflow: auto;
         background-color: white;
     }
 

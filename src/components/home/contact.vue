@@ -122,11 +122,10 @@
     /* CONTACT */
     /* */
     .contact-container {
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
+        min-height: 100vh;
+        overflow: auto;
         background-image: linear-gradient(to top right, rgba(64, 64, 64, .7), rgba(64, 64, 64, .7)), url("../../assets/map.png");
         background-size: cover;
-        overflow: scroll;
     }
 
     .contact-header {
