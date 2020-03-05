@@ -38,14 +38,40 @@
             </div>
 
             <div class="item home-container" id="home">
-                <app-toolbar></app-toolbar>
-                <div class="home-content">
-                    <!--                    <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i-->
-                    <!--                            class="fab fa-instagram fa-2x"></i></a>-->
-                    <!--                    <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i-->
-                    <!--                            class="fab fa-facebook-f fa-2x"></i></a>-->
-                </div>
-                <h1 class="home-header">R.I.B. Charter Experience</h1>
+                <v-carousel
+                        cycle
+                        height="100%"
+                        hide-delimiter-background
+                        :show-arrows="false"
+                        hide-delimiters
+                >
+                    <v-carousel-item
+                            eager
+                            v-for="(slide, i) in slides"
+                            :key="i"
+
+                    >
+                        <v-img v-bind:src="slide"
+                               eager
+                               height="100%">
+                            <app-toolbar></app-toolbar>
+                            <v-row
+                                    class="fill-height"
+                                    align="center"
+                                    justify="center"
+                            >
+                                <h1 class="home-header">R.I.B. Charter Experience</h1>
+                            </v-row>
+                        </v-img>
+                    </v-carousel-item>
+                </v-carousel>
+
+                <!--                <div class="home-content">-->
+                <!--                    &lt;!&ndash;                    <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                            class="fab fa-instagram fa-2x"></i></a>&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                    <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                            class="fab fa-facebook-f fa-2x"></i></a>&ndash;&gt;-->
+                <!--                </div>-->
             </div>
 
             <s_about></s_about>
@@ -77,6 +103,15 @@
             's_contact': contact_section,
             'app-toolbar': toolbar,
             'vue-scroll-snap': VueScrollSnap
+        },
+        data() {
+            return {
+                slides: [
+                    {src: require('../assets/slide_1.jpg')},
+                    {src: require ('../assets/slide_2.jpg')},
+                    {src: require('../assets/slide_3.jpg')},
+                ]
+            }
         },
 
         mounted() {
@@ -167,10 +202,11 @@
     .home-header {
         background-color: rgba(255, 255, 255, 0.5);
         padding: 15px;
-        margin-top: 2%;
+        margin-top: 15%;
         font-size: 250%;
         font-weight: 900;
         color: #17486b;
+        width: 100%;
     }
 
     .home-container {
@@ -181,4 +217,5 @@
     .home-content {
         padding-top: 50vh;
     }
+
 </style>

@@ -69,7 +69,7 @@
         font-family: 'Hind', 'Roboto';
     }
     .toolbar-link {
-        font-size: 20px;
+        font-size: 17px !important;
         padding: 15px 20px !important;
         color: #0c3c60 !important;
         text-decoration: none;
