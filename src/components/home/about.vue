@@ -4,24 +4,14 @@
             <div>
                 <div class="about-hp">
                     <h2 class="about-header"> Apie Mus</h2>
-                    <p class="about-paragraph">Pasinaudokite proga apžiūrėti Lietuvos pajūrio kraštovaizdį ir
-                        uosto
-                        akvatoriją
-                        adrenalino pripildytu ir jaudinančiu būdu.</p>
+                    <p class="about-paragraph">Mūsų tikslas atskleisti tikrąjį, stulbinantį Lietuvos pajūrio kraštovaizdį jaudinančiu ir įspūdžių kupinu būdu, plaukiant greitaeigiu R.I.B. laivu.</p>
                 </div>
                 <div class="row about-row">
                     <div class="col-sm-5">
-                        <p> Mūsų RIB „Sea Safari“ laive jūs priartėsite prie gamtos
-                            ir patirsite nepamirštamus įspūdžius. "Sea Safari" turi du RIB laivus, varomus 300
-                            AG ir
-                            600 AG varikliais, kurių maksimalus
-                            greitis siekia net iki 60 mazgų.</p>
+                        <p>Plaukdami su „Sea Safari“ jūs priartėsite prie gamtos ir patirsite nepamirštamus įspūdžius. Mes siūlome du R.I.B. laivus, varomus 300 AG ir 600 AG varikliais, kurių maksimalus greitis siekia net iki 60 mazgų.</p>
                     </div>
                     <div class="col-sm-5">
-                        <p> Atstumas Klaipėda - Juodkrantė įveikiamas per 20 min., o
-                            Klaipėda - Nida per 45 min. "Sea Safari" veikia ir kaip vandens taksi. Tai puiki
-                            galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į
-                            Nidą/Juodkrantę.</p>
+                        <p>Manevringi ir greitaeigiai laivai užtikrina saugias, patogias ir turiningas išvykas. Mes garantuojame adrenalino pliupsnį ir praskaidrintą kasdienybę, nes mūsų keleivių emocijos - didžiausias ,,Sea Safari" įkvėpimas! </p>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@
                         <div class="card-body text-center review-card-content">
                             <img v-bind:src="review.img" class="review-image">
                             <h4 class="card-title review-title">{{review.name}}</h4>
-                            <p class="card-text">{{review.comment}}</p>
+                            <p class="card-text review-text">{{review.comment}}</p>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,12 @@
     }
 
     .review-title {
-        margin: 10px 0 0 0;
+        margin: 10px 0 10px 0;
+        color: #91160d;
+    }
+
+    .review-text {
+        padding: 0 15px 0 15px;
     }
 
     @media screen and (max-width: 630px ) {

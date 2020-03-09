@@ -36,7 +36,7 @@
                                         color="red darken-4"
                                         v-model="name"
                                         :error-messages="nameErrors"
-                                        :counter="10"
+                                        :counter="30"
                                         label="Vardas"
                                         required
                                         @input="$v.name.$touch()"
@@ -96,7 +96,7 @@
             nameErrors() {
                 const errors = []
                 if (!this.$v.name.$dirty) return errors
-                !this.$v.name.maxLength && errors.push('Vardas negali viršyti 10 raidžių.')
+                !this.$v.name.maxLength && errors.push('Vardas negali viršyti 30 raidžių.')
                 !this.$v.name.required && errors.push('Privaloma įvesti.')
                 return errors
             },
@@ -111,7 +111,7 @@
         mixins: [validationMixin],
 
         validations: {
-            name: {required, maxLength: maxLength(10)},
+            name: {required, maxLength: maxLength(30)},
             email: {required, email},
         },
     }

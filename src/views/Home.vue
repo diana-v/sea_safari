@@ -60,7 +60,7 @@
                                     align="center"
                                     justify="center"
                             >
-                                <h1 class="home-header">R.I.B. Charter Experience</h1>
+                                <h1 class="home-header">R.I.B. CHARTER EXPERIENCE</h1>
                             </v-row>
                         </v-img>
                     </v-carousel-item>
@@ -195,17 +195,16 @@
     /* */
     .home-header {
         background-color: rgba(255, 255, 255, 0.5);
-        padding: 15px;
+        padding: 30px;
         margin-top: 15%;
-        font-size: 250%;
+        font-size: 300%;
         font-weight: 900;
-        color: #17486b;
+        color: rgb(145, 22, 13);
         width: 100%;
     }
 
     .home-container {
         min-height: 100vh;
-        /*height: calc(var(--vh, 1vh) * 100);*/
         overflow: auto;
     }
 
