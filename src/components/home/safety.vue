@@ -148,6 +148,7 @@
 
     .hover-safety-card:hover {
         color: #91160d;
+        /*color: #17486b;*/
         cursor: pointer;
     }
 </style>

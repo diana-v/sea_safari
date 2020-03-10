@@ -87,7 +87,8 @@
 
     .review-title {
         margin: 10px 0 10px 0;
-        color: #91160d;
+        color: #17486b;
+        /*color: #91160d;*/
     }
 
     .review-text {

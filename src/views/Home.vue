@@ -199,7 +199,8 @@
         margin-top: 15%;
         font-size: 300%;
         font-weight: 900;
-        color: rgb(145, 22, 13);
+        /*color: rgb(145, 22, 13);*/
+        color: #17486b;
         width: 100%;
     }
 

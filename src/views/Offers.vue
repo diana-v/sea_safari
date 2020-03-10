@@ -25,47 +25,23 @@
                      v-bind:key="index">
                     <div class="offer-content">
                         <div>
-                            <img class="card-img offer-image"
-                                 v-bind:src="offer.img">
-                            <h2 class="offer-title">{{offer.title}}</h2>
+                            <div class="image-title-container">
+                                <img class="card-img offer-image"
+                                     v-bind:src="offer.img">
+                                <h2 class="offer-title">{{offer.title}}</h2>
+                            </div>
                             <p class="offer-description">{{offer.description}}</p>
-                            <div class="card-columns offer-column">
+                            <div class="card-columns offer-details-column">
                                 <div class="card-body text-center offer-card-content"
                                      v-for="(detail, index2) in offer.details" v-bind:key="index2">
                                     <img v-bind:src="detail.icon" class="detail-image">
-                                    <p class="card-text">{{detail.title}}</p>
+                                    <p class="card-text detail-title">{{detail.title}}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--            <div class="container offer-container">-->
-            <!--                <div class="row display-flex">-->
-            <!--                    <div class="col-md-6">-->
-            <!--                        <div class="card offer-card" v-for="(offer, index) in offers" v-bind:key="index">-->
-            <!--                            <div class="card-img-body offer-image">-->
-            <!--                                <img class="card-img"-->
-            <!--                                     v-bind:src="offer.img">-->
-            <!--                            </div>-->
-            <!--                            <div class="card-body">-->
-            <!--                                <h4 class="card-title offer-title">{{offer.title}}</h4>-->
-            <!--                                <p class="card-text offer-text">{{offer.description}}</p>-->
-            <!--                            </div>-->
-            <!--                            <div class="container-fluid row">-->
-            <!--                                <div v-for="(detail, index2) in offer.details" v-bind:key="index2"-->
-            <!--                                     class="col-6 col-sm-6 offer-details">-->
-            <!--                                    <img class="offer-icon" v-bind:src="detail.icon">-->
-            <!--                                    <div>-->
-            <!--                                        <p>{{detail.title}}</p>-->
-            <!--                                    </div>-->
-            <!--                                </div>-->
-            <!--                            </div>-->
-            <!--                        </div>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
         </div>
     </div>
 </template>
@@ -91,9 +67,22 @@
                         ]
                     },
                     {
-                        img: require('../assets/minges-kaimas.jpg'),
-                        title: 'Išvyka į Mingės kaimą',
-                        description: 'Tai pažintinė kelionė laivu po Nemuno deltos parką, aplankant Uostadvarį ir Rusnės salą. Išvykos metu, aplankysite unikalų Lietuvos Venecija vadinamą kaimą, išvysite Vilhelmo kanalą ir Ventės ragą. Iš Mingės kaimo Minijos upe nuplauksite iki upeivių gyvenvietės Uostadvario, garsėjančio savo bokštu ir vandens kėlimo stoties muziejumi. Išlipus porai valandų į krantą, yra galimybė papietauti Kintuose, žuvies restorane arba Mingės kaime. Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.',
+                        img: require('../assets/juodkrante.jpg'),
+                        title: 'Išvyka į Juodkrantę',
+                        description: 'Išplaukę iš Klaipėdos apiplauksite uosto akvatoriją, grožėsitės unikaliu Kuršių nerijos kraštovaizdžiu, vėjo supūstytomis kopomis. Juodkrantė yra nedidelis, ramus ir tvarkingas kurortas, tai istorinis - urbanistinis draustinis. Kelionė laivu leis grožėtis Juodkrante iš vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių. Išsilipus Juodkrantėje siūlytume aplankyti Raganų kalną, pasivaikščioti akmens skulptūrų parke, paskanauti šviežios žuvies. Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.',
+                        details: [
+                            {title: 'Trukmė: 30min', icon: require('../assets/time.png')},
+                            {title: 'Kaina nuo: €15', icon: require('../assets/price.png')},
+                            {title: 'Apranga suteikiama', icon: require('../assets/shirt.png')},
+                            {title: 'Šiltuoju metų laiku', icon: require('../assets/season.png')},
+                            {title: 'Nuo 11-23 keleivių', icon: require('../assets/people.png')},
+                            {title: 'Būtina rezervacija', icon: require('../assets/info.png')},
+                        ]
+                    },
+                    {
+                        img: require('../assets/juodkrante.jpg'),
+                        title: 'Išvyka į Juodkrantę',
+                        description: 'Išplaukę iš Klaipėdos apiplauksite uosto akvatoriją, grožėsitės unikaliu Kuršių nerijos kraštovaizdžiu, vėjo supūstytomis kopomis. Juodkrantė yra nedidelis, ramus ir tvarkingas kurortas, tai istorinis - urbanistinis draustinis. Kelionė laivu leis grožėtis Juodkrante iš vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių. Išsilipus Juodkrantėje siūlytume aplankyti Raganų kalną, pasivaikščioti akmens skulptūrų parke, paskanauti šviežios žuvies. Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.',
                         details: [
                             {title: 'Trukmė: 30min', icon: require('../assets/time.png')},
                             {title: 'Kaina nuo: €15', icon: require('../assets/price.png')},
@@ -117,22 +106,9 @@
                         ]
                     },
                     {
-                        img: require('../assets/juodkrante.jpg'),
-                        title: 'Išvyka į Juodkrantę',
-                        description: 'Išplaukę iš Klaipėdos apiplauksite uosto akvatoriją, grožėsitės unikaliu Kuršių nerijos kraštovaizdžiu, vėjo supūstytomis kopomis. Juodkrantė yra nedidelis, ramus ir tvarkingas kurortas, tai istorinis - urbanistinis draustinis. Kelionė laivu leis grožėtis Juodkrante iš vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių. Išsilipus Juodkrantėje siūlytume aplankyti Raganų kalną, pasivaikščioti akmens skulptūrų parke, paskanauti šviežios žuvies. Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.',
-                        details: [
-                            {title: 'Trukmė: 30min', icon: require('../assets/time.png')},
-                            {title: 'Kaina nuo: €15', icon: require('../assets/price.png')},
-                            {title: 'Apranga suteikiama', icon: require('../assets/shirt.png')},
-                            {title: 'Šiltuoju metų laiku', icon: require('../assets/season.png')},
-                            {title: 'Nuo 11-23 keleivių', icon: require('../assets/people.png')},
-                            {title: 'Būtina rezervacija', icon: require('../assets/info.png')},
-                        ]
-                    },
-                    {
-                        img: require('../assets/juodkrante.jpg'),
-                        title: 'Išvyka į Juodkrantę',
-                        description: 'Išplaukę iš Klaipėdos apiplauksite uosto akvatoriją, grožėsitės unikaliu Kuršių nerijos kraštovaizdžiu, vėjo supūstytomis kopomis. Juodkrantė yra nedidelis, ramus ir tvarkingas kurortas, tai istorinis - urbanistinis draustinis. Kelionė laivu leis grožėtis Juodkrante iš vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių. Išsilipus Juodkrantėje siūlytume aplankyti Raganų kalną, pasivaikščioti akmens skulptūrų parke, paskanauti šviežios žuvies. Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.',
+                        img: require('../assets/minges-kaimas.jpg'),
+                        title: 'Išvyka į Mingės kaimą',
+                        description: 'Tai pažintinė kelionė laivu po Nemuno deltos parką, aplankant Uostadvarį ir Rusnės salą. Išvykos metu, aplankysite unikalų Lietuvos Venecija vadinamą kaimą, išvysite Vilhelmo kanalą ir Ventės ragą. Iš Mingės kaimo Minijos upe nuplauksite iki upeivių gyvenvietės Uostadvario, garsėjančio savo bokštu ir vandens kėlimo stoties muziejumi. Išlipus porai valandų į krantą, yra galimybė papietauti Kintuose, žuvies restorane arba Mingės kaime. Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.',
                         details: [
                             {title: 'Trukmė: 30min', icon: require('../assets/time.png')},
                             {title: 'Kaina nuo: €15', icon: require('../assets/price.png')},
@@ -170,6 +146,23 @@
         font-family: 'Hind', 'Roboto';
     }
 
+    @media screen and (max-width: 700px ) {
+        .offer-column {
+            padding: 0;
+            column-count: 1 !important;
+        }
+    }
+
+    .offer-column {
+        column-count: 2;
+    }
+
+    .image-title-container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
     .offer-header {
         font-size: 48px;
         letter-spacing: -2px;
@@ -191,14 +184,20 @@
         padding: 0 7% 7% 7%;
     }
 
-    /*.offer-paragraph {*/
-    /*    text-align: start;*/
-    /*    font-size: 17px;*/
-    /*}*/
+    .offer-paragraph {
+        text-align: start;
+        font-size: 17px;
+    }
 
     .offer-image {
-        max-height: 247px;
+        height: 250px;
         overflow: hidden;
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+
+    .detail-title {
+        font-size: 15px;
     }
 
     /*.offer-icon {*/
@@ -285,13 +284,17 @@
 
     .offer-title {
         font-size: 30px;
-        /*letter-spacing: -2px;*/
-        padding-bottom: 2%;
         font-weight: 900;
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        word-wrap: break-word;
     }
 
     .offer-content {
-        padding: 5% 10% 1% 10%;
+        /*padding: 5% 10% 1% 10%;*/
         display: flex;
         justify-content: center;
         align-items: center;
@@ -299,8 +302,9 @@
     }
 
     .offer-description {
-        font-size: 17px !important;
-        padding: 0 8%;
+        font-size: 15px;
+        padding: 5% 5% 0 5%;
+        text-align: start;
     }
 
     .offer-card-content {
@@ -309,15 +313,21 @@
 
     .offer-card {
         border: none !important;
+        /*min-height: 770px !important;*/
+        position: relative;
     }
 
     .detail-image {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 
-    .offer-column {
-        padding: 0 5%;
+    .offer-details-column {
+        /*padding: 0 5%;*/
         column-count: 2 !important;
+        /*position: absolute;*/
+        /*bottom: 0 !important;*/
+        /*width: 100%;*/
+        /*left: 0;*/
     }
 </style>
