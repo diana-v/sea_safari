@@ -2,40 +2,40 @@
     <div>
         <vue-scroll-snap fullscreen>
 
-            <div id="pp-nav" class="right eut-dark" style="color: rgb(0, 0, 0); margin-top: -53.5px;">
-                <ul>
-                    <li data-tooltip="">
-                        <a class="nav-btn active" href="#home">
-                            <span style="border-color: rgb(0, 0, 0);"> </span>
-                        </a>
-                    </li>
-                    <li data-tooltip="">
-                        <a class="nav-btn" href="#about">
-                            <span style="border-color: rgb(0, 0, 0);"> </span>
-                        </a>
-                    </li>
-                    <li data-tooltip="">
-                        <a class="nav-btn" href="#offers">
-                            <span style="border-color: rgb(0, 0, 0);"> </span>
-                        </a>
-                    </li>
-                    <li data-tooltip="">
-                        <a class="nav-btn" href="#safety">
-                            <span style="border-color: rgb(0, 0, 0);"> </span>
-                        </a>
-                    </li>
-                    <li data-tooltip="">
-                        <a class="nav-btn" href="#review">
-                            <span style="border-color: rgb(0, 0, 0);"> </span>
-                        </a>
-                    </li>
-                    <li data-tooltip="">
-                        <a class="nav-btn" href="#contact">
-                            <span style="border-color: rgb(0, 0, 0);"> </span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<!--            <div id="pp-nav" class="right eut-dark" style="color: rgb(0, 0, 0); margin-top: -53.5px;">-->
+<!--                <ul>-->
+<!--                    <li data-tooltip="">-->
+<!--                        <a class="nav-btn active" href="#home">-->
+<!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li data-tooltip="">-->
+<!--                        <a class="nav-btn" href="#about">-->
+<!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li data-tooltip="">-->
+<!--                        <a class="nav-btn" href="#offers">-->
+<!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li data-tooltip="">-->
+<!--                        <a class="nav-btn" href="#safety">-->
+<!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li data-tooltip="">-->
+<!--                        <a class="nav-btn" href="#review">-->
+<!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li data-tooltip="">-->
+<!--                        <a class="nav-btn" href="#contact">-->
+<!--                            <span style="border-color: rgb(0, 0, 0);"> </span>-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
 
             <div class="item home-container" id="home">
                 <v-carousel
@@ -107,7 +107,7 @@
         data() {
             return {
                 slides: [
-                    {src: require('../assets/slide_1.jpg')},
+                    // {src: require('../assets/slide_1.jpg')},
                     {src: require ('../assets/slide_2.jpg')},
                     {src: require('../assets/slide_3.jpg')},
                 ]
@@ -135,60 +135,60 @@
         font-family: 'Hind', 'Roboto';
     }
 
-    #pp-nav.right {
-        right: 2%;
-    }
+    /*#pp-nav.right {*/
+    /*    right: 2%;*/
+    /*}*/
 
-    #pp-nav {
-        position: fixed;
-        z-index: 100;
-        top: 50%;
-        opacity: 1;
-    }
+    /*#pp-nav {*/
+    /*    position: fixed;*/
+    /*    z-index: 100;*/
+    /*    top: 50%;*/
+    /*    opacity: 1;*/
+    /*}*/
 
-    #pp-nav li, .pp-slidesNav li {
-        display: block;
-        width: 14px;
-        height: 13px;
-        margin: 7px;
-        position: relative;
-    }
+    /*#pp-nav li, .pp-slidesNav li {*/
+    /*    display: block;*/
+    /*    width: 14px;*/
+    /*    height: 13px;*/
+    /*    margin: 7px;*/
+    /*    position: relative;*/
+    /*}*/
 
-    #pp-nav li a, .pp-slidesNav li a {
-        display: block;
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        text-decoration: none;
-    }
+    /*#pp-nav li a, .pp-slidesNav li a {*/
+    /*    display: block;*/
+    /*    position: relative;*/
+    /*    z-index: 1;*/
+    /*    width: 100%;*/
+    /*    height: 100%;*/
+    /*    cursor: pointer;*/
+    /*    text-decoration: none;*/
+    /*}*/
 
-    #pp-nav span, .pp-slidesNav span {
-        border-radius: 50%;
-        position: absolute;
-        z-index: 1;
-        height: 4px;
-        width: 4px;
-        left: 50%;
-        top: 50%;
-        margin: -2px 0 0 -2px;
-        -webkit-transition: all 0.1s ease-in-out;
-        -moz-transition: all 0.1s ease-in-out;
-        -o-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out;
-    }
+    /*#pp-nav span, .pp-slidesNav span {*/
+    /*    border-radius: 50%;*/
+    /*    position: absolute;*/
+    /*    z-index: 1;*/
+    /*    height: 4px;*/
+    /*    width: 4px;*/
+    /*    left: 50%;*/
+    /*    top: 50%;*/
+    /*    margin: -2px 0 0 -2px;*/
+    /*    -webkit-transition: all 0.1s ease-in-out;*/
+    /*    -moz-transition: all 0.1s ease-in-out;*/
+    /*    -o-transition: all 0.1s ease-in-out;*/
+    /*    transition: all 0.1s ease-in-out;*/
+    /*}*/
 
-    #pp-nav.eut-dark li span {
-        background-color: #000000;
-    }
+    /*#pp-nav.eut-dark li span {*/
+    /*    background-color: #000000;*/
+    /*}*/
 
-    #pp-nav li .active span, .pp-slidesNav .active span {
-        height: 12px;
-        width: 12px;
-        margin: -6px 0 0 -6px;
-        border-radius: 100%;
-    }
+    /*#pp-nav li .active span, .pp-slidesNav .active span {*/
+    /*    height: 12px;*/
+    /*    width: 12px;*/
+    /*    margin: -6px 0 0 -6px;*/
+    /*    border-radius: 100%;*/
+    /*}*/
 
     /* */
     /* HOME */
@@ -199,8 +199,8 @@
         margin-top: 15%;
         font-size: 300%;
         font-weight: 900;
-        /*color: rgb(145, 22, 13);*/
-        color: #17486b;
+        color: rgb(145, 22, 13);
+        /*color: #17486b;*/
         width: 100%;
     }
 

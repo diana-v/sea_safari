@@ -1,14 +1,10 @@
 <template>
     <div class="item offers-container" id="offers">
         <div class="offers-content">
-            <div class="container">
-                <div class="row">
                     <div class="col-md-6 offers-column">
                         <div class="row">
                             <div class="col-sm-12">
                                 <h2 class="offers-header">Pasiūlymai</h2>
-                            </div>
-                            <div class="col-sm-12 offers-paragraph-column">
                                 <p class="offers-paragraph">Mes teikiame paslaugas įmonių šventėms ir privatiems
                                     vakarėliams -
                                     gimtadieniai,
@@ -25,9 +21,9 @@
                                             href="https://www.dovanusala.lt/lt/s/1510-sea-safari?gclid=EAIaIQobChMItsP97M-B6AIVGaqaCh11owdtEAAYAiAAEgKEZfD_BwE"
                                             target="_blank" class="offers-gift">Dovanų Sala</a>.</p>
                             </div>
-                            <div class="col-sm-12 offer-button-container">
+                            <div class="col-sm-12">
                                 <div class="my-2">
-                                    <v-btn large color="rgb(145, 22, 13)" class="offer-button" href="/pasiulymai">Mūsų
+                                    <v-btn large color="rgb(145, 22, 13)" class="offers-button" href="/pasiulymai">Mūsų
                                         pasiūlymai
                                     </v-btn>
                                 </div>
@@ -35,12 +31,9 @@
                         </div>
                     </div>
                     <div class="col-md-6 image-column">
-                        <img class="offer-image" src="@/assets/offer-image3.jpg">
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 </template>
 
 <style scoped>
@@ -53,20 +46,6 @@
         background-color: white;
     }
 
-    .offers-column {
-        align-content: center;
-        display: grid;
-        padding-left: 50px;
-    }
-
-    .offers-header {
-        font-size: 48px;
-        letter-spacing: -2px;
-        font-weight: 900;
-        margin-bottom: 0;
-        text-align: start;
-    }
-
     .offers-content {
         padding: 5% 5%;
         display: flex;
@@ -76,37 +55,45 @@
         width: 100%;
     }
 
-    .offer-button {
-        color: white !important;
-        text-decoration: none !important;
-        background-color: #17486b !important;
-        border-color: #17486b !important;
+    .offers-column {
+        align-content: center;
+        display: grid;
+        padding: 0 50px 0 0;
+    }
+
+    .offers-header {
+        font-size: 48px;
+        letter-spacing: -2px;
+        font-weight: 900;
+        text-align: center;
     }
 
     .offers-paragraph {
-        font-size: 17px !important;
-        padding: 0 3%;
+        font-size: 17px;
         margin-bottom: 0;
         text-align: start;
     }
 
-    .offers-paragraph-column {
-        padding: 0;
-    }
-
     .offers-gift {
-        /*color: #91160d !important;*/
-        color: #17486b !important;
+        color: #91160d !important;
     }
 
-    .offer-image {
+    .offers-button {
+        color: white !important;
+        text-decoration: none !important;
+        background-color: #91160d !important;
+        border-color: #91160d !important;
+    }
+
+    .image-column {
+        max-width: 450px;
+        background-image: url('../../assets/offer-image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 550px;
-        width: 412.5px;
-        object-fit: cover;
-        top: 0;
     }
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 800px) {
         .image-column {
             display: none;
         }
@@ -114,6 +101,15 @@
             padding: 10%;
             min-width: 100% !important;
         }
+        .offers-header {
+            text-align: center;
+        }
+        .offers-paragraph {
+            text-align: center;
+        }
+        .offers-content {
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../../assets/offer-image.jpg') no-repeat;
+            background-size: cover;
+        }
     }
-
 </style>

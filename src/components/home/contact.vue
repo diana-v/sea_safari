@@ -29,11 +29,10 @@
                             </div>
                         </div>
                         <div class="col-sm-6 contact-column">
-                            <form
-                                    style="--v-error-base: #b71c1c">
+                            <form>
+<!--                                    style="&#45;&#45;v-error-base: #b71c1c">-->
                                 <v-text-field
                                         dark
-                                        color="red darken-4"
                                         v-model="name"
                                         :error-messages="nameErrors"
                                         :counter="30"
@@ -54,7 +53,6 @@
                                 ></v-text-field>
                                 <v-textarea
                                         dark
-                                        color="red darken-4"
                                         :rules="rules"
                                         :counter="250"
                                         required
@@ -63,7 +61,7 @@
                                         label="Žinutė"
                                 ></v-textarea>
 
-                                <v-btn color="rgb(145, 22, 13)" class="contact-button mr-4" @click="submit">
+                                <v-btn class="contact-button mr-4" @click="submit">
                                     Pateikti
                                 </v-btn>
                             </form>
@@ -124,7 +122,7 @@
     .contact-container {
         min-height: 100vh;
         overflow: auto;
-        background-image: linear-gradient(to top right, rgba(64, 64, 64, .7), rgba(64, 64, 64, .7)), url("../../assets/map.png");
+        background: url('../../assets/contact-image.jpeg') no-repeat;
         background-size: cover;
     }
 
@@ -146,6 +144,8 @@
 
     .contact-border {
         border: 3px solid white;
+        background: rgba(0, 0, 0, 0.6) no-repeat;
+        background-size: cover;
     }
 
     .contact-paragraph {
@@ -162,7 +162,7 @@
     }
 
     .contact-details-header {
-        color: rgb(145, 22, 13);
+        color: white;
         text-align: start;
         margin-top: 5%;
         font-weight: bold;
@@ -173,9 +173,12 @@
     }
 
     .contact-button {
-        color: white !important;
+        color: rgb(145, 22, 13) !important;
         text-decoration: none !important;
         margin-top: 10%;
+
+        background-color: white !important;
+        border-color: white !important;
     }
 
     div.v-input:nth-child(1) {
@@ -237,12 +240,12 @@
     }
 
     .fa-facebook-f {
-        color: rgb(145, 22, 13);
+        color: white;
         padding-left: 10px;
     }
 
     .fa-instagram {
-        color: rgb(145, 22, 13);
+        color: white;
         padding-right: 10px;
     }
 
