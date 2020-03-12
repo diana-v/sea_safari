@@ -1,9 +1,9 @@
 <template>
     <div class="item safety-container" id="safety">
         <div class="safety-content">
-            <div class="col-md-6 image-column">
-            </div>
-            <div class="col-md-6 safety-column">
+<!--            <div class="col-md-6 image-column">-->
+<!--            </div>-->
+<!--            <div class="col-md-6 safety-column">-->
                 <div class="row">
                     <div class="col-sm-12">
                         <h2 class="safety-header">Saugumas</h2>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-    </div>
+<!--    </div>-->
 </template>
 
 <script>
@@ -97,26 +97,27 @@
     }
 
     .safety-content {
-        padding: 5% 5%;
+        /*padding: 5% 5%;*/
+        padding: 10% 10%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
     }
 
-    .safety-column {
-        align-content: center;
-        display: grid;
-        padding: 0 0 0 50px;
-    }
+    /*.safety-column {*/
+    /*    align-content: center;*/
+    /*    display: grid;*/
+    /*    padding: 0 0 0 50px;*/
+    /*}*/
 
-    .image-column {
-        max-width: 450px;
-        background-image: url('../../assets/safety-image.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 550px;
-    }
+    /*.image-column {*/
+    /*    max-width: 450px;*/
+    /*    background-image: url('../../assets/safety-image.jpg');*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-size: cover;*/
+    /*    height: 550px;*/
+    /*}*/
 
     .safety-paragraph {
         font-size: 17px !important;
@@ -175,11 +176,11 @@
             text-align: center;
             padding: 0;
         }
-        .safety-content {
-            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../../assets/offer-image.jpg') no-repeat;
-            background-size: cover;
-            padding: 0 10% 0 10%;
-        }
+        /*.safety-content {*/
+        /*    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../../assets/offer-image.jpg') no-repeat;*/
+        /*    background-size: cover;*/
+        /*    padding: 0 10% 0 10%;*/
+        /*}*/
         .p-3 {
             padding: 1rem 0 !important;
         }

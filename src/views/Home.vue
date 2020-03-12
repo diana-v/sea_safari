@@ -109,7 +109,7 @@
                 slides: [
                     // {src: require('../assets/slide_1.jpg')},
                     {src: require ('../assets/slide_2.jpg')},
-                    {src: require('../assets/slide_3.jpg')},
+                    // {src: require('../assets/slide_3.jpg')},
                 ]
             }
         },
@@ -197,7 +197,7 @@
         background-color: rgba(255, 255, 255, 0.5);
         padding: 30px;
         margin-top: 15%;
-        font-size: 300%;
+        font-size: 50px;
         font-weight: 900;
         color: rgb(145, 22, 13);
         /*color: #17486b;*/

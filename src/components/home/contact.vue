@@ -123,6 +123,8 @@
         min-height: 100vh;
         overflow: auto;
         background: url('../../assets/contact-image.jpeg') no-repeat;
+        /*background: linear-gradient(rgba(0, 0, 0, 0.2)), url('../../assets/map.png') no-repeat;*/
+
         background-size: cover;
     }
 

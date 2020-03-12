@@ -6,8 +6,10 @@
                 <div class="card-columns review-column">
                     <div class="card bg-light shadow p-3 mb-3 review-card" v-for="(review, i) in reviews" :key="i">
                         <div class="card-body text-center review-card-content">
+                            <div>
                             <img v-bind:src="review.img" class="review-image">
                             <h4 class="card-title review-title">{{review.name}}</h4>
+                            </div>
                             <p class="card-text review-text">{{review.comment}}</p>
                         </div>
                     </div>
