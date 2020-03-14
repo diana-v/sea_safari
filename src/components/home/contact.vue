@@ -120,10 +120,10 @@
     /* CONTACT */
     /* */
     .contact-container {
-        height: 100vh;
-        overflow: auto;
         background:  url('../../assets/contact-image.jpeg') no-repeat;
         background-size: cover;
+        height: 100vh;
+        min-height: 1000px;
     }
 
     .contact-content {
@@ -206,9 +206,6 @@
     @media screen and (max-width: 575px) {
         .contact-content {
             padding: 0 10% 0 10%;
-        }
-        .contact-border{
-            padding: 0;
         }
     }
 </style>

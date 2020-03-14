@@ -123,5 +123,8 @@
         .review-carousel {
             width: 40vh;
         }
+        .review-carousel-item {
+            padding: 10% 10%;
+        }
     }
 </style>
