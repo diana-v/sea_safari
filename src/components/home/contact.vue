@@ -1,5 +1,5 @@
 <template>
-    <div class="item contact-container" id="contact">
+    <div class="contact-container" id="contact">
         <div class="contact-content">
             <div class="contact-border">
                 <h2 class="contact-header">Kontaktai</h2>
@@ -29,10 +29,10 @@
                             </div>
                         </div>
                         <div class="col-sm-6 contact-column">
-                            <form>
-<!--                                    style="&#45;&#45;v-error-base: #b71c1c">-->
+                            <form
+                                    style="--v-error-base: #b71c1c">
                                 <v-text-field
-                                        dark
+                                        light
                                         v-model="name"
                                         :error-messages="nameErrors"
                                         :counter="30"
@@ -42,7 +42,7 @@
                                         @blur="$v.name.$touch()"
                                 ></v-text-field>
                                 <v-text-field
-                                        dark
+                                        light
                                         color="red darken-4"
                                         v-model="email"
                                         :error-messages="emailErrors"
@@ -52,11 +52,11 @@
                                         @blur="$v.email.$touch()"
                                 ></v-text-field>
                                 <v-textarea
-                                        dark
+                                        light
                                         :rules="rules"
                                         :counter="250"
                                         required
-                                        rows="2"
+                                        rows="3"
                                         no-resize
                                         label="Žinutė"
                                 ></v-textarea>
@@ -120,20 +120,10 @@
     /* CONTACT */
     /* */
     .contact-container {
-        min-height: 100vh;
+        height: 100vh;
         overflow: auto;
-        background: url('../../assets/contact-image.jpeg') no-repeat;
-        /*background: linear-gradient(rgba(0, 0, 0, 0.2)), url('../../assets/map.png') no-repeat;*/
-
+        background:  url('../../assets/contact-image.jpeg') no-repeat;
         background-size: cover;
-    }
-
-    .contact-header {
-        color: white;
-        font-size: 48px;
-        letter-spacing: -2px;
-        padding: 5% 0 2% 0;
-        font-weight: 900;
     }
 
     .contact-content {
@@ -145,95 +135,37 @@
     }
 
     .contact-border {
-        border: 3px solid white;
-        background: rgba(0, 0, 0, 0.6) no-repeat;
         background-size: cover;
+        background-color: white;
+        padding: 3%;
+    }
+
+    .contact-header {
+        color: black;
+        font-size: 48px;
+        letter-spacing: -2px;
+        padding: 5% 0 2% 0;
+        font-weight: 900;
     }
 
     .contact-paragraph {
         font-size: 17px !important;
         padding: 0 8%;
-        color: white;
         margin-bottom: 0;
-    }
-
-    .contact-details-paragraph {
-        margin-bottom: 0 !important;
-        text-align: start;
-        color: white;
+        color: black;
     }
 
     .contact-details-header {
-        color: white;
+        color: black;
         text-align: start;
         margin-top: 5%;
         font-weight: bold;
     }
 
-    .contact-column {
-        padding: 2% 8% !important;
-    }
-
-    .contact-button {
-        color: rgb(145, 22, 13) !important;
-        text-decoration: none !important;
-        margin-top: 10%;
-
-        background-color: white !important;
-        border-color: white !important;
-    }
-
-    div.v-input:nth-child(1) {
-        padding-top: 0;
-    }
-
-    div.v-input:nth-child(2) {
-        padding-top: 22px;
-    }
-
-    @media screen and (max-width: 575px) {
-        .contact-details-header {
-            margin-top: 2%;
-        }
-
-        .social-media-container {
-            padding-top: 3%;
-        }
-
-        .contact-paragraph {
-            margin-bottom: 0 !important;
-            padding: 0;
-        }
-
-        div.container:nth-child(3) {
-            padding-top: 0;
-        }
-
-        div.col-sm-6:nth-child(2) {
-            padding-top: 0;
-        }
-
-        div.v-input:nth-child(2) {
-            padding-top: 0;
-        }
-
-        .contact-button {
-            margin-top: 0;
-        }
-
-        div.v-input:nth-child(3) {
-            padding-top: 0;
-        }
-
-        .contact-header {
-            padding-bottom: 0;
-            margin-bottom: 0;
-            padding-top: 2%;
-        }
-
-        .contact-content {
-            padding: 0 10% 0 10%;
-        }
+    .contact-details-paragraph {
+        margin-bottom: 0 !important;
+        text-align: start;
+        color: black;
     }
 
     .social-media-container {
@@ -242,13 +174,41 @@
     }
 
     .fa-facebook-f {
-        color: white;
+        color: rgb(145, 22, 13);
         padding-left: 10px;
     }
 
     .fa-instagram {
-        color: white;
+        color: rgb(145, 22, 13);
         padding-right: 10px;
     }
 
+    .contact-column {
+        padding: 2% 8% !important;
+    }
+
+    .contact-button {
+        color: white !important;
+        text-decoration: none !important;
+        margin-top: 10%;
+        background-color: rgb(145, 22, 13) !important;
+        border-color: rgb(145, 22, 13) !important;
+    }
+
+    div.v-input:nth-child(1) {
+        padding-top: 0;
+    }
+
+    div.v-input:nth-child(2) {
+        padding-top: 30px;
+    }
+
+    @media screen and (max-width: 575px) {
+        .contact-content {
+            padding: 0 10% 0 10%;
+        }
+        .contact-border{
+            padding: 0;
+        }
+    }
 </style>

@@ -170,12 +170,6 @@
         font-weight: 900;
     }
 
-    /*@media screen and (max-width: 575px) {*/
-    /*    .offer-header {*/
-    /*        padding: 0 7% 5% 7%;*/
-    /*    }*/
-    /*}*/
-
     .offer-paragraph-container {
         padding: 0 10% 0 10%;
     }
@@ -199,83 +193,6 @@
     .detail-title {
         font-size: 15px;
     }
-
-    /*.offer-icon {*/
-    /*    height: 40px;*/
-    /*    width: 40px;*/
-    /*}*/
-
-    /*.offer {*/
-    /*    background-color: #ffffff;*/
-    /*    background-image: -webkit-linear-gradient(70deg, #0c3c60 65%, white 35%);*/
-    /*}*/
-
-    /*.card:hover .offer-title,*/
-    /*.card:hover .offer-details {*/
-    /*    font-weight: bold;*/
-    /*    color: rgb(145, 22, 13);*/
-    /*}*/
-
-    /*.offer-text {*/
-    /*    text-align: start;*/
-    /*    min-height: 200px;*/
-    /*}*/
-
-    /*.offer-card {*/
-    /*    height: 100%;*/
-    /*    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px, rgba(0, 0, 0, 0.05) 0px 0.5px 1px;*/
-    /*    transition: all .3s ease-in-out;*/
-    /*}*/
-
-    /*.offer-details {*/
-    /*    padding-top: 0;*/
-    /*    padding-bottom: 0;*/
-    /*}*/
-
-    /*.offer-card:hover {*/
-    /*    box-shadow: rgba(225, 225, 225, 0.3) 0px 19px 43px, rgba(225, 225, 225, 0.3) 0px 4px 11px;*/
-    /*}*/
-
-    /*.row.display-flex {*/
-    /*    display: flex;*/
-    /*    flex-wrap: wrap;*/
-    /*}*/
-
-    /*.row.display-flex > [class*='col-'] {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-
-    /*@media screen and (max-width: 990px) {*/
-    /*    .offer-text {*/
-    /*        min-height: 70%;*/
-    /*    }*/
-    /*}*/
-
-    /*@media (min-width: 768px) {*/
-    /*    .offer-container, .container-sm, .container-md {*/
-    /*        max-width: none;*/
-    /*    }*/
-    /*}*/
-
-    /*@media (min-width: 576px) {*/
-    /*    .offer-container, .container-sm {*/
-    /*        max-width: none;*/
-    /*    }*/
-    /*}*/
-
-    /*@media (min-width: 768px) {*/
-    /*    .offer-container {*/
-    /*        max-width: none;*/
-    /*    }*/
-    /*}*/
-
-    /*@media (min-width: 576px) {*/
-    /*    .offer-container {*/
-    /*        max-width: none;*/
-    /*    }*/
-    /*}*/
-
 
     .offer-container {
         overflow: auto;

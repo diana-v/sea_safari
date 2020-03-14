@@ -1,5 +1,5 @@
 <template>
-    <div class="item about-container" id="about">
+    <div id="about">
         <div class="about-content">
             <div>
                 <div>
@@ -36,14 +36,8 @@
     /* */
     /* ABOUT */
     /* */
-    .about-container {
-        min-height: 100vh;
-        overflow: auto;
-        background-color: white;
-    }
-
     .about-content {
-        padding: 5% 5%;
+        padding: 5% 10%;
         align-items: center;
         display: grid;
         justify-content: center;
@@ -58,48 +52,38 @@
     }
 
     .image-column {
-        max-width: 450px;
-        background-image: url('../../assets/about-image.jpg');
+        background-image: url('../../assets/slide_3.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height: 550px;
+        background-position: top;
     }
 
     .about-column {
         align-content: center;
         display: grid;
-        padding: 0 0 0 50px;
+        padding: 0 0 0 70px;
     }
 
     .about-header {
         font-size: 48px;
         letter-spacing: -2px;
         font-weight: 900;
-        text-align: center !important;
     }
 
     .about-paragraph {
         color: rgb(145, 22, 13);
-        /*color: #17486b;*/
         font-style: italic;
         font-size: 17px;
         text-align: start;
     }
 
-    @media screen and (max-width: 800px) {
-        .image-column {
-            display: none;
+    @media screen and (max-width: 750px) {
+        .about-header {
+            padding-top: 10%;
         }
         .about-column {
-            padding: 10%;
-            min-width: 100% !important;
-        }
-        .about-content {
-            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../../assets/about-image.jpg') no-repeat;
-            background-size: cover;
-        }
-        .about-row {
-            text-align: center;
+            padding: 0;
         }
     }
 </style>

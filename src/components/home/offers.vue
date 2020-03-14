@@ -1,7 +1,7 @@
 <template>
-    <div class="item offers-container" id="offers">
+    <div class="offers-container" id="offers">
         <div class="offers-content">
-                    <div class="col-md-6 offers-column">
+                    <div class="offers-description-column">
                         <div class="row">
                             <div class="col-sm-12">
                                 <h2 class="offers-header">Pasiūlymai</h2>
@@ -21,33 +21,77 @@
                                             href="https://www.dovanusala.lt/lt/s/1510-sea-safari?gclid=EAIaIQobChMItsP97M-B6AIVGaqaCh11owdtEAAYAiAAEgKEZfD_BwE"
                                             target="_blank" class="offers-gift">Dovanų Sala</a>.</p>
                             </div>
-                            <div class="col-sm-12">
-                                <div class="my-2">
-                                    <v-btn large color="rgb(145, 22, 13)" class="offers-button" href="/pasiulymai">Mūsų
-                                        pasiūlymai
-                                    </v-btn>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 image-column">
+                </div>
+        <div class="offer-container offer-column">
+            <div class="card bg-light shadow p-3 mb-3 offer-card" v-for="(offer, index) in offers"
+                 v-bind:key="index">
+                <div class="offer-content">
+                    <div>
+                        <div class="image-title-container">
+                            <img class="card-img offer-image"
+                                 v-bind:src="offer.img">
+                            <h2 class="offer-title">{{offer.title}}</h2>
+                        </div>
+                        <p class="offer-description">{{offer.description}}</p>
                     </div>
                 </div>
             </div>
+        </div>
+            </div>
 </template>
 
+<script>
+    export default {
+        data() {
+            return {
+                offers: [
+                    {
+                        img: require('../../assets/slide_2.jpg'),
+                        title: 'Ekstremali išvyka į jūrą',
+                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                    },
+                    {
+                        img: require('../../assets/juodkrante.jpg'),
+                        title: 'Išvyka į Juodkrantę',
+                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                    },
+                    {
+                        img: require('../../assets/juodkrante.jpg'),
+                        title: 'Išvyka į Juodkrantę',
+                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                    },
+                    {
+                        img: require('../../assets/nida.jpg'),
+                        title: 'Išvyka į Nidą',
+                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                    },
+                    {
+                        img: require('../../assets/minges-kaimas.jpg'),
+                        title: 'Išvyka į Mingės kaimą',
+                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                    },
+                    {
+                        img: require('../../assets/juodkrante.jpg'),
+                        title: 'Išvyka į Juodkrantę',
+                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                    },
+                ]
+            }
+        }
+    };
+</script>
 <style scoped>
     /* */
     /* OFFERS */
     /* */
     .offers-container {
-        min-height: 100vh;
-        overflow: auto;
-        background-color: white;
+        background-color: #f8f9fa;
     }
 
     .offers-content {
-        padding: 5% 5%;
+        padding: 3% 10% 3% 10%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -55,10 +99,9 @@
         width: 100%;
     }
 
-    .offers-column {
+    .offers-description-column {
         align-content: center;
         display: grid;
-        padding: 0 50px 0 0;
     }
 
     .offers-header {
@@ -71,45 +114,77 @@
     .offers-paragraph {
         font-size: 17px;
         margin-bottom: 0;
-        text-align: start;
+        padding: 0 5%;
     }
 
     .offers-gift {
         color: #91160d !important;
     }
 
-    .offers-button {
-        color: white !important;
-        text-decoration: none !important;
-        background-color: #91160d !important;
-        border-color: #91160d !important;
+    .offer-column {
+        column-count: 3;
     }
 
-    .image-column {
-        max-width: 450px;
-        background-image: url('../../assets/offer-image.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 550px;
+    .offer-card {
+        border: none !important;
+        position: relative;
     }
 
-    @media screen and (max-width: 800px) {
-        .image-column {
-            display: none;
+    .offer-container {
+        background-color: #f8f9fa;
+        padding: 1% 10% 3% 10%;
+    }
+
+    .offer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .image-title-container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .offer-image {
+        height: 250px;
+        overflow: hidden;
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+
+    .offer-title {
+        font-size: 30px;
+        font-weight: 900;
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        word-wrap: break-word;
+    }
+
+    .offer-description {
+        font-size: 17px;
+        padding: 5% 5% 0 5%;
+        text-align: start;
+    }
+
+    .shadow:hover{
+        box-shadow: 0 0.5rem 1rem rgba(145, 22, 13, 0.5) !important;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .offer-column {
+            column-count: 2;
         }
-        .offers-column {
-            padding: 10%;
-            min-width: 100% !important;
-        }
-        .offers-header {
-            text-align: center;
-        }
-        .offers-paragraph {
-            text-align: center;
-        }
-        .offers-content {
-            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('../../assets/offer-image.jpg') no-repeat;
-            background-size: cover;
+    }
+
+    @media screen and (max-width: 750px) {
+        .offer-column {
+            column-count: 1;
         }
     }
 </style>
