@@ -94,17 +94,17 @@
         },
         computed: {
             nameErrors() {
-                const errors = []
-                if (!this.$v.name.$dirty) return errors
-                !this.$v.name.maxLength && errors.push('Vardas negali viršyti 30 raidžių.')
-                !this.$v.name.required && errors.push('Privaloma įvesti.')
+                const errors = [];
+                if (!this.$v.name.$dirty) return errors;
+                !this.$v.name.maxLength && errors.push('Vardas negali viršyti 30 raidžių.');
+                !this.$v.name.required && errors.push('Privaloma įvesti.');
                 return errors
             },
             emailErrors() {
-                const errors = []
-                if (!this.$v.email.$dirty) return errors
-                !this.$v.email.email && errors.push('Įveskite teisingą el. pašto adresą.')
-                !this.$v.email.required && errors.push('Privaloma įvesti.')
+                const errors = [];
+                if (!this.$v.email.$dirty) return errors;
+                !this.$v.email.email && errors.push('Įveskite teisingą el. pašto adresą.');
+                !this.$v.email.required && errors.push('Privaloma įvesti.');
                 return errors
             },
         },

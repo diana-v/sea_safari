@@ -52,7 +52,7 @@
     }
 
     .image-column {
-        background-image: url('../../assets/slide_3.jpg');
+        background-image: url('../../assets/about-image.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height: 550px;

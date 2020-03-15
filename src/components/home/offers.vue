@@ -48,7 +48,7 @@
             return {
                 offers: [
                     {
-                        img: require('../../assets/slide_2.jpg'),
+                        img: require('../../assets/slide_2_1x.jpg'),
                         title: 'Ekstremali išvyka į jūrą',
                         description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
                     },
