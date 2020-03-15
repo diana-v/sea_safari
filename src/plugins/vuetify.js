@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib';
 import '@fortawesome/fontawesome-free/css/all.css';
-import '@mdi/font/css/materialdesignicons.css'
-import colors from 'vuetify/lib/util/colors'
+import '@mdi/font/css/materialdesignicons.css';
+import colors from 'vuetify/lib/util/colors';
 
 Vue.use(Vuetify);
 

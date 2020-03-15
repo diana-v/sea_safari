@@ -65,11 +65,11 @@
         },
 
         mounted() {
-            this.lastScrollPosition = window.pageYOffset
-            window.addEventListener('scroll', this.onScroll)
-            const viewportMeta = document.createElement('meta')
-            viewportMeta.name = 'viewport'
-            viewportMeta.content = 'width=device-width, initial-scale=1'
+            this.lastScrollPosition = window.pageYOffset;
+            window.addEventListener('scroll', this.onScroll);
+            const viewportMeta = document.createElement('meta');
+            viewportMeta.name = 'viewport';
+            viewportMeta.content = 'width=device-width, initial-scale=1';
             document.head.appendChild(viewportMeta)
         },
 
@@ -80,7 +80,7 @@
         methods: {
             onScroll() {
                 if ((window.pageYOffset < 0) || (Math.abs(window.pageYOffset) < 120)) {
-                    this.scrolled_toolbar = 'transparent'
+                    this.scrolled_toolbar = 'transparent';
                     return
                 }
                 this.scrolled_toolbar = 'toolbar-scrolled';
@@ -92,7 +92,6 @@
 <style>
     html, body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        font-display: swap;
     }
 
     .app-container {
