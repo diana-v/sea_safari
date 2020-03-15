@@ -13,13 +13,13 @@
                     <div class="card-columns safety-card-column">
                         <div class="card bg-light shadow p-3 mb-3 safety-card">
                             <div class="card-body text-center safety-card-content">
-                                <img src="@/assets/lifebouy.png" class="safety-image">
+                                <img src="@/assets/lifebouy.png" class="safety-image" alt="Gelbėjimo ratas">
                                 <p class="card-text">Gelbėjimo ratas</p>
                             </div>
                         </div>
                         <div class="card bg-light shadow p-3 mb-3 safety-card">
                             <div class="card-body text-center safety-card-content">
-                                <img src="@/assets/lifevest.png" class="safety-image">
+                                <img src="@/assets/lifevest.png" class="safety-image" alt="Gelbėjimosi liemenė">
                                 <p class="card-text">Gelbėjimosi liemenė</p>
                             </div>
                         </div>
@@ -31,7 +31,7 @@
                                 >
                                     <template v-slot:activator="{ on }">
                                         <div v-on="on">
-                                            <img src="@/assets/wetsuit.png" class="safety-image">
+                                            <img src="@/assets/wetsuit.png" class="safety-image" alt="Neperšlampama apranga">
                                             <p class="card-text">Neperšlampama apranga</p>
                                         </div>
                                     </template>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="card bg-light shadow p-3 mb-3 safety-card">
                             <div class="card-body text-center safety-card-content">
-                                <img src="@/assets/medkit.png" class="safety-image">
+                                <img src="@/assets/medkit.png" class="safety-image" alt="Neperšlampama apranga">
                                 <p class="card-text">Vaistinėlė</p>
                             </div>
                         </div>

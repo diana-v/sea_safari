@@ -116,6 +116,7 @@
 
     .toolbar-scrolled {
         background: white !important;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
     }
 
     .toolbar-scrolled .toolbar-item > a {

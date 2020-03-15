@@ -22,9 +22,9 @@
                                 <p class="contact-details-paragraph">+37067572133</p>
                             </div>
                             <div class="social-media-container">
-                                <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"><i
+                                <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank" alt="Instagram" rel="noreferrer"><i
                                         class="fab fa-instagram fa-2x"></i></a>
-                                <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank"><i
+                                <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank" alt="Facebook" rel="noreferrer"><i
                                         class="fab fa-facebook-f fa-2x"></i></a>
                             </div>
                         </div>
@@ -171,16 +171,21 @@
     .social-media-container {
         padding-top: 10%;
         width: 70px;
+        display: flex;
     }
 
     .fa-facebook-f {
         color: rgb(145, 22, 13);
         padding-left: 10px;
+        height: 48px;
+        width: 48px;
     }
 
     .fa-instagram {
         color: rgb(145, 22, 13);
         padding-right: 10px;
+        height: 48px;
+        width: 48px;
     }
 
     .contact-column {

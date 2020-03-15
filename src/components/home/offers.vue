@@ -17,9 +17,9 @@
                                 <p class="offers-paragraph">Ieškote dovanos idėjos, kuri paliktų neišdildomus įspūdžius
                                     visus metus? ,,Sea Safari” siūlo įsigyti dovanų kuponus, pradžiuginančius kiekvieną!
                                     Juos galite įsigyti <a href="https://www.geradovana.lt/sea-safari" target="_blank"
-                                                           class="offers-gift">Gera Dovana</a> arba <a
-                                            href="https://www.dovanusala.lt/lt/s/1510-sea-safari?gclid=EAIaIQobChMItsP97M-B6AIVGaqaCh11owdtEAAYAiAAEgKEZfD_BwE"
-                                            target="_blank" class="offers-gift">Dovanų Sala</a>.</p>
+                                                           class="offers-gift" rel="noreferrer">Gera Dovana</a> arba <a
+                                            href="https://www.dovanusala.lt/lt/s/1510-sea-safari"
+                                            target="_blank" class="offers-gift" rel="noreferrer">Dovanų Sala</a>.</p>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                     <div>
                         <div class="image-title-container">
                             <img class="card-img offer-image"
-                                 v-bind:src="offer.img">
+                                 v-bind:src="offer.img" alt="Išvyka">
                             <h2 class="offer-title">{{offer.title}}</h2>
                         </div>
                         <p class="offer-description">{{offer.description}}</p>

@@ -18,7 +18,7 @@
                                     class="review-carousel-item"
                             >
                                 <img v-bind:src="review.img"
-                                     class="review-image">
+                                     class="review-image" alt="Komentatoriaus nuotrauka">
                                 <h5 class="review-title">{{review.name}}</h5>
                                 <p class="review-text">{{review.comment}}</p>
                             </v-carousel-item>
