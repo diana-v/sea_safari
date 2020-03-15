@@ -140,12 +140,6 @@
     }
 </script>
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
-
-    html, body {
-        font-family: 'Hind', 'Roboto';
-    }
-
     @media screen and (max-width: 700px ) {
         .offer-column {
             padding: 0;

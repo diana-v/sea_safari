@@ -94,6 +94,7 @@
 
     html, body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-display: swap;
     }
 
     .app-container {
@@ -154,6 +155,12 @@
     @media screen and (max-width: 720px) {
         .home-header {
             font-size: 3rem;
+        }
+    }
+
+    @media screen and (max-width: 479px) {
+        .home-container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/slide_2_2.jpg");
         }
     }
 </style>
