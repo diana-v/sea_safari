@@ -90,8 +90,6 @@
 </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
-
     html, body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         font-display: swap;
@@ -158,7 +156,7 @@
         }
     }
 
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: 600px) {
         .home-container {
             background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/slide_2_2.jpg");
         }
