@@ -17,6 +17,10 @@ const routes = [
                     content: 'Sea-Safari Lietuva | Nepamirštami įspūdžiai Jums'
                 },
                 {
+                    property: 'og:title',
+                    content: 'Sea-Safari Lietuva | Nepamirštami įspūdžiai Jums'
+                },
+                {
                     name: 'description',
                     content: 'Plaukdami su „Sea Safari“ jūs priartėsite prie gamtos ir patirsite nepamirštamus įspūdžius. Mes siūlome du R.I.B. laivus, varomus 300 AG ir 600 AG varikliais, kurių maksimalus greitis siekia net iki 60 mazgų.'
                 },
@@ -41,6 +45,10 @@ const routes = [
                     content: 'Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.'
                 },
                 {
+                    property: 'og:title',
+                    content: 'Sea-Safari Lietuva | Išvyka į Baltijos Jūrą'
+                },
+                {
                     property: 'og:description',
                     content: 'Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.'
                 }
@@ -59,6 +67,10 @@ const routes = [
                 {
                     name: 'description',
                     content: 'Plaukdami Nidos pakrante, pamatysite šį nuostabų gamtos kampelį, plačiai atsiveriantį Kuršių nerijos kraštovaizdį, išskirtinę augmeniją ir žvejų gyvenvietes.'
+                },
+                {
+                    property: 'og:title',
+                    content: 'Sea-Safari Lietuva | Išvyka į Nidą'
                 },
                 {
                     property: 'og:description',
@@ -81,6 +93,10 @@ const routes = [
                     content: 'Išvykos metu, aplankysite unikalų Lietuvos Venecija vadinamą kaimą, išvysite Vilhelmo kanalą ir Ventės ragą.'
                 },
                 {
+                    property: 'og:title',
+                    content: 'Sea-Safari Lietuva | Išvyka į Mingės Kaimą'
+                },
+                {
                     property: 'og:description',
                     content: 'Išvykos metu, aplankysite unikalų Lietuvos Venecija vadinamą kaimą, išvysite Vilhelmo kanalą ir Ventės ragą.'
                 }
@@ -99,6 +115,10 @@ const routes = [
                 {
                     name: 'description',
                     content: 'Išplaukę iš Klaipėdos apiplauksite uosto akvatoriją, grožėsitės unikaliu Kuršių nerijos kraštovaizdžiu, vėjo supūstytomis kopomis.'
+                },
+                {
+                    property: 'og:title',
+                    content: 'Sea-Safari Lietuva | Išvyka į Juodkrantę'
                 },
                 {
                     property: 'og:description',
