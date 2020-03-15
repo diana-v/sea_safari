@@ -91,7 +91,7 @@
     }
 
     .offers-content {
-        padding: 3% 10% 3% 10%;
+        padding: 5% 10% 3% 10%;
         display: flex;
         align-items: center;
         justify-content: center;

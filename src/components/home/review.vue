@@ -69,7 +69,7 @@
     }
 
     .review-content {
-        padding: 5% 10% 5% 10%;
+        padding: 7% 10% 5% 10%;
         display: grid;
         justify-content: center;
         align-items: center;

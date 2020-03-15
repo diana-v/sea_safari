@@ -1,6 +1,7 @@
 <template>
-    <div class="contact-container" id="contact">
+    <div class="contact-container">
         <div class="contact-content">
+            <div class="contact-border-container" id="contact">
             <div class="contact-border">
                 <h2 class="contact-header">Kontaktai</h2>
                 <p class="contact-paragraph">Rezervacijos priimamos el. paštu, telefonu arba susisiekus per
@@ -23,9 +24,9 @@
                             </div>
                             <div class="social-media-container">
                                 <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank" alt="Instagram" rel="noreferrer"><i
-                                        class="fab fa-instagram fa-2x"></i></a>
+                                        class="fab fa-instagram fa-2x"></i>Instagram</a>
                                 <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank" alt="Facebook" rel="noreferrer"><i
-                                        class="fab fa-facebook-f fa-2x"></i></a>
+                                        class="fab fa-facebook-f fa-2x"></i>Facebook</a>
                             </div>
                         </div>
                         <div class="col-sm-6 contact-column">
@@ -67,6 +68,7 @@
                             </form>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
@@ -134,6 +136,13 @@
         height: 100%;
     }
 
+    .contact-border-container {
+        width: 80%;
+        height: 80%;
+        align-content: center;
+        display: grid;
+    }
+
     .contact-border {
         background-size: cover;
         background-color: white;
@@ -166,6 +175,7 @@
         margin-bottom: 0 !important;
         text-align: start;
         color: black;
+        word-wrap: break-word;
     }
 
     .social-media-container {
@@ -174,16 +184,22 @@
         display: flex;
     }
 
+    .social-media-container > a:nth-child(1) {
+        padding-right: 20px;
+    }
+
+    .social-media-container > a {
+        color: #91160d;
+    }
+
     .fa-facebook-f {
         color: rgb(145, 22, 13);
-        padding-left: 10px;
         height: 48px;
         width: 48px;
     }
 
     .fa-instagram {
         color: rgb(145, 22, 13);
-        padding-right: 10px;
         height: 48px;
         width: 48px;
     }
@@ -208,9 +224,14 @@
         padding-top: 30px;
     }
 
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 600px) {
         .contact-content {
             padding: 0 10% 0 10%;
         }
+        .contact-border-container {
+            width: initial;
+            height: initial;
+        }
+
     }
 </style>

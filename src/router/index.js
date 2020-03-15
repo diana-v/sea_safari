@@ -13,6 +13,10 @@ const routes = [
             title: 'Sea-Safari Lietuva | Nepamirštami įspūdžiai Jums',
             metaTags: [
                 {
+                    name: 'title',
+                    content: 'Sea-Safari Lietuva | Nepamirštami įspūdžiai Jums'
+                },
+                {
                     name: 'description',
                     content: 'Plaukdami su „Sea Safari“ jūs priartėsite prie gamtos ir patirsite nepamirštamus įspūdžius. Mes siūlome du R.I.B. laivus, varomus 300 AG ir 600 AG varikliais, kurių maksimalus greitis siekia net iki 60 mazgų.'
                 },
@@ -112,3 +116,30 @@ const router = new VueRouter({
 })
 
 export default router
+
+router.beforeEach((to, from, next) => {
+
+    const nearestWithTitle = to.matched.slice().reverse().find(r => r.meta && r.meta.title);
+
+    const nearestWithMeta = to.matched.slice().reverse().find(r => r.meta && r.meta.metaTags);
+
+    if (nearestWithTitle) document.title = nearestWithTitle.meta.title;
+
+    Array.from(document.querySelectorAll('[data-vue-router-controlled]')).map(el => el.parentNode.removeChild(el));
+
+    if (!nearestWithMeta) return next();
+
+    nearestWithMeta.meta.metaTags.map(tagDef => {
+        const tag = document.createElement('meta');
+
+        Object.keys(tagDef).forEach(key => {
+            tag.setAttribute(key, tagDef[key]);
+        });
+
+        tag.setAttribute('data-vue-router-controlled', '');
+
+        return tag;
+    })
+        .forEach(tag => document.head.appendChild(tag));
+    next();
+});

@@ -20,6 +20,13 @@ Vue.prototype.$FB_KEY = process.env.VUE_APP_FB_API_KEY;
 Vue.prototype.$FB_HOST = process.env.VUE_APP_FB_API_HOST;
 Vue.prototype.$FB_PAGE = process.env.VUE_APP_FB_PAGE;
 
+// eslint-disable-next-line no-unused-vars
+router.afterEach((to, from) => {
+  Vue.nextTick(() => {
+    document.title = to.meta.title(to)
+  })
+})
+
 new Vue({
   router,
   store,
