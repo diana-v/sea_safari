@@ -230,6 +230,5 @@
             width: initial;
             height: initial;
         }
-
     }
 </style>
