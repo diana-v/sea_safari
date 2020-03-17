@@ -27,6 +27,7 @@
         <div class="offer-container offer-column">
             <div class="card bg-light shadow p-3 mb-3 offer-card" v-for="(offer, index) in offers"
                  v-bind:key="index">
+                <router-link :to="offer.routerUrl" class="offer-routes">
                 <div class="offer-content">
                     <div>
                         <div class="image-title-container">
@@ -37,6 +38,7 @@
                         <p class="offer-description">{{offer.description}}</p>
                     </div>
                 </div>
+                </router-link>
             </div>
         </div>
             </div>
@@ -51,31 +53,37 @@
                         img: require('../../assets/slide_2_1x.jpg'),
                         title: 'Ekstremali išvyka į jūrą',
                         description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                        routerUrl: '/baltijos-jura',
                     },
                     {
                         img: require('../../assets/juodkrante.jpg'),
                         title: 'Išvyka į Juodkrantę',
                         description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                        routerUrl: '/juodkrante',
                     },
                     {
                         img: require('../../assets/juodkrante.jpg'),
                         title: 'Išvyka į Juodkrantę',
                         description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                        routerUrl: '/juodkrante',
                     },
                     {
                         img: require('../../assets/nida.jpg'),
                         title: 'Išvyka į Nidą',
                         description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                        routerUrl: '/nida',
                     },
                     {
                         img: require('../../assets/minges-kaimas.jpg'),
                         title: 'Išvyka į Mingės kaimą',
                         description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                        routerUrl: '/minges-kaimas',
                     },
                     {
                         img: require('../../assets/juodkrante.jpg'),
                         title: 'Išvyka į Juodkrantę',
                         description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
+                        routerUrl: '/juodkrante',
                     },
                 ]
             }
@@ -128,6 +136,11 @@
     .offer-card {
         border: none !important;
         position: relative;
+    }
+
+    .offer-routes {
+        text-decoration: none !important;
+        color: black !important;
     }
 
     .offer-container {

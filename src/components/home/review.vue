@@ -5,7 +5,6 @@
                 <h2 class="review-header">Atsiliepimai</h2>
                     <div>
                         <v-carousel
-                                cycle
                                 height="350px"
                                 class="review-carousel"
                                 hide-delimiter-background
@@ -115,13 +114,13 @@
 
     @media screen and (max-width: 900px) {
         .review-carousel {
-            width: 50vh;
+            width: 60vh;
         }
     }
 
     @media screen and (max-width: 550px) {
         .review-carousel {
-            width: 40vh;
+            width: 60vh;
         }
         .review-carousel-item {
             padding: 10% 10%;

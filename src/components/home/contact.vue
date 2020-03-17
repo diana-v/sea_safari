@@ -137,8 +137,6 @@
     }
 
     .contact-border-container {
-        width: 80%;
-        height: 80%;
         align-content: center;
         display: grid;
     }

@@ -2,19 +2,19 @@
     <div class="app-container">
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar"
                   v-bind:class="scrolled_toolbar" toggleable="lg">
-            <b-navbar-brand class="navbar-brand" href="#home">Sea Safari</b-navbar-brand>
+            <b-navbar-brand class="navbar-brand" href="/#home">Sea Safari</b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-nav class="navbar-nav ml-auto mt-2 mt-lg-0" v-b-scrollspy:scrollspy-nested>
-                    <b-nav-item class="nav-item ml-4 toolbar-item" href="#about">Apie Mus
+                    <b-nav-item class="nav-item ml-4 toolbar-item" href="/#about">Apie Mus
                     </b-nav-item>
-                    <b-nav-item class="nav-item ml-4 toolbar-item" href="#offers">Pasiūlymai
+                    <b-nav-item class="nav-item ml-4 toolbar-item" href="/#offers">Pasiūlymai
                     </b-nav-item>
-                    <b-nav-item class="nav-item ml-4 toolbar-item" href="#safety">Saugumas
+                    <b-nav-item class="nav-item ml-4 toolbar-item" href="/#safety">Saugumas
                     </b-nav-item>
-                    <b-nav-item class="nav-item ml-4 toolbar-item" href="#review">Atsiliepimai
+                    <b-nav-item class="nav-item ml-4 toolbar-item" href="/#review">Atsiliepimai
                     </b-nav-item>
-                    <b-nav-item class="nav-item ml-4 toolbar-item" href="#contact">Kontaktai
+                    <b-nav-item class="nav-item ml-4 toolbar-item" href="/#contact">Kontaktai
                     </b-nav-item>
                 </b-nav>
             </b-collapse>
