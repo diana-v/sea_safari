@@ -118,6 +118,12 @@
         }
     }
 
+    @media screen and (max-width: 750px) {
+        .review-content {
+            padding-top: 50px;
+        }
+    }
+
     @media screen and (max-width: 550px) {
         .review-carousel {
             width: 60vh;

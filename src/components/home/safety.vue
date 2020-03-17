@@ -137,7 +137,7 @@
     @media screen and (max-width: 800px) {
         .safety-column {
             min-width: 100% !important;
-            padding: 0;
+            padding: 50px 0 0 0;
         }
 
         .safety-header {

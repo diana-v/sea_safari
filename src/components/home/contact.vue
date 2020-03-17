@@ -139,6 +139,7 @@
     .contact-border-container {
         align-content: center;
         display: grid;
+        height: 80%;
     }
 
     .contact-border {
@@ -229,6 +230,7 @@
         .contact-border-container {
             width: initial;
             height: initial;
+            padding-top: 10%;
         }
     }
 </style>

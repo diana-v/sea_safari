@@ -199,5 +199,8 @@
         .offer-column {
             column-count: 1;
         }
+        .offers-description-column {
+            padding-top: 50px;
+        }
     }
 </style>
