@@ -2,7 +2,7 @@
     <div class="review-container" id="review">
         <div class="review-content">
             <div>
-                <h2 class="review-header">Atsiliepimai</h2>
+                <h2 class="review-header ">Atsiliepimai</h2>
                     <div>
                         <v-carousel
                                 height="350px"

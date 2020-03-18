@@ -2,7 +2,7 @@
     <div class="safety-container" id="safety">
         <div class="safety-content">
             <div class="row">
-                <div class="col-sm-12 safety-column">
+                <div class="col-sm-12 safety-column slide-in-top" v-bind:class="animation">
                     <h2 class="safety-header">Saugumas</h2>
                     <p class="safety-paragraph">RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai
                         atsakingai atsižvelgia į jūsų
@@ -11,19 +11,19 @@
                 </div>
                 <div class="col-sm-12">
                     <div class="card-columns safety-card-column">
-                        <div class="card bg-light shadow p-3 mb-3 safety-card">
+                        <div class="card bg-light shadow p-3 mb-3 safety-card fade-in1" v-bind:class="animation">
                             <div class="card-body text-center safety-card-content">
                                 <img src="@/assets/lifebouy.svg" class="safety-image" alt="Gelbėjimo ratas">
                                 <p class="card-text">Gelbėjimo ratas</p>
                             </div>
                         </div>
-                        <div class="card bg-light shadow p-3 mb-3 safety-card">
+                        <div class="card bg-light shadow p-3 mb-3 safety-card fade-in2" v-bind:class="animation">
                             <div class="card-body text-center safety-card-content">
                                 <img src="@/assets/lifevest.svg" class="safety-image" alt="Gelbėjimosi liemenė">
                                 <p class="card-text">Gelbėjimosi liemenė</p>
                             </div>
                         </div>
-                        <div class="card bg-light shadow p-3 mb-3 safety-card hover-safety-card">
+                        <div class="card bg-light shadow p-3 mb-3 safety-card hover-safety-card fade-in3" v-bind:class="animation">
                             <div class="card-body text-center safety-card-content">
 
                                 <v-dialog
@@ -52,7 +52,7 @@
                                 </v-dialog>
                             </div>
                         </div>
-                        <div class="card bg-light shadow p-3 mb-3 safety-card">
+                        <div class="card bg-light shadow p-3 mb-3 safety-card fade-in4" v-bind:class="animation">
                             <div class="card-body text-center safety-card-content">
                                 <img src="@/assets/medkit.svg" class="safety-image" alt="Neperšlampama apranga">
                                 <p class="card-text">Vaistinėlė</p>
@@ -67,6 +67,7 @@
 
 <script>
     export default {
+        props: ['animation'],
         data: () => ({
             safety_img: require('@/assets/aprangos.png'),
             dialog: false,
@@ -88,10 +89,14 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        overflow: hidden;
     }
 
     .safety-column {
         padding-top: 0;
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
     }
 
     .safety-header {
@@ -114,6 +119,7 @@
         border: none !important;
         height: 130px;
         min-width: 130px;
+        opacity: 0;
     }
 
     .hover-safety-card:hover {
@@ -153,4 +159,75 @@
             padding: 1rem 0 !important;
         }
     }
+
+    /* ANIMATE */
+    .slide-in-top.animate {
+        -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+    }
+
+    @-webkit-keyframes slide-in-top {
+        0% {
+            -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-top {
+        0% {
+            -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .fade-in1.animate {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
+    }
+
+    .fade-in2.animate {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.25s both;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.25s both;
+    }
+
+    .fade-in3.animate {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+    }
+
+    .fade-in4.animate {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.75s both;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.75s both;
+    }
+
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+
 </style>

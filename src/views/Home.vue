@@ -26,11 +26,11 @@
                     <h1 class="home-header">R.I.B. CHARTER EXPERIENCE</h1>
                 </div>
             </div>
-            <s_about></s_about>
-            <s_offers></s_offers>
-            <s_safety></s_safety>
+            <s_about v-bind:animation="about.animated"></s_about>
+            <s_offers ref="offers" v-bind:animation="offers.animated"></s_offers>
+            <s_safety v-bind:animation="safety.animated"></s_safety>
             <s_review></s_review>
-            <s_contact></s_contact>
+            <s_contact v-bind:animation="contact.animated"></s_contact>
         </div>
     </div>
 </template>
@@ -53,6 +53,23 @@
         },
         data() {
             return {
+                about:{
+                    animated: '',
+                    offset: 0,
+                },
+                offers:{
+                    animated: '',
+                    offset: 0,
+                },
+                safety:{
+                    animated: '',
+                    offset: 0,
+                },
+                contact:{
+                    animated: '',
+                    offset: 0,
+                },
+
                 scrolled_toolbar: 'transparent',
                 menu: [
                     {title: 'Apie Mus', link: '/#about'},
@@ -64,9 +81,19 @@
             }
         },
 
+        created() {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+        destroyed() {
+            window.removeEventListener('scroll', this.handleScroll);
+        },
+
         mounted() {
-            this.lastScrollPosition = window.pageYOffset;
-            window.addEventListener('scroll', this.onScroll);
+            this.about.offset=document.querySelector('#about').offsetTop;
+            this.offers.offset=document.querySelector('#offers').offsetTop;
+            this.safety.offset=document.querySelector('#safety').offsetTop;
+            this.contact.offset=document.querySelector('#contact').offsetTop;
+
             const viewportMeta = document.createElement('meta');
             viewportMeta.name = 'viewport';
             viewportMeta.content = 'width=device-width, initial-scale=1';
@@ -84,8 +111,27 @@
                     return
                 }
                 this.scrolled_toolbar = 'toolbar-scrolled';
+            },
+            handleScroll() {
+                this.onScroll();
+                if (window.pageYOffset > this.about.offset - window.innerHeight) {
+                    this.about.animated='animate'
+                }
+
+                if (window.pageYOffset > this.offers.offset - (window.innerHeight/2)) {
+                    this.offers.animated='animate'
+                    // this.$refs.offers.addCard()
+                }
+
+                if (window.pageYOffset > this.safety.offset - window.innerHeight) {
+                    this.safety.animated='animate'
+                }
+
+                if (window.pageYOffset > this.contact.offset - (window.innerHeight/3)) {
+                    this.contact.animated='animate'
+                }
             }
-        }
+        },
     }
 </script>
 
@@ -147,7 +193,7 @@
         color: white;
         width: 100%;
         position: absolute;
-        top: 50%;
+        top: 45%;
     }
 
     @media screen and (max-width: 720px) {
