@@ -30,7 +30,7 @@
             <s_offers ref="offers" v-bind:animation="offers.animated"></s_offers>
             <s_safety v-bind:animation="safety.animated"></s_safety>
             <s_review></s_review>
-            <s_contact v-bind:animation="contact.animated"></s_contact>
+            <s_contact id="s_contact" v-bind:animation="contact.animated"></s_contact>
         </div>
     </div>
 </template>
@@ -92,7 +92,7 @@
             this.about.offset=document.querySelector('#about').offsetTop;
             this.offers.offset=document.querySelector('#offers').offsetTop;
             this.safety.offset=document.querySelector('#safety').offsetTop;
-            this.contact.offset=document.querySelector('#contact').offsetTop;
+            this.contact.offset=document.querySelector('#s_contact').offsetTop;
 
             const viewportMeta = document.createElement('meta');
             viewportMeta.name = 'viewport';
@@ -127,7 +127,7 @@
                     this.safety.animated='animate'
                 }
 
-                if (window.pageYOffset > this.contact.offset - (window.innerHeight/3)) {
+                if (window.pageYOffset > this.contact.offset - window.innerHeight/2 ) {
                     this.contact.animated='animate'
                 }
             }
