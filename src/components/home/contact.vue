@@ -127,7 +127,6 @@
         background-size: cover;
         height: 100vh;
         min-height: 1000px;
-        overflow: hidden;
     }
 
     .contact-content {
@@ -142,8 +141,6 @@
         align-content: center;
         display: grid;
         height: 80%;
-        -webkit-transform: translateY(1000px);
-        transform: translateY(1000px);
         opacity: 0;
     }
 
@@ -244,7 +241,6 @@
         -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
         animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
     }
-
     @-webkit-keyframes slide-in-bottom {
         0% {
             -webkit-transform: translateY(1000px);
@@ -269,5 +265,4 @@
             opacity: 1;
         }
     }
-
 </style>

@@ -25,7 +25,6 @@
                         </div>
                         <div class="card bg-light shadow p-3 mb-3 safety-card hover-safety-card fade-in3" v-bind:class="animation">
                             <div class="card-body text-center safety-card-content">
-
                                 <v-dialog
                                         v-model="dialog"
                                 >
@@ -89,13 +88,10 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        overflow: hidden;
     }
 
     .safety-column {
         padding-top: 0;
-        -webkit-transform: translateY(-1000px);
-        transform: translateY(-1000px);
         opacity: 0;
     }
 
@@ -228,6 +224,4 @@
             opacity: 1;
         }
     }
-
-
 </style>

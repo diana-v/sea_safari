@@ -180,7 +180,6 @@
         height: 100vh;
         background-size: cover;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/slide_2_1x.jpg");
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-set("../assets/slide_2_1x.jpg" 1x, "../assets/slide_2_2x.jpg" 2x, "../assets/slide_2_3x.jpg" 3x, "../assets/slide_2_4x.jpg" 4x);
         background-repeat: no-repeat;
         position: relative;
         background-position: top;

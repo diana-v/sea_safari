@@ -54,7 +54,6 @@
         display: flex;
         justify-content: center;
         text-align: start;
-        overflow: hidden;
     }
 
     .image-column {
@@ -63,7 +62,6 @@
         background-size: cover;
         height: 550px;
         background-position: top;
-        /*transform: translateX(-1000px);*/
         opacity: 0;
     }
 
@@ -77,7 +75,6 @@
         font-size: 48px;
         letter-spacing: -2px;
         font-weight: 900;
-        /*transform: translateX(1000px);*/
         opacity: 0;
     }
 
@@ -86,7 +83,6 @@
         font-style: italic;
         font-size: 17px;
         text-align: start;
-        /*transform: translateX(1000px);*/
         opacity: 0;
     }
 
@@ -94,7 +90,6 @@
         color: black;
         font-size: 17px;
         text-align: start;
-        transform: translateX(1000px);
         opacity: 0;
     }
 
@@ -181,6 +176,4 @@
             opacity: 1;
         }
     }
-
-
 </style>

@@ -126,7 +126,7 @@
 
     @media screen and (max-width: 550px) {
         .review-carousel {
-            width: 60vh;
+            width: 45vh;
         }
         .review-carousel-item {
             padding: 10% 10%;

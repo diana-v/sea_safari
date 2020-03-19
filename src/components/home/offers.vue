@@ -107,7 +107,6 @@
         justify-content: center;
         height: 100%;
         width: 100%;
-        overflow: hidden;
     }
 
     .offers-description-column {
@@ -120,10 +119,6 @@
         letter-spacing: -2px;
         font-weight: 900;
         text-align: center;
-        -webkit-transform: rotateX(-100deg);
-        transform: rotateX(-100deg);
-        -webkit-transform-origin: top;
-        transform-origin: top;
         opacity: 0;
     }
 
@@ -131,10 +126,6 @@
         font-size: 17px;
         margin-bottom: 0;
         padding: 0 5%;
-        -webkit-transform: rotateX(-100deg);
-        transform: rotateX(-100deg);
-        -webkit-transform-origin: top;
-        transform-origin: top;
         opacity: 0;
     }
 
@@ -149,10 +140,6 @@
     .offer-card {
         border: none !important;
         position: relative;
-        -webkit-transform: rotateX(-100deg);
-        transform: rotateX(-100deg);
-        -webkit-transform-origin: top;
-        transform-origin: top;
         opacity: 0;
     }
 
