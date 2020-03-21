@@ -189,23 +189,23 @@
     }
 
     .fade-in1.animate {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.75s both;
+        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.75s both;
+    }
+
+    .fade-in2.animate {
         -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
         animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1s both;
     }
 
-    .fade-in2.animate {
+    .fade-in3.animate {
         -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.25s both;
         animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.25s both;
     }
 
-    .fade-in3.animate {
+    .fade-in4.animate {
         -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
         animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
-    }
-
-    .fade-in4.animate {
-        -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.75s both;
-        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.75s both;
     }
 
     @-webkit-keyframes fade-in {

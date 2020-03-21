@@ -2,7 +2,7 @@
     <div class="offer-container">
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar"
                   v-bind:class="scrolled_toolbar" toggleable="lg">
-            <b-navbar-brand class="navbar-brand" href="/#home">Sea Safari</b-navbar-brand>
+            <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo" src="../assets/logo.svg">SEA SAFARI LIETUVA</b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-nav class="navbar-nav ml-auto mt-2 mt-lg-0" v-b-scrollspy:scrollspy-nested>
@@ -83,6 +83,19 @@
         background: url("../assets/offer-background.svg") repeat;
         height: 100%;
         min-height: 100vh;
+    }
+
+    .toolbar-logo {
+        height: 40px;
+        width: 130px;
+    }
+
+    .toolbar-brand {
+        display: grid !important;
+        font-size: 12px !important;
+        color: #17486b !important;
+        font-weight: bold;
+        font-style: italic;
     }
 
     .toolbar {
@@ -168,7 +181,7 @@
     }
 
     @media screen and (max-width: 770px) {
-        .icon-column[data-v-4da1c8df] {
+        .icon-column {
             column-count: 3;
         }
         .icon-card {

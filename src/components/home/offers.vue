@@ -5,7 +5,8 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <h2 class="offers-header slide-in-top" v-bind:class="animation">Pasiūlymai</h2>
-                        <p class="offers-paragraph slide-in-top" v-bind:class="animation">Mes teikiame paslaugas įmonių šventėms ir privatiems
+                        <p class="offers-paragraph slide-in-top" v-bind:class="animation">Mes teikiame paslaugas įmonių
+                            šventėms ir privatiems
                             vakarėliams -
                             gimtadieniai,
                             bernvakariai, mergvakariai. Renkame grupes išvykoms į jūrą. Siūlome turiningas
@@ -14,7 +15,8 @@
                             Jūsų
                             pasirinkti maršrutai.</p>
                         <br>
-                        <p class="offers-paragraph slide-in-top" v-bind:class="animation">Ieškote dovanos idėjos, kuri paliktų neišdildomus
+                        <p class="offers-paragraph slide-in-top" v-bind:class="animation">Ieškote dovanos idėjos, kuri
+                            paliktų neišdildomus
                             įspūdžius
                             visus metus? ,,Sea Safari” siūlo įsigyti dovanų kuponus, pradžiuginančius kiekvieną!
                             Juos galite įsigyti <a href="https://www.geradovana.lt/sea-safari" target="_blank"
@@ -26,21 +28,97 @@
             </div>
         </div>
         <div class="offer-container offer-column">
-            <div class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd" v-bind:class="animation" v-for="(offer, index) in offers"
-                 v-bind:key="index">
-                <router-link :to="offer.routerUrl" class="offer-routes">
-                    <div class="offer-content">
-                        <div>
-                            <div class="image-title-container flip-in-hor-bottom">
-                                <img class="card-img offer-image"
-                                     v-bind:src="offer.img" alt="Išvyka">
-                                <h2 class="offer-title">{{offer.title}}</h2>
-                            </div>
-                            <p class="offer-description">{{offer.description}}</p>
+            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd1"
+                         v-bind:class="animation" to="/baltijos-jura">
+                <div class="offer-content">
+                    <div>
+                        <div class="image-title-container flip-in-hor-bottom">
+                            <img class="card-img offer-image"
+                                 src="../../assets/slide_2_1x.jpg" alt="Išvyka">
+                            <h2 class="offer-title">Ekstremali išvyka į jūrą</h2>
                         </div>
+                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
+                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
                     </div>
-                </router-link>
-            </div>
+                </div>
+            </router-link>
+
+            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd2"
+                         v-bind:class="animation" to="/juodkrante">
+                <div class="offer-content">
+                    <div>
+                        <div class="image-title-container flip-in-hor-bottom">
+                            <img class="card-img offer-image"
+                                 src="../../assets/juodkrante.jpg" alt="Išvyka">
+                            <h2 class="offer-title">Išvyka į Juodkrantę</h2>
+                        </div>
+                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
+                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                    </div>
+                </div>
+            </router-link>
+
+            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd3"
+                         v-bind:class="animation" to="/nida">
+                <div class="offer-content">
+                    <div>
+                        <div class="image-title-container flip-in-hor-bottom">
+                            <img class="card-img offer-image"
+                                 src="../../assets/nida.jpg" alt="Išvyka">
+                            <h2 class="offer-title">Išvyka į Nidą</h2>
+                        </div>
+                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
+                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                    </div>
+                </div>
+            </router-link>
+        </div>
+
+        <div class="offer-container offer-column">
+            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd4"
+                         v-bind:class="animation" to="/minges-kaimas">
+                <div class="offer-content">
+                    <div>
+                        <div class="image-title-container flip-in-hor-bottom">
+                            <img class="card-img offer-image"
+                                 src="../../assets/minges-kaimas.jpg" alt="Išvyka">
+                            <h2 class="offer-title">Išvyka į Mingės kaimą</h2>
+                        </div>
+                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
+                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                    </div>
+                </div>
+            </router-link>
+
+            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd5"
+                         v-bind:class="animation" to="/juodkrante">
+                <div class="offer-content">
+                    <div>
+                        <div class="image-title-container flip-in-hor-bottom">
+                            <img class="card-img offer-image"
+                                 src="../../assets/juodkrante.jpg" alt="Išvyka">
+                            <h2 class="offer-title">Išvyka į Juodkrantę</h2>
+                        </div>
+                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
+                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                    </div>
+                </div>
+            </router-link>
+
+            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd6"
+                         v-bind:class="animation" to="/juodkrante">
+                <div class="offer-content">
+                    <div>
+                        <div class="image-title-container flip-in-hor-bottom">
+                            <img class="card-img offer-image"
+                                 src="../../assets/juodkrante.jpg" alt="Išvyka">
+                            <h2 class="offer-title">Išvyka į Juodkrantę</h2>
+                        </div>
+                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
+                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                    </div>
+                </div>
+            </router-link>
         </div>
     </div>
 </template>
@@ -48,48 +126,6 @@
 <script>
     export default {
         props: ['animation'],
-        data() {
-            return {
-                offers: [
-                    {
-                        img: require('../../assets/slide_2_1x.jpg'),
-                        title: 'Ekstremali išvyka į jūrą',
-                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
-                        routerUrl: '/baltijos-jura',
-                    },
-                    {
-                        img: require('../../assets/juodkrante.jpg'),
-                        title: 'Išvyka į Juodkrantę',
-                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
-                        routerUrl: '/juodkrante',
-                    },
-                    {
-                        img: require('../../assets/juodkrante.jpg'),
-                        title: 'Išvyka į Juodkrantę',
-                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
-                        routerUrl: '/juodkrante',
-                    },
-                    {
-                        img: require('../../assets/nida.jpg'),
-                        title: 'Išvyka į Nidą',
-                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
-                        routerUrl: '/nida',
-                    },
-                    {
-                        img: require('../../assets/minges-kaimas.jpg'),
-                        title: 'Išvyka į Mingės kaimą',
-                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
-                        routerUrl: '/minges-kaimas',
-                    },
-                    {
-                        img: require('../../assets/juodkrante.jpg'),
-                        title: 'Išvyka į Juodkrantę',
-                        description: 'Išvyka į  Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.',
-                        routerUrl: '/juodkrante',
-                    },
-                ]
-            }
-        }
     };
 </script>
 <style scoped>
@@ -212,8 +248,8 @@
 
     /* ANIMATE */
     .slide-in-top.animate {
-        -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
-        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+        -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     @-webkit-keyframes slide-in-top {
@@ -242,9 +278,34 @@
         }
     }
 
-    .swing-in-top-fwd.animate {
+    .swing-in-top-fwd1.animate {
+        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s both;
+        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s both;
+    }
+
+    .swing-in-top-fwd2.animate {
+        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.25s both;
+        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.25s both;
+    }
+
+    .swing-in-top-fwd3.animate {
+        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.5s both;
+        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.5s both;
+    }
+
+    .swing-in-top-fwd4.animate {
+        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.75s both;
+        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.75s both;
+    }
+
+    .swing-in-top-fwd5.animate {
         -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2s both;
         animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2s both;
+    }
+
+    .swing-in-top-fwd6.animate {
+        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2.25s both;
+        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2.25s both;
     }
 
     @-webkit-keyframes swing-in-top-fwd {
@@ -263,6 +324,7 @@
             opacity: 1;
         }
     }
+
     @keyframes swing-in-top-fwd {
         0% {
             -webkit-transform: rotateX(-100deg);

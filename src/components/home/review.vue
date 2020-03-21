@@ -9,6 +9,7 @@
                                 class="review-carousel"
                                 hide-delimiter-background
                                 light
+                                cycle
                         >
                             <v-carousel-item
                                     eager
