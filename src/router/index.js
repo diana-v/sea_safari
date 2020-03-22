@@ -127,6 +127,11 @@ const routes = [
             ]
         }
     },
+    {
+        path: '*',
+        name: 'Home',
+        redirect: '/',
+    }
 ];
 
 const router = new VueRouter({
