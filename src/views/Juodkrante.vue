@@ -1,11 +1,10 @@
 <template>
     <div class="offer-container">
-        <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar"
-                  v-bind:class="scrolled_toolbar" toggleable="lg">
+        <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar" toggleable="lg">
             <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo" src="../assets/logo.svg">SEA SAFARI LIETUVA</b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
-                <b-nav class="navbar-nav ml-auto mt-2 mt-lg-0" v-b-scrollspy:scrollspy-nested>
+                <b-nav class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <b-nav-item class="nav-item ml-4 toolbar-item" href="/#about">Apie Mus
                     </b-nav-item>
                     <b-nav-item class="nav-item ml-4 toolbar-item" href="/#offers">Pasiūlymai

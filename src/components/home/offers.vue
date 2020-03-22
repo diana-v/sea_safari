@@ -179,11 +179,6 @@
         opacity: 0;
     }
 
-    .offer-routes {
-        text-decoration: none !important;
-        color: black !important;
-    }
-
     .offer-container {
         background-color: #f8f9fa;
         padding: 1% 10% 3% 10%;
@@ -284,28 +279,28 @@
     }
 
     .swing-in-top-fwd2.animate {
-        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.25s both;
-        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.25s both;
-    }
-
-    .swing-in-top-fwd3.animate {
         -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.5s both;
         animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.5s both;
     }
 
-    .swing-in-top-fwd4.animate {
-        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.75s both;
-        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1.75s both;
-    }
-
-    .swing-in-top-fwd5.animate {
+    .swing-in-top-fwd3.animate {
         -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2s both;
         animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2s both;
     }
 
+    .swing-in-top-fwd4.animate {
+        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2.5s both;
+        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2.5s both;
+    }
+
+    .swing-in-top-fwd5.animate {
+        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 3s both;
+        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 3s both;
+    }
+
     .swing-in-top-fwd6.animate {
-        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2.25s both;
-        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 2.25s both;
+        -webkit-animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 3.5s both;
+        animation: swing-in-top-fwd 0.75s cubic-bezier(0.175, 0.885, 0.320, 1.275) 3.5s both;
     }
 
     @-webkit-keyframes swing-in-top-fwd {
