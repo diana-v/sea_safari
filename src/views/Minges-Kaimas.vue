@@ -81,11 +81,16 @@
         height: 100%;
         min-height: 100vh;
         padding-right: 2%;
+        overflow: hidden;
     }
 
     .toolbar-logo {
         height: 40px;
         width: 130px;
+    }
+
+    .fixed-top {
+        z-index: 100;
     }
 
     .toolbar-brand {

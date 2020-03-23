@@ -85,6 +85,7 @@
         height: 100%;
         min-height: 100vh;
         padding-right: 2%;
+        overflow: hidden;
     }
 
     .toolbar-logo {
@@ -103,6 +104,10 @@
     .toolbar {
         background: white !important;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .fixed-top {
+        z-index: 100;
     }
 
     .toolbar-item > a {

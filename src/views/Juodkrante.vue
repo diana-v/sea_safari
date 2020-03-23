@@ -87,6 +87,7 @@
         height: 100%;
         min-height: 100vh;
         padding-right: 2%;
+        overflow: hidden;
     }
 
     .toolbar-logo {
@@ -100,6 +101,10 @@
         color: #17486b !important;
         font-weight: bold;
         font-style: italic;
+    }
+
+    .fixed-top {
+        z-index: 100;
     }
 
     .toolbar {

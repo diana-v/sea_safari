@@ -27,6 +27,13 @@
                                     ></v-text-field>
                                 </v-col>
                                 <v-col cols="12" sm="6">
+                                    <v-select
+                                            :items="['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']"
+                                            label="Keleivių skaičius"
+                                            color="#91160d"
+                                    ></v-select>
+                                </v-col>
+                                <v-col cols="12" sm="6">
                                     <v-text-field
                                             color="#91160d"
                                             label="Telefono nr.*"
@@ -35,6 +42,18 @@
                                             v-model="phone"
                                             :counter="20"
                                     ></v-text-field>
+                                </v-col>
+                                <v-col cols="12" sm="6">
+                                <v-text-field
+                                        light
+                                        color="red darken-4"
+                                        v-model="email"
+                                        :error-messages="emailErrors"
+                                        label="El. Paštas*"
+                                        required
+                                        @input="$v.email.$touch()"
+                                        @blur="$v.email.$touch()"
+                                ></v-text-field>
                                 </v-col>
                                 <v-col cols="12" sm="6">
                                     <v-text-field color="#91160d" disabled v-bind:label=dest_comp></v-text-field>
@@ -46,6 +65,7 @@
                                             :close-on-content-click="false"
                                             :return-value.sync="date"
                                             transition="scale-transition"
+                                            required
                                             offset-y
                                             min-width="290px"
                                             color="#91160d"
@@ -53,7 +73,7 @@
                                         <template v-slot:activator="{ on }">
                                             <v-text-field
                                                     v-model="date"
-                                                    label="Pasirinkite datą"
+                                                    label="Pasirinkite datą*"
                                                     prepend-icon="fas fa-calendar-alt"
                                                     readonly
                                                     v-on="on"
@@ -71,7 +91,7 @@
                         </v-container>
                         <small>*Būtina užpildyti</small>
                         <v-alert v-if="d_success" dense type="success">
-                            Išsiųsta sėkmingai.
+                            Išsiųsta sėkmingai. Susisieksime su Jumis per artimiausias 24 val. patvirtinti rezervaciją.
                         </v-alert>
                         <v-alert v-if="d_error" dense type="error">{{d_error_msg}}</v-alert>
                     </v-card-text>
@@ -88,7 +108,7 @@
 
 <script>
     import {validationMixin} from "vuelidate";
-    import {maxLength, required, minLength} from "vuelidate/lib/validators";
+    import {maxLength, required, minLength, email} from "vuelidate/lib/validators";
 
     export default {
         props: ['destination'],
@@ -96,6 +116,7 @@
             return {
                 name: '',
                 phone: '',
+                email: '',
                 rules: [
                     value => !!value || 'Privaloma įvesti.',
                     value => (value || '').length >= 5 || 'Min 5 skaičiai',
@@ -124,6 +145,13 @@
                 !this.$v.name.required && errors.push('Privaloma įvesti.');
                 return errors
             },
+            emailErrors() {
+                const errors = [];
+                if (!this.$v.email.$dirty) return errors;
+                !this.$v.email.email && errors.push('Įveskite teisingą el. pašto adresą.');
+                !this.$v.email.required && errors.push('Privaloma įvesti.');
+                return errors
+            },
         },
         methods: {
             submit:function () {
@@ -143,13 +171,14 @@
 
         validations: {
             name: {required, maxLength: maxLength(30)},
-            phone: {required, maxLength: maxLength(20), minLength: minLength(5)}
+            phone: {required, maxLength: maxLength(20), minLength: minLength(5)},
+            email: {required, email},
         },
     }
 </script>
 
 <style>
     .offer-reservation-button {
-        padding: 2% 0 5% 0 !important;
+        margin: 2% 0 5% 0 !important;
     }
 </style>
