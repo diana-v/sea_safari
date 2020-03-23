@@ -53,7 +53,7 @@
                                         <template v-slot:activator="{ on }">
                                             <v-text-field
                                                     v-model="date"
-                                                    label="Picker in menu"
+                                                    label="Pasirinkite datą"
                                                     prepend-icon="fas fa-calendar-alt"
                                                     readonly
                                                     v-on="on"
@@ -71,7 +71,7 @@
                         </v-container>
                         <small>*Būtina užpildyti</small>
                         <v-alert v-if="d_success" dense type="success">
-                            Išsiūsta sėkmingai.
+                            Išsiųsta sėkmingai.
                         </v-alert>
                         <v-alert v-if="d_error" dense type="error">{{d_error_msg}}</v-alert>
                     </v-card-text>

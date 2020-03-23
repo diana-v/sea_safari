@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <res-form destination="Nida"></res-form>
+                <res-form destination="Nidą"></res-form>
             </div>
         </div>
     </div>
@@ -130,17 +130,15 @@
 
     .offer-header {
         color: black;
-        /*padding-left: 5%;*/
         font-weight: 900;
         font-size: 3rem;
-        max-height: 100px;
     }
 
     .offer-description {
         text-align: start;
         font-size: 17px;
         color: black;
-        /*padding: 2% 0 0 5%;*/
+        padding: 0 2%;
     }
 
     .icon-column {

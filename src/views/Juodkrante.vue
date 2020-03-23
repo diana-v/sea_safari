@@ -1,7 +1,10 @@
 <template>
     <div class="offer-container">
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar" toggleable="lg">
-            <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo" src="../assets/logo.svg">SEA SAFARI LIETUVA</b-navbar-brand>
+            <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo"
+                                                                                  src="../assets/logo.svg">SEA SAFARI
+                LIETUVA
+            </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-nav class="navbar-nav ml-auto mt-2 mt-lg-0">
@@ -18,25 +21,21 @@
                 </b-nav>
             </b-collapse>
         </b-navbar>
-        <div class="container offer-description-container">
-            <div class="row">
-                <div class="col-md-6 offer-image"></div>
-                <div class="col-md-6">
-                    <h1 class="offer-header">Išvyka į Juodkrantę</h1>
-                    <div class="offer-description">
-                        <p>Išplaukę iš Klaipėdos apiplauksite uosto akvatoriją, grožėsitės unikaliu
-                            Kuršių nerijos kraštovaizdžiu, vėjo supūstytomis kopomis.
-                        <p>Juodkrantė yra nedidelis, ramus ir tvarkingas
-                            kurortas, tai istorinis - urbanistinis draustinis. Kelionė laivu leis grožėtis Juodkrante iš
-                            vandens, o
-                            tai paliks tik dar daugiau neišdildomų įspūdžių. Išsilipus Juodkrantėje siūlytume aplankyti
-                            Raganų
-                            kalną, pasivaikščioti akmens skulptūrų parke, paskanauti šviežios žuvies. Atsižvelgiant į
-                            Jūsų
-                            pageidavimus, išvykos trukmę ir maršrutą galima keisti.</p>
-                    </div>
+        <div class="row">
+            <div class="col-md-6 offer-image"></div>
+            <div class="col-md-6 description-column">
+                <h1 class="offer-header">Išvyka į Juodkrantę</h1>
+                <div class="offer-description">
+                    <p>Išplaukę iš Klaipėdos apiplauksite uosto akvatoriją, grožėsitės unikaliu
+                        Kuršių nerijos kraštovaizdžiu, vėjo supūstytomis kopomis.</p>
+                    <p>Juodkrantė yra nedidelis, ramus ir tvarkingas kurortas, tai istorinis - urbanistinis draustinis.
+                        Kelionė laivu leis grožėtis Juodkrante iš
+                        vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių. Išsilipus Juodkrantėje siūlytume
+                        aplankyti
+                        Raganų kalną, pasivaikščioti akmens skulptūrų parke, paskanauti šviežios žuvies. Atsižvelgiant į
+                        Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.</p>
                 </div>
-                <div class="col-sm-12 icon-column">
+                <div class="icon-column">
                     <div class="card bg-light shadow p-3 mb-3 icon-card" v-for="(detail, index) in details"
                          v-bind:key="index">
                         <div class="icon-content">
@@ -50,15 +49,22 @@
                         </div>
                     </div>
                 </div>
+                <res-form destination="Juodkrantę"></res-form>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    import ReservationForm from '../components/ReservationForm';
+
     export default {
+        components: {
+            'res-form': ReservationForm
+        },
         data() {
             return {
+                dialog: false,
                 details: [
                     {title: 'Trukmė: 30min', icon: require('../assets/time.png')},
                     {title: 'Kaina nuo: €15', icon: require('../assets/price.png')},
@@ -78,10 +84,9 @@
     }
 
     .offer-container {
-        padding: 90px 0 2% 0;
-        background: url("../assets/offer-background.svg") repeat;
         height: 100%;
         min-height: 100vh;
+        padding-right: 2%;
     }
 
     .toolbar-logo {
@@ -110,36 +115,36 @@
         color: #91160d !important;
     }
 
-    .offer-description-container {
-        background-color: white;
-        padding: 2% 4% 0 4%;
-    }
-
     .offer-image {
         background-image: url("../assets/juodkrante.jpg");
-        min-height: 400px;
         background-size: cover;
         background-position: center;
+        min-height: 100vh;
+        height: 100%;
+    }
+
+    .description-column {
+        padding-top: 105px;
+        height: 100vh;
+        align-content: center;
+        display: grid;
     }
 
     .offer-header {
         color: black;
-        padding-left: 5%;
         font-weight: 900;
         font-size: 3rem;
-        max-height: 100px;
     }
 
     .offer-description {
         text-align: start;
         font-size: 17px;
         color: black;
-        padding: 5% 0 0 5%;
+        padding: 0 2%;
     }
 
-
     .icon-column {
-        column-count: 6;
+        column-count: 3;
     }
 
     .icon-container {
@@ -157,16 +162,17 @@
 
     .icon-title {
         color: black;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .icon-card {
         border: none !important;
         position: relative;
+        padding: 2% !important;
     }
 
     .icon-column {
-        column-count: 6;
+        column-count: 3;
         position: relative;
         text-align: center;
         color: white;
@@ -180,11 +186,9 @@
     }
 
     @media screen and (max-width: 770px) {
-        .icon-column {
-            column-count: 3;
-        }
-        .icon-card {
-            min-height: 122px;
+        .description-column {
+            height: initial;
+            padding: 5% 8% 0 8%;
         }
     }
 </style>
