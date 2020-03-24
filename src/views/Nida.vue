@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <res-form destination="Nidą"></res-form>
+                <res-form ref="dialog" destination="į Nidą"></res-form>
             </div>
         </div>
     </div>
@@ -72,7 +72,15 @@
                     {title: 'Būtina rezervacija', icon: require('../assets/info.png')},
                 ]
             }
-        }
+        },
+        beforeRouteLeave(to, from, next) {
+            if (this.$refs.dialog.dialog) {
+                this.$refs.dialog.dialog = false;
+                next(false)
+            } else {
+                next()
+            }
+        },
     }
 </script>
 

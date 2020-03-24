@@ -128,6 +128,54 @@ const routes = [
         }
     },
     {
+        path: '/vandens-taksi',
+        name: 'Vandens Taksi',
+        component: function () {
+            return import(/* webpackChunkName: "about" */ '../views/Vandens-Taksi.vue')
+        },
+        meta: {
+            title: 'Sea-Safari Lietuva | Vandens Taksi',
+            metaTags: [
+                {
+                    name: 'description',
+                    content: 'Mūsų laivai veikia ir kaip vandens taksi. Tai puiki galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokesčio, vykstant į Nidą ar Juodkrantę.'
+                },
+                {
+                    property: 'og:title',
+                    content: 'Sea-Safari Lietuva | Vandens Taksi'
+                },
+                {
+                    property: 'og:description',
+                    content: 'Mūsų laivai veikia ir kaip vandens taksi. Tai puiki galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokesčio, vykstant į Nidą ar Juodkrantę.'
+                }
+            ]
+        }
+    },
+    {
+        path: '/privatus-vakareliai',
+        name: 'Privatūs Vakarėliai',
+        component: function () {
+            return import(/* webpackChunkName: "about" */ '../views/Privatus-Vakareliai.vue')
+        },
+        meta: {
+            title: 'Sea-Safari Lietuva | Privatūs Vakarėliai',
+            metaTags: [
+                {
+                    name: 'description',
+                    content: 'Linksmai atšvęsite mergvakarius, bernvakarius ar įmonių vakarėlius tik savo kompanijoje. Galimi įvairūs Jūsų pasirinkti maršrutai su sustojimais.'
+                },
+                {
+                    property: 'og:title',
+                    content: 'Sea-Safari Lietuva | Privatūs Vakarėliai'
+                },
+                {
+                    property: 'og:description',
+                    content: 'Linksmai atšvęsite mergvakarius, bernvakarius ar įmonių vakarėlius tik savo kompanijoje. Galimi įvairūs Jūsų pasirinkti maršrutai su sustojimais. '
+                }
+            ]
+        }
+    },
+    {
         path: '*',
         name: 'Home',
         redirect: '/',
@@ -141,7 +189,6 @@ const router = new VueRouter({
     scrollBehavior () {
         return { x: 0, y: 0 }
     }
-
 });
 
 export default router

@@ -136,7 +136,7 @@
         },
         computed: {
             dest_comp: function () {
-                return "Išvyka į " + this.destination;
+                return "Išvyka " + this.destination;
             },
             nameErrors() {
                 const errors = [];

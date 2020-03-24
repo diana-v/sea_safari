@@ -86,31 +86,29 @@
             </router-link>
 
             <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd5"
-                         v-bind:class="animation" to="/juodkrante">
+                         v-bind:class="animation" to="/vandens-taksi">
                 <div class="offer-content">
                     <div>
                         <div class="image-title-container flip-in-hor-bottom">
                             <img class="card-img offer-image"
-                                 src="../../assets/juodkrante.jpg" alt="Išvyka">
-                            <h2 class="offer-title">Išvyka į Juodkrantę</h2>
+                                 src="../../assets/vandens-taksi.jpg" alt="Išvyka">
+                            <h2 class="offer-title">Vandens Taksi</h2>
                         </div>
-                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
-                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                        <p class="offer-description">Mūsų laivai veikia ir kaip vandens taksi. Tai puiki galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokesčio, vykstant į Nidą ar Juodkrantę. Greitai ir saugiai nuplukdinsime Jus į pageidaujamas vietas. </p>
                     </div>
                 </div>
             </router-link>
 
             <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd6"
-                         v-bind:class="animation" to="/juodkrante">
+                         v-bind:class="animation" to="/privatus-vakareliai">
                 <div class="offer-content">
                     <div>
                         <div class="image-title-container flip-in-hor-bottom">
                             <img class="card-img offer-image"
-                                 src="../../assets/juodkrante.jpg" alt="Išvyka">
-                            <h2 class="offer-title">Išvyka į Juodkrantę</h2>
+                                 src="../../assets/privatus-vakareliai.jpg" alt="Išvyka">
+                            <h2 class="offer-title">Privatūs Vakarėliai</h2>
                         </div>
-                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
-                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                        <p class="offer-description">Linksmai atšvęsite mergvakarius, bernvakarius ar įmonių vakarėlius tik savo kompanijoje. Galimi įvairūs Jūsų pasirinkti maršrutai su sustojimais. </p>
                     </div>
                 </div>
             </router-link>

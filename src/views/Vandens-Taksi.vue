@@ -24,10 +24,9 @@
         <div class="row">
             <div class="col-md-6 offer-image"></div>
             <div class="col-md-6 description-column">
-                <h1 class="offer-header">Ekstremali išvyka į jūrą</h1>
+                <h1 class="offer-header">Vandens Taksi</h1>
                 <div class="offer-description">
-                    <p>Tai populiariausia ,,Sea Safari" pramoga. Šios trumpos kelionės metu turėsite galimybę praplaukti Danės upe, pasižvalgyti uosto akvatorijoje, pamatyti Baltijos jūros vartus.</p>
-                    <p>Skrodžiant Baltijos jūros bangas iki 90km/h greičiu greitaeigiu R.I.B. laivu pajausite visą jūros galybę, greitį, vėją ir vandens purslus! Tai pusvalandžio trukmės išvyka maršrutu Danės upė – Baltijos jūra – Danės upė, nenuvilianti net didžiausio adrenalino fanatiko. Ši pramoga puikiai tinka privatiems vakarėliams - mergvakariai, bernvakariai, gimtadieniai ar įmonių šventės. Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.</p>
+                    <p>Siūlome ir vandens taksi paslaugas. Greitai ir saugiai nuplukdinsime Jus į pageidaujamas vietas : delfinariumas, Juodkrantė, Nida ir kt. Atstumas Klaipėda - Juodkrantė įveikiamas vos per 20 min., o Klaipėda - Nida per 45 min. Tai puiki galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į Nidą ar Juodkrantę. Galimi įvairūs Jūsų pageidaujami maršrutai. </p>
                 </div>
                 <div class="icon-column">
                     <div class="card bg-light shadow p-3 mb-3 icon-card" v-for="(detail, index) in details"
@@ -43,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <res-form ref="dialog" destination="į Baltijos Jūrą"></res-form>
+                <res-form ref="dialog" destination="su Vandens Taksi"></res-form>
             </div>
         </div>
     </div>
@@ -123,7 +122,7 @@
     }
 
     .offer-image {
-        background-image: url("../assets/slide_2_1x.jpg");
+        background-image: url("../assets/vandens-taksi.jpg");
         background-size: cover;
         background-position: center;
         min-height: 100vh;
