@@ -27,8 +27,9 @@
                 </div>
             </div>
         </div>
-        <div class="offer-container offer-column">
-            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd1"
+
+        <div class="card-deck offer-container offer-column">
+            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd1 align-items-stretch"
                          v-bind:class="animation" to="/baltijos-jura">
                 <div class="offer-content">
                     <div>
@@ -37,8 +38,7 @@
                                  src="../../assets/slide_2_1x.jpg" alt="Išvyka">
                             <h2 class="offer-title">Ekstremali išvyka į jūrą</h2>
                         </div>
-                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
-                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                        <p class="offer-description">Išvyka į Baltijos jūrą greitaeigiu R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pamatysite uosto akvatoriją, pajusite jūros galybę, greitį, vėją ir vandens purslus. Tai populiariausias mūsų pasiūlymas.</p>
                     </div>
                 </div>
             </router-link>
@@ -52,8 +52,7 @@
                                  src="../../assets/juodkrante.jpg" alt="Išvyka">
                             <h2 class="offer-title">Išvyka į Juodkrantę</h2>
                         </div>
-                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
-                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                        <p class="offer-description">Išplaukę iš Klaipėdos, pamatysite unikalų Kuršių nerijos kraštovaizdį, vėjo supūstytas kopas. Kelionė laivu leis grožėtis Juodkrante iš vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių.</p>
                     </div>
                 </div>
             </router-link>
@@ -67,14 +66,11 @@
                                  src="../../assets/nida.jpg" alt="Išvyka">
                             <h2 class="offer-title">Išvyka į Nidą</h2>
                         </div>
-                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
-                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                        <p class="offer-description">Plaukdami Nidos pakrante pamatysite ne tik šį nuostabų gamtos kampelį, tačiau ir kitas savo grožiu stebinančias vietas: plačiai atsiveriantį Kuršių nerijos kraštovaizdį, išskirtinę augmeniją, žvejų gyvenvietes.</p>
                     </div>
                 </div>
             </router-link>
-        </div>
 
-        <div class="offer-container offer-column">
             <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd4"
                          v-bind:class="animation" to="/minges-kaimas">
                 <div class="offer-content">
@@ -84,8 +80,7 @@
                                  src="../../assets/minges-kaimas.jpg" alt="Išvyka">
                             <h2 class="offer-title">Išvyka į Mingės kaimą</h2>
                         </div>
-                        <p class="offer-description">Išvyka į Baltijos jūrą R.I.B. laivu įsimins ilgam. Praplauksite
-                            Danės upe, pajausite jūros galybę, greitį, vėją ir vandens purslus.</p>
+                        <p class="offer-description">Pažintinės išvykos metu plauksite Nemuno deltos parku, aplankant Uostadvarį ir Rusnės salą. Išvysite Lietuvos Venecija vadinamą Mingės kaimą. Išsilaipinę į krantą, galėsite papietauti Kintuose, žuvies restorane. </p>
                     </div>
                 </div>
             </router-link>
@@ -169,14 +164,11 @@
         color: #91160d !important;
     }
 
-    .offer-column {
-        column-count: 3;
-    }
-
     .offer-card {
         border: none !important;
         position: relative;
         opacity: 0;
+        min-width: 350px;
     }
 
     .offer-container {
@@ -187,7 +179,6 @@
     .offer-content {
         display: flex;
         justify-content: center;
-        align-items: center;
         height: 100%;
     }
 
@@ -223,22 +214,6 @@
 
     .shadow:hover {
         box-shadow: 0 0.5rem 1rem rgba(145, 22, 13, 0.5) !important;
-    }
-
-    @media screen and (max-width: 1200px) {
-        .offer-column {
-            column-count: 2;
-        }
-    }
-
-    @media screen and (max-width: 750px) {
-        .offer-column {
-            column-count: 1;
-        }
-
-        .offers-description-column {
-            padding-top: 50px;
-        }
     }
 
     /* ANIMATE */
