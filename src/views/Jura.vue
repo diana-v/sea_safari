@@ -147,7 +147,7 @@
         text-align: start;
         font-size: 17px;
         color: black;
-        padding: 0 2%;
+        padding: 2% 2%;
     }
 
     .icon-column {

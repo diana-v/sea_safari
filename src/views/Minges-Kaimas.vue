@@ -60,8 +60,8 @@
             return {
                 dialog: false,
                 details: [
-                    {title: 'Trukmė: 30min', icon: require('../assets/time.png')},
-                    {title: 'Kaina nuo: €15', icon: require('../assets/price.png')},
+                    {title: 'Trukmė: 3-4val', icon: require('../assets/time.png')},
+                    {title: 'Kaina nuo: €400', icon: require('../assets/price.png')},
                     {title: 'Apranga suteikiama', icon: require('../assets/shirt.png')},
                     {title: 'Šiltuoju metų laiku', icon: require('../assets/season.png')},
                     {title: 'Nuo 11-23 keleivių', icon: require('../assets/people.png')},
@@ -147,7 +147,7 @@
         text-align: start;
         font-size: 17px;
         color: black;
-        padding: 0 2%;
+        padding: 2% 2%;
     }
 
     .icon-column {
