@@ -123,7 +123,7 @@
     }
 
     .offer-image {
-        background-image: url("../assets/slide_2_1x.jpg");
+        background-image: url("../assets/baltijos-jura.jpg");
         background-size: cover;
         background-position: center;
         min-height: 100vh;

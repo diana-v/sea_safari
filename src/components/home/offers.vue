@@ -35,7 +35,7 @@
                     <div>
                         <div class="image-title-container flip-in-hor-bottom">
                             <img class="card-img offer-image"
-                                 src="../../assets/slide_2_1x.jpg" alt="Išvyka">
+                                 src="../../assets/baltijos-jura.jpg" alt="Išvyka">
                             <h2 class="offer-title">Ekstremali išvyka į jūrą</h2>
                         </div>
                         <p class="offer-description">Išvyka į Baltijos jūrą greitaeigiu R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pamatysite uosto akvatoriją, pajusite jūros galybę, greitį, vėją ir vandens purslus. Tai populiariausias mūsų pasiūlymas.</p>
@@ -212,6 +212,12 @@
 
     .shadow:hover {
         box-shadow: 0 0.5rem 1rem rgba(145, 22, 13, 0.5) !important;
+    }
+
+    @media screen and (max-width: 575px) {
+        .offer-card {
+            min-width: initial;
+        }
     }
 
     /* ANIMATE */
