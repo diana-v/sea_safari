@@ -28,92 +28,111 @@
             </div>
         </div>
 
-        <div class="card-deck offer-container offer-column">
-            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd1 align-items-stretch"
-                         v-bind:class="animation" to="/baltijos-jura">
-                <div class="offer-content">
-                    <div>
-                        <div class="image-title-container flip-in-hor-bottom">
-                            <img class="card-img offer-image"
-                                 src="../../assets/baltijos-jura.jpg" alt="Išvyka">
-                            <h2 class="offer-title">Ekstremali išvyka į jūrą</h2>
+        <div>
+            <div class="card-deck offer-container">
+                <div class="row">
+                <router-link tag="div"
+                             class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd1 align-items-stretch"
+                             v-bind:class="animation" to="/baltijos-jura">
+                    <div class="offer-content">
+                        <div>
+                            <div class="image-title-container flip-in-hor-bottom">
+                                <img class="card-img offer-image"
+                                     src="../../assets/baltijos-jura.jpg" alt="Išvyka">
+                                <h2 class="offer-title">Ekstremali išvyka į jūrą</h2>
+                            </div>
+                            <p class="offer-description">Išvyka į Baltijos jūrą greitaeigiu R.I.B. laivu įsimins ilgam.
+                                Praplauksite Danės upe, pamatysite uosto akvatoriją, pajusite jūros galybę, greitį, vėją
+                                ir vandens purslus. Tai populiariausias mūsų pasiūlymas.</p>
                         </div>
-                        <p class="offer-description">Išvyka į Baltijos jūrą greitaeigiu R.I.B. laivu įsimins ilgam. Praplauksite Danės upe, pamatysite uosto akvatoriją, pajusite jūros galybę, greitį, vėją ir vandens purslus. Tai populiariausias mūsų pasiūlymas.</p>
                     </div>
-                </div>
-            </router-link>
+                </router-link>
 
-            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd2"
-                         v-bind:class="animation" to="/juodkrante">
-                <div class="offer-content">
-                    <div>
-                        <div class="image-title-container flip-in-hor-bottom">
-                            <img class="card-img offer-image"
-                                 src="../../assets/juodkrante.jpg" alt="Išvyka">
-                            <h2 class="offer-title">Išvyka į Juodkrantę</h2>
+                <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd2"
+                             v-bind:class="animation" to="/juodkrante">
+                    <div class="offer-content">
+                        <div>
+                            <div class="image-title-container flip-in-hor-bottom">
+                                <img class="card-img offer-image"
+                                     src="../../assets/juodkrante.jpg" alt="Išvyka">
+                                <h2 class="offer-title">Išvyka į Juodkrantę</h2>
+                            </div>
+                            <p class="offer-description">Išplaukę iš Klaipėdos, pamatysite unikalų Kuršių nerijos
+                                kraštovaizdį, vėjo supūstytas kopas. Kelionė laivu leis grožėtis Juodkrante iš vandens,
+                                o tai paliks tik dar daugiau neišdildomų įspūdžių.</p>
                         </div>
-                        <p class="offer-description">Išplaukę iš Klaipėdos, pamatysite unikalų Kuršių nerijos kraštovaizdį, vėjo supūstytas kopas. Kelionė laivu leis grožėtis Juodkrante iš vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių.</p>
                     </div>
-                </div>
-            </router-link>
+                </router-link>
 
-            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd3"
-                         v-bind:class="animation" to="/nida">
-                <div class="offer-content">
-                    <div>
-                        <div class="image-title-container flip-in-hor-bottom">
-                            <img class="card-img offer-image"
-                                 src="../../assets/nida.jpg" alt="Išvyka">
-                            <h2 class="offer-title">Išvyka į Nidą</h2>
+                <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd3"
+                             v-bind:class="animation" to="/nida">
+                    <div class="offer-content">
+                        <div>
+                            <div class="image-title-container flip-in-hor-bottom">
+                                <img class="card-img offer-image"
+                                     src="../../assets/nida.jpg" alt="Išvyka">
+                                <h2 class="offer-title">Išvyka į Nidą</h2>
+                            </div>
+                            <p class="offer-description">Plaukdami Nidos pakrante pamatysite ne tik šį nuostabų gamtos
+                                kampelį, tačiau ir kitas savo grožiu stebinančias vietas: plačiai atsiveriantį Kuršių
+                                nerijos kraštovaizdį, išskirtinę augmeniją, žvejų gyvenvietes.</p>
                         </div>
-                        <p class="offer-description">Plaukdami Nidos pakrante pamatysite ne tik šį nuostabų gamtos kampelį, tačiau ir kitas savo grožiu stebinančias vietas: plačiai atsiveriantį Kuršių nerijos kraštovaizdį, išskirtinę augmeniją, žvejų gyvenvietes.</p>
                     </div>
+                </router-link>
                 </div>
-            </router-link>
 
-            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd4"
-                         v-bind:class="animation" to="/minges-kaimas">
-                <div class="offer-content">
-                    <div>
-                        <div class="image-title-container flip-in-hor-bottom">
-                            <img class="card-img offer-image"
-                                 src="../../assets/minges-kaimas.jpg" alt="Išvyka">
-                            <h2 class="offer-title">Išvyka į Mingės kaimą</h2>
+                <div class="row">
+                <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd4"
+                             v-bind:class="animation" to="/minges-kaimas">
+                    <div class="offer-content">
+                        <div>
+                            <div class="image-title-container flip-in-hor-bottom">
+                                <img class="card-img offer-image"
+                                     src="../../assets/minges-kaimas.jpg" alt="Išvyka">
+                                <h2 class="offer-title">Išvyka į Mingės kaimą</h2>
+                            </div>
+                            <p class="offer-description">Pažintinės išvykos metu plauksite Nemuno deltos parku,
+                                aplankant Uostadvarį ir Rusnės salą. Išvysite Lietuvos Venecija vadinamą Mingės kaimą.
+                                Išsilaipinę į krantą, galėsite papietauti Kintuose, žuvies restorane. </p>
                         </div>
-                        <p class="offer-description">Pažintinės išvykos metu plauksite Nemuno deltos parku, aplankant Uostadvarį ir Rusnės salą. Išvysite Lietuvos Venecija vadinamą Mingės kaimą. Išsilaipinę į krantą, galėsite papietauti Kintuose, žuvies restorane. </p>
                     </div>
-                </div>
-            </router-link>
+                </router-link>
 
-            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd5"
-                         v-bind:class="animation" to="/vandens-taksi">
-                <div class="offer-content">
-                    <div>
-                        <div class="image-title-container flip-in-hor-bottom">
-                            <img class="card-img offer-image"
-                                 src="../../assets/vandens-taksi.jpg" alt="Išvyka">
-                            <h2 class="offer-title">Vandens Taksi</h2>
+                <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd5"
+                             v-bind:class="animation" to="/vandens-taksi">
+                    <div class="offer-content">
+                        <div>
+                            <div class="image-title-container flip-in-hor-bottom">
+                                <img class="card-img offer-image"
+                                     src="../../assets/vandens-taksi.jpg" alt="Išvyka">
+                                <h2 class="offer-title">Vandens Taksi</h2>
+                            </div>
+                            <p class="offer-description">Mūsų laivai veikia ir kaip vandens taksi. Tai puiki galimybė
+                                išvengti automobilių spūsčių, kelto ir ekologijos mokesčio, vykstant į Nidą ar
+                                Juodkrantę. Greitai ir saugiai nuplukdinsime Jus į pageidaujamas vietas. </p>
                         </div>
-                        <p class="offer-description">Mūsų laivai veikia ir kaip vandens taksi. Tai puiki galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokesčio, vykstant į Nidą ar Juodkrantę. Greitai ir saugiai nuplukdinsime Jus į pageidaujamas vietas. </p>
                     </div>
-                </div>
-            </router-link>
+                </router-link>
 
-            <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd6"
-                         v-bind:class="animation" to="/privatus-vakareliai">
-                <div class="offer-content">
-                    <div>
-                        <div class="image-title-container flip-in-hor-bottom">
-                            <img class="card-img offer-image"
-                                 src="../../assets/privatus-vakareliai.jpg" alt="Išvyka">
-                            <h2 class="offer-title">Privatūs Vakarėliai</h2>
+                <router-link tag="div" class="card bg-light shadow p-3 mb-3 offer-card swing-in-top-fwd6"
+                             v-bind:class="animation" to="/privatus-vakareliai">
+                    <div class="offer-content">
+                        <div>
+                            <div class="image-title-container flip-in-hor-bottom">
+                                <img class="card-img offer-image"
+                                     src="../../assets/privatus-vakareliai.jpg" alt="Išvyka">
+                                <h2 class="offer-title">Privatūs Vakarėliai</h2>
+                            </div>
+                            <p class="offer-description">Linksmai atšvęsite mergvakarius, bernvakarius ar įmonių
+                                vakarėlius tik savo kompanijoje. Galimi įvairūs Jūsų pasirinkti maršrutai su
+                                sustojimais. </p>
                         </div>
-                        <p class="offer-description">Linksmai atšvęsite mergvakarius, bernvakarius ar įmonių vakarėlius tik savo kompanijoje. Galimi įvairūs Jūsų pasirinkti maršrutai su sustojimais. </p>
                     </div>
-                </div>
-            </router-link>
-        </div>
+                </router-link>
+            </div>
+            </div>
     </div>
+        </div>
 </template>
 
 <script>
