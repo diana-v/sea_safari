@@ -186,8 +186,10 @@ const router = new VueRouter({
     mode: 'history',
     base: process.env.BASE_URL,
     routes,
-    scrollBehavior () {
-        return { x: 0, y: 0 }
+    scrollBehavior(to, from, savedPosition) {
+        console.log(to, from, savedPosition)
+        if (to.path !== from.path)
+            return {x: 0, y: 0}
     }
 });
 
