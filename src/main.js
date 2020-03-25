@@ -16,9 +16,7 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 
 Vue.prototype.$http = axios;
-Vue.prototype.$FB_KEY = process.env.VUE_APP_FB_API_KEY;
-Vue.prototype.$FB_HOST = process.env.VUE_APP_FB_API_HOST;
-Vue.prototype.$FB_PAGE = process.env.VUE_APP_FB_PAGE;
+Vue.prototype.$contact_url = process.env.VUE_APP_CONTACT_URL;
 
 router.afterEach((to) => {
   Vue.nextTick(() => {

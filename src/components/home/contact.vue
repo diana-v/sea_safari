@@ -2,73 +2,84 @@
     <div class="contact-container">
         <div class="contact-content">
             <div class="contact-border-container slide-in-bottom" id="contact" v-bind:class="animation">
-            <div class="contact-border">
-                <h2 class="contact-header">Kontaktai</h2>
-                <p class="contact-paragraph">Rezervacijos priimamos el. paštu, telefonu arba susisiekus per
-                    Facebook.</p>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 contact-column">
-                            <div>
-                                <h5 class="contact-details-header">Adresas:</h5>
-                                <p class="contact-details-paragraph">Danės g. 5, Klaipėda</p>
-                                <p class="contact-details-paragraph">Palangos Tiltas, Palanga</p>
+                <div class="contact-border">
+                    <h2 class="contact-header">Kontaktai</h2>
+                    <p class="contact-paragraph">Rezervacijos priimamos el. paštu, telefonu arba susisiekus per
+                        Facebook.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 contact-column">
+                                <div>
+                                    <h5 class="contact-details-header">Adresas:</h5>
+                                    <p class="contact-details-paragraph">Danės g. 5, Klaipėda</p>
+                                    <p class="contact-details-paragraph">Palangos Tiltas, Palanga</p>
+                                </div>
+                                <div>
+                                    <h5 class="contact-details-header">El. Paštas:</h5>
+                                    <p class="contact-details-paragraph">seasafari.lietuva@gmail.com</p>
+                                </div>
+                                <div>
+                                    <h5 class="contact-details-header">Telefonas:</h5>
+                                    <p class="contact-details-paragraph">+37067572133</p>
+                                </div>
+                                <div class="social-media-container">
+                                    <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"
+                                       alt="Instagram" rel="noreferrer"><i
+                                            class="fab fa-instagram fa-2x"></i>Instagram</a>
+                                    <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank" alt="Facebook"
+                                       rel="noreferrer"><i
+                                            class="fab fa-facebook-f fa-2x"></i>Facebook</a>
+                                </div>
                             </div>
-                            <div>
-                                <h5 class="contact-details-header">El. Paštas:</h5>
-                                <p class="contact-details-paragraph">seasafari.lietuva@gmail.com</p>
-                            </div>
-                            <div>
-                                <h5 class="contact-details-header">Telefonas:</h5>
-                                <p class="contact-details-paragraph">+37067572133</p>
-                            </div>
-                            <div class="social-media-container">
-                                <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank" alt="Instagram" rel="noreferrer"><i
-                                        class="fab fa-instagram fa-2x"></i>Instagram</a>
-                                <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank" alt="Facebook" rel="noreferrer"><i
-                                        class="fab fa-facebook-f fa-2x"></i>Facebook</a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 contact-column">
-                            <form
-                                    style="--v-error-base: #b71c1c">
-                                <v-text-field
-                                        light
-                                        v-model="name"
-                                        :error-messages="nameErrors"
-                                        :counter="30"
-                                        label="Vardas"
-                                        required
-                                        @input="$v.name.$touch()"
-                                        @blur="$v.name.$touch()"
-                                ></v-text-field>
-                                <v-text-field
-                                        light
-                                        color="red darken-4"
-                                        v-model="email"
-                                        :error-messages="emailErrors"
-                                        label="El. Paštas"
-                                        required
-                                        @input="$v.email.$touch()"
-                                        @blur="$v.email.$touch()"
-                                ></v-text-field>
-                                <v-textarea
-                                        light
-                                        :rules="rules"
-                                        :counter="250"
-                                        required
-                                        rows="3"
-                                        no-resize
-                                        label="Žinutė"
-                                ></v-textarea>
+                            <div class="col-sm-6 contact-column">
+                                <form
+                                        style="--v-error-base: #b71c1c">
+                                    <v-text-field
+                                            light
+                                            v-model="name"
+                                            :error-messages="nameErrors"
+                                            :counter="30"
+                                            label="Vardas"
+                                            required
+                                            @input="$v.name.$touch()"
+                                            @blur="$v.name.$touch()"
+                                    ></v-text-field>
+                                    <v-text-field
+                                            light
+                                            color="red darken-4"
+                                            v-model="email"
+                                            :error-messages="emailErrors"
+                                            label="El. Paštas"
+                                            required
+                                            @input="$v.email.$touch()"
+                                            @blur="$v.email.$touch()"
+                                    ></v-text-field>
+                                    <v-textarea
+                                            light
+                                            v-model="message"
+                                            :counter="250"
+                                            required
+                                            rows="3"
+                                            no-resize
+                                            label="Žinutė"
+                                            :error-messages="messageErrors"
+                                            @input="$v.message.$touch()"
+                                            @blur="$v.message.$touch()"
+                                    ></v-textarea>
 
-                                <v-btn class="contact-button mr-4" @click="submit">
-                                    Pateikti
-                                </v-btn>
-                            </form>
+                                    <v-btn class="contact-button mr-4" @click="submit">
+                                        Pateikti
+                                    </v-btn>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div style="--v-error-base: #b71c1c">
+                <v-alert v-if="c_error" dense type="error">{{c_error_msg}}</v-alert>
+                <v-alert v-if="c_success" dense type="success">
+                    Išsiųsta sėkmingai. Susisieksime su Jumis per artimiausias 24 val..
+                </v-alert>
                 </div>
             </div>
         </div>
@@ -76,21 +87,38 @@
 </template>
 <script>
     import {validationMixin} from "vuelidate";
-    import {email, maxLength, required} from "vuelidate/lib/validators";
+    import {email, maxLength, minLength, required} from "vuelidate/lib/validators";
 
     export default {
         props: ['animation'],
         data: () => ({
-            name: '',
-            email: '',
-            rules: [
-                value => !!value || 'Privaloma įvesti.',
-                value => (value || '').length >= 20 || 'Min 20 characters',
-            ]
+            name: null,
+            email: null,
+            message: null,
+            c_error: false,
+            c_success: false,
+            c_error_msg: null,
         }),
         methods: {
             submit() {
-                this.$v.$touch()
+                this.$v.$touch();
+                if (this.$v.$invalid) {
+                    this.c_error = true;
+                    this.c_error_msg = "Įvyko klaida, prašome patikrinti duomenis ir bandyti dar kartą."
+                    return
+                }
+                this.$http.post(this.$contact_url, {
+                    name: this.name,
+                    email: this.email,
+                    message: this.message})
+                    .then(()=> {
+                        this.c_error = false;
+                        this.c_success = true;
+                    })
+                    .catch((error)=> {
+                        this.c_error = true;
+                        this.c_error_msg = error.response.data;
+                    })
             }
         },
         computed: {
@@ -108,12 +136,20 @@
                 !this.$v.email.required && errors.push('Privaloma įvesti.');
                 return errors
             },
+            messageErrors() {
+                const errors = [];
+                if (!this.$v.message.$dirty) return errors;
+                !this.$v.message.minLength && errors.push('Įveskite žinutę.');
+                !this.$v.message.required && errors.push('Privaloma įvesti.');
+                return errors
+            },
         },
         mixins: [validationMixin],
 
         validations: {
             name: {required, maxLength: maxLength(30)},
             email: {required, email},
+            message: {required, minLength: minLength(20)},
         },
     }
 </script>
@@ -123,7 +159,7 @@
     /* CONTACT */
     /* */
     .contact-container {
-        background:  url('../../assets/contact-image.jpeg') no-repeat;
+        background: url('../../assets/contact-image.jpeg') no-repeat;
         background-size: cover;
         height: 100vh;
         min-height: 1000px;
@@ -229,6 +265,7 @@
         .contact-content {
             padding: 0 10% 0 10%;
         }
+
         .contact-border-container {
             width: initial;
             height: initial;
@@ -241,6 +278,7 @@
         -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+
     @-webkit-keyframes slide-in-bottom {
         0% {
             -webkit-transform: translateY(1000px);
@@ -253,6 +291,7 @@
             opacity: 1;
         }
     }
+
     @keyframes slide-in-bottom {
         0% {
             -webkit-transform: translateY(1000px);
