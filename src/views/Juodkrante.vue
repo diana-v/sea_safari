@@ -2,7 +2,7 @@
     <div class="offer-container">
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar" toggleable="lg">
             <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo"
-                                                                                  src="../assets/logo.svg">SEA SAFARI
+                                                                                  src="../assets/logo.svg" alt="Plaukiantis laivas">SEA SAFARI
                 LIETUVA
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

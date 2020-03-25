@@ -2,7 +2,10 @@
     <div class="app-container">
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar"
                   v-bind:class="scrolled_toolbar" toggleable="lg">
-            <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo" src="../assets/logo.svg">SEA SAFARI LIETUVA</b-navbar-brand>
+            <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo"
+                                                                                  src="../assets/logo.svg" alt="Plaukiantis laivas">SEA SAFARI
+                LIETUVA
+            </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-nav class="navbar-nav ml-auto mt-2 mt-lg-0" v-b-scrollspy:scrollspy-nested>
@@ -53,24 +56,24 @@
         },
         data() {
             return {
-                about:{
+                about: {
                     animated: '',
                     offset: 0,
                 },
-                offers:{
+                offers: {
                     animated: '',
                     offset: 0,
                 },
-                safety:{
+                safety: {
                     animated: '',
                     offset: 0,
                 },
-                contact:{
+                contact: {
                     animated: '',
                     offset: 0,
                 },
 
-                scrolled_toolbar: 'transparent',
+                scrolled_toolbar: '',
                 menu: [
                     {title: 'Apie Mus', link: '/#about'},
                     {title: 'Pasiūlymai', link: '/#offers'},
@@ -82,54 +85,56 @@
         },
 
         created() {
-            window.addEventListener('scroll', this.handleScroll);
+            window.addEventListener('scroll', this.onScroll);
+            window.addEventListener('resize', this.handleWindowUpdate);
         },
         destroyed() {
-            window.removeEventListener('scroll', this.handleScroll);
+            window.removeEventListener('scroll', this.onScroll);
+            window.removeEventListener('resize', this.handleWindowUpdate);
         },
 
         mounted() {
-            this.about.offset=document.querySelector('#about').offsetTop;
-            this.offers.offset=document.querySelector('#offers').offsetTop;
-            this.safety.offset=document.querySelector('#safety').offsetTop;
-            this.contact.offset=document.querySelector('#s_contact').offsetTop;
+            this.about.offset = document.querySelector('#about').offsetTop;
+            this.offers.offset = document.querySelector('#offers').offsetTop;
+            this.safety.offset = document.querySelector('#safety').offsetTop;
+            this.contact.offset = document.querySelector('#s_contact').offsetTop;
 
             const viewportMeta = document.createElement('meta');
             viewportMeta.name = 'viewport';
             viewportMeta.content = 'width=device-width, initial-scale=1';
             document.head.appendChild(viewportMeta)
         },
-
-        beforeDestroy() {
-            window.removeEventListener('scroll', this.onScroll)
-        },
-
         methods: {
             onScroll() {
-                if ((window.pageYOffset < 0) || (Math.abs(window.pageYOffset) < 120)) {
+                if (window.pageYOffset > 120 || window.innerWidth <= 975 ) {
+                    this.scrolled_toolbar = 'toolbar-scrolled';
+                } else  {
                     this.scrolled_toolbar = 'transparent';
-                    return
-                }
-                this.scrolled_toolbar = 'toolbar-scrolled';
-            },
-            handleScroll() {
-                this.onScroll();
-                if (window.pageYOffset > this.about.offset - window.innerHeight) {
-                    this.about.animated='animate'
                 }
 
-                if (window.pageYOffset > this.offers.offset - (window.innerHeight/2)) {
-                    this.offers.animated='animate'
-                    // this.$refs.offers.addCard()
+                if (window.pageYOffset > this.about.offset - window.innerHeight) {
+                    this.about.animated = 'animate'
+                }
+
+                if (window.pageYOffset > this.offers.offset - (window.innerHeight / 2)) {
+                    this.offers.animated = 'animate'
                 }
 
                 if (window.pageYOffset > this.safety.offset - window.innerHeight) {
-                    this.safety.animated='animate'
+                    this.safety.animated = 'animate'
                 }
 
-                if (window.pageYOffset > this.contact.offset - window.innerHeight/2 ) {
-                    this.contact.animated='animate'
+                if (window.pageYOffset > this.contact.offset - window.innerHeight / 2) {
+                    this.contact.animated = 'animate'
                 }
+            },
+            handleWindowUpdate() {
+                this.about.offset = document.querySelector('#about').offsetTop;
+                this.offers.offset = document.querySelector('#offers').offsetTop;
+                this.safety.offset = document.querySelector('#safety').offsetTop;
+                this.contact.offset = document.querySelector('#s_contact').offsetTop;
+
+                this.onScroll();
             }
         },
     }
