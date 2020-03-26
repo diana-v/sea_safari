@@ -54,7 +54,7 @@
             return {
                 offers: [
                     {
-                        img: require('../assets/slide_2_1x.jpg'),
+                        img: require('../assets/home-background.jpg'),
                         title: 'Ekstremali išvyka į jūrą',
                         description: 'Tai populiariausia ,,Sea Safari" pramoga. Šios trumpos kelionės metu turėsite galimybę praplaukti Danės upe, pasižvalgyti uosto akvatorijoje, pamatyti Baltijos jūros vartus. Skrodžiant Baltijos jūros bangas iki 90km/h greičiu greitaeigiu R.I.B. laivu pajausite visą jūros galybę, greitį, vėją ir vandens purslus! Tai pusvalandžio trukmės išvyka maršrutu Danės upė – Baltijos jūra – Danės upė, nenuvilianti net didžiausio adrenalino fanatiko. Ši pramoga puikiai tinka privatiems vakarėliams - mergvakariai, bernvakariai, gimtadieniai ar įmonių šventės. Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.',
                         details: [

@@ -197,7 +197,7 @@
         width: 100%;
         height: 100vh;
         background-size: cover;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/slide_2_1x.jpg");
+        background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/home-background.jpg");
         background-repeat: no-repeat;
         position: relative;
         background-position: top;
