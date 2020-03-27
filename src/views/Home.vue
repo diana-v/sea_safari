@@ -169,7 +169,7 @@
     }
 
     .toolbar-item > a {
-        color: white !important;
+        color: #17486b !important;
     }
 
     .toolbar :hover {
@@ -182,7 +182,7 @@
     }
 
     .toolbar-scrolled .toolbar-item > a {
-        color: #7c7c7d !important;
+        color: #17486b !important;
     }
 
     .toolbar-scrolled .toolbar-item > a:hover {
