@@ -17,6 +17,8 @@ Vue.use(BootstrapVue);
 
 Vue.prototype.$http = axios;
 Vue.prototype.$contact_url = process.env.VUE_APP_CONTACT_URL;
+Vue.prototype.$reservation_url = process.env.VUE_APP_RESERVATION_URL;
+
 
 router.afterEach((to) => {
   Vue.nextTick(() => {

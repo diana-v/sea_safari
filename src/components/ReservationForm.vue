@@ -3,7 +3,7 @@
         <v-dialog v-model="dialog" max-width="600px">
             <template v-slot:activator="{ on }">
                 <div class="offer-reservation-button">
-                <v-btn color="#91160d" dark v-on="on">Rezervacija</v-btn>
+                    <v-btn color="#91160d" dark v-on="on">Rezervacija</v-btn>
                 </div>
             </template>
             <div class="offer-dialog" style="--v-error-base: #b71c1c">
@@ -28,9 +28,14 @@
                                 </v-col>
                                 <v-col cols="12" sm="6">
                                     <v-select
-                                            :items="['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']"
-                                            label="Keleivių skaičius"
+                                            :items="getPassengers"
+                                            label="Keleivių skaičius*"
                                             color="#91160d"
+                                            required
+                                            v-model="passenger"
+                                            :error-messages="passengerErrors"
+                                            @input="$v.passenger.$touch()"
+                                            @blur="$v.passenger.$touch()"
                                     ></v-select>
                                 </v-col>
                                 <v-col cols="12" sm="6">
@@ -38,22 +43,24 @@
                                             color="#91160d"
                                             label="Telefono nr.*"
                                             required
-                                            :rules="rules"
                                             v-model="phone"
+                                            :error-messages="phoneErrors"
                                             :counter="20"
+                                            @input="$v.phone.$touch()"
+                                            @blur="$v.phone.$touch()"
                                     ></v-text-field>
                                 </v-col>
                                 <v-col cols="12" sm="6">
-                                <v-text-field
-                                        light
-                                        color="red darken-4"
-                                        v-model="email"
-                                        :error-messages="emailErrors"
-                                        label="El. Paštas*"
-                                        required
-                                        @input="$v.email.$touch()"
-                                        @blur="$v.email.$touch()"
-                                ></v-text-field>
+                                    <v-text-field
+                                            light
+                                            color="red darken-4"
+                                            v-model="email"
+                                            :error-messages="emailErrors"
+                                            label="El. Paštas*"
+                                            required
+                                            @input="$v.email.$touch()"
+                                            @blur="$v.email.$touch()"
+                                    ></v-text-field>
                                 </v-col>
                                 <v-col cols="12" sm="6">
                                     <v-text-field color="#91160d" disabled v-bind:label=dest_comp></v-text-field>
@@ -83,7 +90,8 @@
                                         <v-date-picker v-model="date" color="#91160d" no-title scrollable>
                                             <v-spacer></v-spacer>
                                             <v-btn text color="#91160d" @click="menu = false">Uždaryti</v-btn>
-                                            <v-btn text color="#91160d" @click="$refs.menu.save(date)">Pasirinkti</v-btn>
+                                            <v-btn text color="#91160d" @click="$refs.menu.save(date)">Pasirinkti
+                                            </v-btn>
                                         </v-date-picker>
                                     </v-menu>
                                 </v-col>
@@ -93,12 +101,13 @@
                         <v-alert v-if="d_success" dense type="success">
                             Išsiųsta sėkmingai. Susisieksime su Jumis per artimiausias 24 val. patvirtinti rezervaciją.
                         </v-alert>
-                        <v-alert v-if="d_error" dense type="error">{{d_error_msg}}</v-alert>
+                        <v-alert v-if="d_error" dense type="error">Įvyko klaida, prašome bandyti dar kartą.</v-alert>
                     </v-card-text>
                     <v-card-actions>
                         <v-spacer></v-spacer>
                         <v-btn color="#91160d" text @click="dialog = false">Uždaryti</v-btn>
-                        <v-btn color="#91160d" text v-bind:disabled="b_submit.disabled" @click="submit">Išsaugoti</v-btn>
+                        <v-btn color="#91160d" text v-bind:disabled="b_submit.disabled" @click="submit">Išsaugoti
+                        </v-btn>
                     </v-card-actions>
                 </v-card>
             </div>
@@ -114,27 +123,30 @@
         props: ['destination'],
         data() {
             return {
-                name: '',
-                phone: '',
-                email: '',
-                rules: [
-                    value => !!value || 'Privaloma įvesti.',
-                    value => (value || '').length >= 5 || 'Min 5 skaičiai',
-                    value => (value || '').length <= 20 || 'Max 20 skaičių',
-                ],
-                b_close: {},
+                name: null,
+                passenger: null,
+                phone: null,
+                email: null,
+                date: new Date().toISOString().substr(0, 10),
                 b_submit: {disabled: false},
                 dialog: false,
-                date: new Date().toISOString().substr(0, 10),
                 menu: false,
-                modal: false,
-                menu2: false,
                 d_error: false,
-                d_error_msg: 'Įvyko klaida, prašome bandyti dar kartą.',
                 d_success: false,
             }
         },
         computed: {
+            getPassengers: function () {
+                let people = [];
+                for (let i = 0; i < 24; i++) {
+                    if (i === 0) {
+                        people.push({text: 'Patikslinsiu', value: i})
+                    } else {
+                        people.push({text: i, value: i})
+                    }
+                }
+                return people
+            },
             dest_comp: function () {
                 return "Išvyka " + this.destination;
             },
@@ -143,6 +155,19 @@
                 if (!this.$v.name.$dirty) return errors;
                 !this.$v.name.maxLength && errors.push('Vardas negali viršyti 30 raidžių.');
                 !this.$v.name.required && errors.push('Privaloma įvesti.');
+                return errors
+            },
+            passengerErrors() {
+                const errors = [];
+                if (!this.$v.passenger.$dirty) return errors;
+                !this.$v.passenger.required && errors.push('Privaloma įvesti.');
+                return errors
+            },
+            phoneErrors() {
+                const errors = [];
+                if (!this.$v.phone.$dirty) return errors;
+                !this.$v.phone.maxLength && errors.push('Telefonas negali viršyti 20 simbolių.');
+                !this.$v.phone.required && errors.push('Privaloma įvesti.');
                 return errors
             },
             emailErrors() {
@@ -154,25 +179,39 @@
             },
         },
         methods: {
-            submit:function () {
+            submit: function () {
                 this.$v.$touch();
                 if (this.$v.$invalid) {
-                    // this.d_error_msg = this.$v.na
                     this.d_error = true;
-                } else {
-                    this.d_error = false;
-                    this.d_success = true;
-                    this.b_submit.disabled = true;
+                    return
                 }
-            },
+                this.$http.post(this.$reservation_url, {
+                    name: this.name,
+                    passengers: this.passenger,
+                    phone: this.phone,
+                    email: this.email,
+                    destination: this.destination,
+                    date: this.date,
+                })
+                    .then(() => {
+                        this.d_error = false;
+                        this.d_success = true;
+                    })
+                    .catch(() => {
+                        this.d_error = true;
+                    })
+            }
         },
 
         mixins: [validationMixin],
 
         validations: {
             name: {required, maxLength: maxLength(30)},
+            passenger: {required},
             phone: {required, maxLength: maxLength(20), minLength: minLength(5)},
             email: {required, email},
+            destination: {required},
+            date: {required},
         },
     }
 </script>
