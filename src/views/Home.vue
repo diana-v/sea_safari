@@ -3,8 +3,7 @@
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar"
                   v-bind:class="scrolled_toolbar" toggleable="lg">
             <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo"
-                                                                                  src="../assets/logo.svg" alt="Plaukiantis laivas">SEA SAFARI
-                LIETUVA
+                                                                                  src="../assets/sea_safari_logotipas.svg" alt="Plaukiantis laivas">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -152,8 +151,7 @@
     }
 
     .toolbar-logo {
-        height: 40px;
-        width: 130px;
+        height: 50px;
     }
 
     .toolbar-brand {

@@ -2,8 +2,7 @@
     <div class="offer-container">
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar" toggleable="lg">
             <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo"
-                                                                                  src="../assets/logo.svg" alt="Plaukiantis laivas">SEA SAFARI
-                LIETUVA
+                                                                                  src="../assets/sea_safari_logotipas.svg" alt="Plaukiantis laivas">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -26,7 +25,7 @@
             <div class="col-md-6 description-column">
                 <h1 class="offer-header">Privatūs Vakarėliai</h1>
                 <div class="offer-description">
-                    <p>Tai puiki gaimybė švęsti mergvakarius, bernvakarius, gimtadienius ar įmonių vakarėlius. Šventinės išvykos metu linksmai praleisite laiką tik savo kompanijoje. Įprastai mergvakarių, bernvakarių ir gimtadienių šventėms rekomenduojame populiariausią mūsų pasiūlymą – ekstremali išvyka į jūrą. Įmonėms siūlome tolimesnes, pažintines išvykas : Juodkrantė, Nida, Mingės kaimas ir kt. Pasirinkus tolimesnius maršrutus galimi sustojimai strateginėse vietose bernvakario/mergvakario priesaikai perkaityti ar papietauti išsilaipinus.</p>
+                    <p>Tai puiki pramoga švenčiant mergvakarius, bernvakarius, gimtadienius ar įmonių vakarėlius. Šventinės išvykos metu linksmai praleisite laiką tik savo kompanijoje. Įprastai mergvakarių, bernvakarių ir gimtadienių šventėms rekomenduojame populiariausią mūsų pasiūlymą – ekstremali išvyka į jūrą. Įmonėms siūlome tolimesnes, pažintines išvykas: Juodkrantė, Nida, Mingės kaimas ir kt. Pasirinkus tolimesnius maršrutus galimi sustojimai strateginėse vietose bernvakario/mergvakario priesaikai perkaityti ar papietauti išsilaipinus.</p>
                 </div>
                 <div class="icon-column">
                     <div class="card bg-light shadow p-3 mb-3 icon-card" v-for="(detail, index) in details"
@@ -92,8 +91,7 @@
     }
 
     .toolbar-logo {
-        height: 40px;
-        width: 130px;
+        height: 50px;
     }
 
     .toolbar-brand {

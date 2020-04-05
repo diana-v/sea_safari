@@ -2,8 +2,7 @@
     <div class="offer-container">
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar" toggleable="lg">
             <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo"
-                                                                                  src="../assets/logo.svg" alt="Plaukiantis laivas">SEA SAFARI
-                LIETUVA
+                                                                                  src="../assets/sea_safari_logotipas.svg" alt="Plaukiantis laivas">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -26,7 +25,7 @@
             <div class="col-md-6 description-column">
                 <h1 class="offer-header">Ekstremali išvyka į jūrą</h1>
                 <div class="offer-description">
-                    <p>Tai populiariausia ,,Sea Safari" pramoga. Šios trumpos kelionės metu turėsite galimybę praplaukti Danės upe, pasižvalgyti uosto akvatorijoje, pamatyti Baltijos jūros vartus.</p>
+                    <p>Tai populiariausia "Sea Safari" pramoga. Šios trumpos kelionės metu turėsite galimybę praplaukti Danės upe, pasižvalgyti uosto akvatorijoje, pamatyti Baltijos jūros vartus.</p>
                     <p>Skrodžiant Baltijos jūros bangas iki 90km/h greičiu greitaeigiu R.I.B. laivu pajausite visą jūros galybę, greitį, vėją ir vandens purslus! Tai pusvalandžio trukmės išvyka maršrutu Danės upė – Baltijos jūra – Danės upė, nenuvilianti net didžiausio adrenalino fanatiko. Ši pramoga puikiai tinka privatiems vakarėliams - mergvakariai, bernvakariai, gimtadieniai ar įmonių šventės. Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.</p>
                 </div>
                 <div class="icon-column">
@@ -61,7 +60,7 @@
                 dialog: false,
                 details: [
                     {title: 'Trukmė: 30min', icon: require('../assets/time.png')},
-                    {title: 'Kaina nuo: €15', icon: require('../assets/price.png')},
+                    {title: 'Kaina nuo: €12', icon: require('../assets/price.png')},
                     {title: 'Apranga suteikiama', icon: require('../assets/shirt.png')},
                     {title: 'Šiltuoju metų laiku', icon: require('../assets/season.png')},
                     {title: 'Nuo 11-23 keleivių', icon: require('../assets/people.png')},
@@ -93,8 +92,7 @@
     }
 
     .toolbar-logo {
-        height: 40px;
-        width: 130px;
+        height: 50px;
     }
 
     .toolbar-brand {
@@ -148,10 +146,6 @@
         font-size: 17px;
         color: black;
         padding: 2% 2%;
-    }
-
-    .icon-column {
-        column-count: 3;
     }
 
     .icon-container {

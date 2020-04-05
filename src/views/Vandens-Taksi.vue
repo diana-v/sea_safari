@@ -2,8 +2,7 @@
     <div class="offer-container">
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar" toggleable="lg">
             <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo"
-                                                                                  src="../assets/logo.svg" alt="Plaukiantis laivas">SEA SAFARI
-                LIETUVA
+                                                                                  src="../assets/sea_safari_logotipas.svg" alt="Plaukiantis laivas">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -26,7 +25,7 @@
             <div class="col-md-6 description-column">
                 <h1 class="offer-header">Vandens Taksi</h1>
                 <div class="offer-description">
-                    <p>Siūlome ir vandens taksi paslaugas. Greitai ir saugiai nuplukdinsime Jus į pageidaujamas vietas : delfinariumas, Juodkrantė, Nida ir kt. Atstumas Klaipėda - Juodkrantė įveikiamas vos per 20 min., o Klaipėda - Nida per 45 min. Tai puiki galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į Nidą ar Juodkrantę. Galimi įvairūs Jūsų pageidaujami maršrutai. </p>
+                    <p>Siūlome ir vandens taksi paslaugas. Greitai ir saugiai nuplukdinsime Jus į pageidaujamas vietas: delfinariumas, Juodkrantė, Nida ir kt. Atstumas Klaipėda - Juodkrantė įveikiamas vos per 20 min., o Klaipėda - Nida per 45 min. Tai puiki galimybė išvengti automobilių spūsčių, kelto ir ekologijos mokečio, vykstant į Nidą ar Juodkrantę. Galimi įvairūs Jūsų pageidaujami maršrutai.</p>
                 </div>
                 <div class="icon-column">
                     <div class="card bg-light shadow p-3 mb-3 icon-card" v-for="(detail, index) in details"
@@ -59,8 +58,6 @@
             return {
                 dialog: false,
                 details: [
-                    {title: 'Trukmė: 30min', icon: require('../assets/time.png')},
-                    {title: 'Kaina nuo: €15', icon: require('../assets/price.png')},
                     {title: 'Apranga suteikiama', icon: require('../assets/shirt.png')},
                     {title: 'Šiltuoju metų laiku', icon: require('../assets/season.png')},
                     {title: 'Nuo 11-23 keleivių', icon: require('../assets/people.png')},
@@ -92,8 +89,7 @@
     }
 
     .toolbar-logo {
-        height: 40px;
-        width: 130px;
+        height: 50px;
     }
 
     .toolbar-brand {
@@ -149,10 +145,6 @@
         padding: 2% 2%;
     }
 
-    .icon-column {
-        column-count: 3;
-    }
-
     .icon-container {
         position: relative;
         text-align: center;
@@ -178,7 +170,7 @@
     }
 
     .icon-column {
-        column-count: 3;
+        column-count: 2;
         position: relative;
         text-align: center;
         color: white;
