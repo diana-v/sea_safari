@@ -32,7 +32,7 @@
                         vandens, o tai paliks tik dar daugiau neišdildomų įspūdžių. Išsilipus Juodkrantėje siūlytume
                         aplankyti
                         Raganų kalną, pasivaikščioti akmens skulptūrų parke, paskanauti šviežios žuvies. Atsižvelgiant į
-                        Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.</p>
+                        Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti..</p>
                 </div>
                 <div class="icon-column">
                     <div class="card bg-light shadow p-3 mb-3 icon-card" v-for="(detail, index) in details"
