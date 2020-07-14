@@ -11,7 +11,7 @@ module.exports = {
                     'type': 'image/png',
                 },
                 {
-                    'src': 'static/favicons/apple-chrome-180x180.png',
+                    'src': 'static/favicons/apple-icon-180x180.png',
                     'sizes': '180x180',
                     'type': 'image/png',
                 },
