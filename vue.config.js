@@ -11,6 +11,11 @@ module.exports = {
                     'type': 'image/png',
                 },
                 {
+                    'src': 'static/favicons/android-icon-512x512.png',
+                    'sizes': '512x512',
+                    'type': 'image/png',
+                },
+                {
                     'src': 'static/favicons/apple-icon-180x180.png',
                     'sizes': '180x180',
                     'type': 'image/png',
