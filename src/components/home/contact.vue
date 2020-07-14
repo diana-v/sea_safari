@@ -170,13 +170,6 @@
         height: 100%;
     }
 
-    .contact-border-container {
-        align-content: center;
-        display: grid;
-        height: 80%;
-        opacity: 0;
-    }
-
     .contact-border {
         background-size: cover;
         background-color: white;
