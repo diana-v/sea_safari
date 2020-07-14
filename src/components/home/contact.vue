@@ -181,7 +181,6 @@
         background-size: cover;
         background-color: white;
         padding: 3%;
-        width: fit-content;
     }
 
     .contact-header {
@@ -240,7 +239,7 @@
     }
 
     .contact-column {
-        padding: 2% 5% 2% 8%!important;
+        padding: 2% 5% 2% 5%!important;
     }
 
     .contact-button {
