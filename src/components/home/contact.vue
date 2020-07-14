@@ -1,7 +1,7 @@
 <template>
     <div class="contact-container">
         <div class="contact-content">
-            <div class="contact-content contact-border-container slide-in-bottom" id="contact" v-bind:class="animation">
+            <div class="slide-in-bottom" id="contact" v-bind:class="animation">
                 <main class="contact-border">
                     <h2 class="contact-header">Kontaktai</h2>
                     <p class="contact-paragraph">Rezervacijos priimamos el. paštu, telefonu arba susisiekus per
