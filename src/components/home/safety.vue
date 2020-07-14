@@ -62,7 +62,17 @@
 </template>
 
 <script>
+    import { VDialog, VCard, VBtn, VImg, VCardActions, VSpacer } from 'vuetify/lib';
+
     export default {
+        components: {
+            VDialog,
+            VCard,
+            VBtn,
+            VImg,
+            VCardActions,
+            VSpacer
+        },
         props: ['animation'],
         data: () => ({
             safety_img: require('@/assets/safety/outfits.png'),

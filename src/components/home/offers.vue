@@ -148,7 +148,17 @@
 </template>
 
 <script>
+    import { VDialog, VCard, VImg, VCardActions, VSpacer, VBtn } from 'vuetify/lib';
+
     export default {
+        components: {
+            VDialog,
+            VCard,
+            VImg,
+            VCardActions,
+            VSpacer,
+            VBtn
+        },
         props: ['animation'],
         data: () => ({
             giftcard_img: require('@/assets/offers/giftcard.jpg'),

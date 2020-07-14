@@ -56,10 +56,22 @@
 
 <script>
     import ReservationForm from '../components/ReservationForm';
+    import {BNavbar} from 'bootstrap-vue/src/components/navbar/navbar'
+    import {BNav} from 'bootstrap-vue/src/components/nav/nav'
+    import {BNavbarBrand} from 'bootstrap-vue/src/components/navbar/navbar-brand'
+    import {BNavbarToggle} from 'bootstrap-vue/src/components/navbar/navbar-toggle'
+    import {BNavItem} from 'bootstrap-vue/src/components/nav/nav-item'
+    import {BCollapse} from 'bootstrap-vue/src/components/collapse/collapse';
 
     export default {
         components: {
-            'res-form': ReservationForm
+            'res-form': ReservationForm,
+            BNavbar,
+            BNavbarBrand,
+            BNav,
+            BNavbarToggle,
+            BNavItem,
+            BCollapse
         },
         data() {
             return {

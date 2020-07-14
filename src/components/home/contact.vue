@@ -20,11 +20,13 @@
 
                                 <figure class="social-media-container">
                                     <a href="https://www.instagram.com/seasafari.lietuva/" target="_blank"
-                                       alt="Instagram" rel="noreferrer"><i
-                                            class="fab fa-instagram fa-2x"></i>Instagram</a>
+                                       alt="Instagram" rel="noreferrer">
+                                        <font-awesome-icon :icon="['fab', 'instagram']" class="icon instagram-icon" alt="Instagram"/>
+                                        Instagram</a>
                                     <a href="https://www.facebook.com/seasafari.lietuva/" target="_blank" alt="Facebook"
-                                       rel="noreferrer"><i
-                                            class="fab fa-facebook-f fa-2x"></i>Facebook</a>
+                                       rel="noreferrer">
+                                        <font-awesome-icon :icon="['fab', 'facebook']" class="icon facebook-icon" alt="Facebook"/>
+                                        Facebook</a>
                                 </figure>
                             </section>
                             <section class="col-sm-6 contact-column">
@@ -85,7 +87,15 @@
     import {validationMixin} from "vuelidate";
     import {email, maxLength, minLength, required} from "vuelidate/lib/validators";
 
+    import { VAlert, VBtn, VTextarea, VTextField } from 'vuetify/lib';
+
     export default {
+        components: {
+            VAlert,
+            VBtn,
+            VTextarea,
+            VTextField
+        },
         props: ['animation'],
         data: () => ({
             name: null,
@@ -206,7 +216,7 @@
     }
 
     .social-media-container {
-        padding-top: 10%;
+        padding-top: 15%;
         width: 70px;
         display: flex;
     }
@@ -219,13 +229,13 @@
         color: #91160d;
     }
 
-    .fa-facebook-f {
+    .facebook-icon {
         color: rgb(145, 22, 13);
         height: 48px;
         width: 48px;
     }
 
-    .fa-instagram {
+    .instagram-icon {
         color: rgb(145, 22, 13);
         height: 48px;
         width: 48px;

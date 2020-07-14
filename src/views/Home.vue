@@ -38,6 +38,13 @@
 </template>
 
 <script>
+    import {BNavbar} from 'bootstrap-vue/src/components/navbar/navbar'
+    import {BNav} from 'bootstrap-vue/src/components/nav/nav'
+    import {BNavbarBrand} from 'bootstrap-vue/src/components/navbar/navbar-brand'
+    import {BNavbarToggle} from 'bootstrap-vue/src/components/navbar/navbar-toggle'
+    import {BNavItem} from 'bootstrap-vue/src/components/nav/nav-item'
+    import {BCollapse} from 'bootstrap-vue/src/components/collapse/collapse';
+
     import about_section from "../components/home/about";
     import offers_section from "../components/home/offers";
     import safety_section from "../components/home/safety";
@@ -52,6 +59,12 @@
             's_safety': safety_section,
             's_review': review_section,
             's_contact': contact_section,
+            BNavbar,
+            BNavbarBrand,
+            BNav,
+            BNavbarToggle,
+            BNavItem,
+            BCollapse
         },
         data() {
             return {

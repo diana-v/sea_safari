@@ -27,7 +27,13 @@
 </template>
 
 <script>
+    import { VCarousel, VCarouselItem } from 'vuetify/lib';
+
     export default {
+        components: {
+            VCarousel,
+            VCarouselItem
+        },
         data() {
             return {
                 reviews: [
