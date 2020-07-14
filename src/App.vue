@@ -20,6 +20,7 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     width: 100vw;
+    font-display: swap;
   }
 
   html {

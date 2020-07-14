@@ -44,7 +44,7 @@
                         <article>
                             <figure class="image-title-container flip-in-hor-bottom">
                                 <img class="card-img offer-image"
-                                     src="../../assets/offers/baltijos-jura.jpg" alt="Išvyka">
+                                     src="../../assets/offers/baltijos-jura-sm.jpg" alt="Išvyka">
                                 <h2 class="offer-title">Ekstremali išvyka į jūrą</h2>
                             </figure>
                             <p class="offer-description">Išvyka į Baltijos jūrą greitaeigiu R.I.B. laivu įsimins
@@ -62,7 +62,7 @@
                         <article>
                             <figure class="image-title-container flip-in-hor-bottom">
                                 <img class="card-img offer-image"
-                                     src="../../assets/offers/juodkrante.jpg" alt="Išvyka">
+                                     src="../../assets/offers/juodkrante-sm.jpg" alt="Išvyka">
                                 <h2 class="offer-title">Išvyka į Juodkrantę</h2>
                             </figure>
                             <p class="offer-description">Išplaukę iš Klaipėdos, pamatysite unikalų Kuršių nerijos
@@ -79,7 +79,7 @@
                         <article>
                             <figure class="image-title-container flip-in-hor-bottom">
                                 <img class="card-img offer-image"
-                                     src="../../assets/offers/nida.jpg" alt="Išvyka">
+                                     src="../../assets/offers/nida-sm.jpg" alt="Išvyka">
                                 <h2 class="offer-title">Išvyka į Nidą</h2>
                             </figure>
                             <p class="offer-description">Plaukdami Nidos pakrante pamatysite ne tik šį nuostabų
@@ -99,7 +99,7 @@
                         <article>
                             <figure class="image-title-container flip-in-hor-bottom">
                                 <img class="card-img offer-image"
-                                     src="../../assets/offers/minges-kaimas.jpg" alt="Išvyka">
+                                     src="../../assets/offers/minges-kaimas-sm.jpg" alt="Išvyka">
                                 <h2 class="offer-title">Išvyka į Mingės kaimą</h2>
                             </figure>
                             <p class="offer-description">Pažintinės išvykos metu plauksite Nemuno deltos parku,
@@ -116,7 +116,7 @@
                         <article>
                             <figure class="image-title-container flip-in-hor-bottom">
                                 <img class="card-img offer-image"
-                                     src="../../assets/offers/water-taxi.jpg" alt="Išvyka">
+                                     src="../../assets/offers/water-taxi-sm.jpg" alt="Išvyka">
                                 <h2 class="offer-title">Vandens Taksi</h2>
                             </figure>
                             <p class="offer-description">Mūsų laivai veikia ir kaip vandens taksi. Tai puiki
@@ -133,7 +133,7 @@
                         <article>
                             <figure class="image-title-container flip-in-hor-bottom">
                                 <img class="card-img offer-image"
-                                     src="../../assets/offers/private-parties.jpg" alt="Išvyka">
+                                     src="../../assets/offers/private-parties-sm.jpg" alt="Išvyka">
                                 <h2 class="offer-title">Privatūs Vakarėliai</h2>
                             </figure>
                             <p class="offer-description">Linksmai atšvęsite mergvakarius, bernvakarius ar įmonių
