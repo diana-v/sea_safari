@@ -6,7 +6,7 @@ module.exports = {
         manifestOptions: {
             icons: [
                 {
-                    'src': 'static/favicons/android-chrome-192x192.png',
+                    'src': 'static/favicons/android-icon-192x192.png',
                     'sizes': '192x192',
                     'type': 'image/png',
                 },
