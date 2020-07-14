@@ -1,33 +1,20 @@
 <template>
-    <div id="about">
-        <div class="about-content">
-            <div>
-                <div>
-                    <div class="row about-row">
-                        <div class="col-md-6 image-column slide-in-left" v-bind:class="animation"></div>
-                        <div class="col-md-6 about-column">
-                            <div>
-                                <h2 class="about-header slide-in-right slide-in-right1" v-bind:class="animation"> Apie Mus</h2>
-                                <p class="about-paragraph-red slide-in-right slide-in-right2" v-bind:class="animation">Mūsų tikslas atskleisti
-                                    tikrąjį, stulbinantį Lietuvos pajūrio
-                                    kraštovaizdį jaudinančiu ir įspūdžių kupinu būdu, plaukiant greitaeigiu R.I.B.
-                                    laivu.</p>
-                                <p class="about-paragraph slide-in-right slide-in-right3" v-bind:class="animation">Plaukdami su „Sea Safari“ jūs priartėsite prie
-                                    gamtos ir patirsite nepamirštamus
-                                    įspūdžius. Mes siūlome du R.I.B. laivus, varomus 300 AG ir 600 AG varikliais, kurių
-                                    maksimalus greitis siekia net iki 60 mazgų.</p>
-                                <p class="about-paragraph slide-in-right slide-in-right3" v-bind:class="animation">Manevringi ir greitaeigiai laivai užtikrina
-                                    saugias, patogias ir turiningas išvykas. Mes
-                                    garantuojame adrenalino pliupsnį ir praskaidrintą kasdienybę, nes mūsų keleivių
-                                    emocijos
-                                    - didžiausias ,,Sea Safari" įkvėpimas! </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <main id="about" class="about-content row about-row">
+        <figure class="col-md-6 image-column slide-in-left" v-bind:class="animation"></figure>
+        <section class="col-md-6 about-column">
+            <h2 class="about-header slide-in-right slide-in-right1" v-bind:class="animation"> Apie Mus</h2>
+            <p class="about-paragraph-red slide-in-right slide-in-right2" v-bind:class="animation">Mūsų
+                tikslas atskleisti tikrąjį, stulbinantį Lietuvos pajūrio kraštovaizdį jaudinančiu ir įspūdžių kupinu
+                būdu, plaukiant greitaeigiu R.I.B. laivu.</p>
+            <p class="about-paragraph slide-in-right slide-in-right3" v-bind:class="animation">Plaukdami su
+                „Sea Safari“ jūs priartėsite prie gamtos ir patirsite nepamirštamus įspūdžius. Mes siūlome du R.I.B.
+                laivus, varomus 300 AG ir 600 AG varikliais, kurių maksimalus greitis siekia net iki 60 mazgų.</p>
+            <p class="about-paragraph slide-in-right slide-in-right3" v-bind:class="animation">Manevringi ir
+                greitaeigiai laivai užtikrina saugias, patogias ir turiningas išvykas. Mes garantuojame adrenalino
+                pliupsnį ir praskaidrintą kasdienybę, nes mūsų keleivių emocijos - didžiausias ,,Sea Safari"
+                įkvėpimas! </p>
+        </section>
+    </main>
 </template>
 
 <script>
@@ -57,11 +44,11 @@
     }
 
     .image-column {
-        background-image: url('../../assets/about-image.jpg');
+        background-image: url('../../assets/about/about-image.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         height: 550px;
-        background-position: top;
+        background-position: center;
         opacity: 0;
     }
 
@@ -177,7 +164,7 @@
         }
     }
 
-    @media only screen and (max-width : 768px) {
+    @media only screen and (max-width: 768px) {
         * {
             /*CSS transitions*/
             -o-transition-property: none !important;
@@ -199,6 +186,7 @@
             animation: none !important;
             opacity: 1 !important;
         }
+
         .about-column {
             padding: 5px 0 0 0;
         }

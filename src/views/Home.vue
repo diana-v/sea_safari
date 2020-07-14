@@ -3,7 +3,7 @@
         <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar"
                   v-bind:class="scrolled_toolbar" toggleable="lg">
             <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo"
-                                                                                  src="../assets/sea_safari_logotipas.svg" alt="Plaukiantis laivas">
+                                                                                  src="../assets/home/sea_safari_logo.svg" alt="Plaukiantis laivas">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -195,7 +195,7 @@
         width: 100%;
         height: 100vh;
         background-size: cover;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/home-background.jpg");
+        background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/home/home-background.jpg");
         background-repeat: no-repeat;
         position: relative;
         background-position: top;

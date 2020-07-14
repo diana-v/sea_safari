@@ -20,4 +20,8 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
   }
+
+  html {
+    scroll-behavior: smooth !important;
+  }
 </style>

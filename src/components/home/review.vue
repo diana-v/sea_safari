@@ -1,32 +1,29 @@
 <template>
-    <div class="review-container" id="review">
-        <div class="review-content">
-            <div>
-                <h2 class="review-header ">Atsiliepimai</h2>
-                    <div>
-                        <v-carousel
-                                height="350px"
-                                class="review-carousel"
-                                hide-delimiter-background
-                                light
-                                cycle
-                        >
-                            <v-carousel-item
-                                    eager
-                                    v-for="(review, i) in reviews"
-                                    :key="i"
-                                    class="review-carousel-item"
-                            >
-                                <img v-bind:src="review.img"
-                                     class="review-image" alt="Komentatoriaus nuotrauka">
-                                <h5 class="review-title">{{review.name}}</h5>
-                                <p class="review-text">{{review.comment}}</p>
-                            </v-carousel-item>
-                        </v-carousel>
-                    </div>
-            </div>
-        </div>
-    </div>
+    <main class="review-container review-content" id="review">
+        <section>
+            <h2 class="review-header ">Atsiliepimai</h2>
+            <v-carousel
+                    :show-arrows="false"
+                    height="350px"
+                    class="review-carousel"
+                    hide-delimiter-background
+                    light
+                    cycle
+            >
+                <v-carousel-item
+                        eager
+                        v-for="(review, i) in reviews"
+                        :key="i"
+                        class="review-carousel-item"
+                >
+                    <img v-bind:src="review.img"
+                         class="review-image" alt="Komentatoriaus nuotrauka">
+                    <h5 class="review-title">{{review.name}}</h5>
+                    <p class="review-text">{{review.comment}}</p>
+                </v-carousel-item>
+            </v-carousel>
+        </section>
+    </main>
 </template>
 
 <script>
@@ -35,22 +32,22 @@
             return {
                 reviews: [
                     {
-                        img: require('../../assets/review_vilma.jpg'),
+                        img: require('../../assets/review/review_vilma.jpg'),
                         name: 'Zotovienė Vilma',
                         comment: 'NEREALIAI!!! Rekomendacijos pačios geriausios nuo mūsų šeimos. Plaukimą būtinai pakartosim'
                     },
                     {
-                        img: require('../../assets/review_giedre.jpg'),
+                        img: require('../../assets/review/review_giedre.jpg'),
                         name: 'Giedrė Fid',
                         comment: 'Aukščiausias įvertinimas! Superiniai įspūdžiai! Būtina išbandyti!'
                     },
                     {
-                        img: require('../../assets/review_vincentas.jpg'),
+                        img: require('../../assets/review/review_vincentas.jpg'),
                         name: 'Vincentas Liškauskas',
                         comment: 'Nesitikėjau, kad Lietuvos vandenyse galima pamatyti tiek daug! Patiko, rekomenduoju'
                     },
                     {
-                        img: require('../../assets/review_edvis.jpg'),
+                        img: require('../../assets/review/review_edvis.jpg'),
                         name: 'Edvis Izokaitis',
                         comment: 'Visiems rekomenduoju išbandyti šitą reikalą, adrenalino dozė garantuota'
                     }
@@ -129,6 +126,7 @@
         .review-carousel {
             width: 45vh;
         }
+
         .review-carousel-item {
             padding: 10% 10%;
         }

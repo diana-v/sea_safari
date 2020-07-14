@@ -1,74 +1,71 @@
 <template>
-    <div class="safety-container" id="safety">
-        <div class="safety-content">
-            <div class="row">
-                <div class="col-sm-12 safety-column slide-in-top" v-bind:class="animation">
-                    <h2 class="safety-header">Saugumas</h2>
-                    <p class="safety-paragraph">RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai
-                        atsakingai atsižvelgia į jūsų
-                        asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes naudojame šias saugumo
-                        priemones:</p>
+    <main class="safety-container safety-content row" id="safety">
+        <section class="col-sm-12 safety-column slide-in-top" v-bind:class="animation">
+            <h2 class="safety-header">Saugumas</h2>
+            <p class="safety-paragraph">RIB laivai yra manevringi ir labai saugūs, o mūsų laivavedžiai
+                atsakingai atsižvelgia į jūsų asmeninio saugumo užtikrinimą kiekvieno plaukimo metu. Mes
+                naudojame šias saugumo priemones:</p>
+        </section>
+        <section class="col-sm-12">
+            <div class="card-columns safety-card-column">
+                <div class="card bg-light shadow p-3 mb-3 safety-card fade-in1" v-bind:class="animation">
+                    <figure class="card-body text-center safety-card-content">
+                        <img src="@/assets/safety/lifebouy.svg" class="safety-image" alt="Gelbėjimo ratas">
+                        <figcaption class="card-text">Gelbėjimo ratas</figcaption>
+                    </figure>
                 </div>
-                <div class="col-sm-12">
-                    <div class="card-columns safety-card-column">
-                        <div class="card bg-light shadow p-3 mb-3 safety-card fade-in1" v-bind:class="animation">
-                            <div class="card-body text-center safety-card-content">
-                                <img src="@/assets/lifebouy.svg" class="safety-image" alt="Gelbėjimo ratas">
-                                <p class="card-text">Gelbėjimo ratas</p>
-                            </div>
-                        </div>
-                        <div class="card bg-light shadow p-3 mb-3 safety-card fade-in2" v-bind:class="animation">
-                            <div class="card-body text-center safety-card-content">
-                                <img src="@/assets/lifevest.svg" class="safety-image" alt="Gelbėjimosi liemenė">
-                                <p class="card-text">Gelbėjimosi liemenė</p>
-                            </div>
-                        </div>
-                        <div class="card bg-light shadow p-3 mb-3 safety-card hover-safety-card fade-in3" v-bind:class="animation">
-                            <div class="card-body text-center safety-card-content">
-                                <v-dialog
-                                        v-model="dialog"
-                                >
-                                    <template v-slot:activator="{ on }">
-                                        <div v-on="on">
-                                            <img src="@/assets/wetsuit.svg" class="safety-image" alt="Neperšlampama apranga">
-                                            <p class="card-text">Neperšlampama apranga</p>
-                                        </div>
-                                    </template>
+                <div class="card bg-light shadow p-3 mb-3 safety-card fade-in2" v-bind:class="animation">
+                    <figure class="card-body text-center safety-card-content">
+                        <img src="@/assets/safety/lifevest.svg" class="safety-image" alt="Gelbėjimosi liemenė">
+                        <figcaption class="card-text">Gelbėjimosi liemenė</figcaption>
+                    </figure>
+                </div>
+                <div class="card bg-light shadow p-3 mb-3 safety-card hover-safety-card fade-in3"
+                     v-bind:class="animation">
+                    <figure class="card-body text-center safety-card-content">
+                        <v-dialog
+                                v-model="dialog"
+                        >
+                            <template v-slot:activator="{ on }">
+                                <div v-on="on">
+                                    <img src="@/assets/safety/wetsuit.svg" class="safety-image"
+                                         alt="Neperšlampama apranga">
+                                    <p class="card-text">Neperšlampama apranga</p>
+                                </div>
+                            </template>
 
-                                    <v-card>
-                                        <v-img :src="safety_img" max-height="560px" contain></v-img>
-                                        <v-card-actions>
-                                            <v-spacer></v-spacer>
-                                            <v-btn
-                                                    color="red darken-4"
-                                                    text
-                                                    @click="dialog = false"
-                                            >
-                                                Uždaryti
-                                            </v-btn>
-                                        </v-card-actions>
-                                    </v-card>
-                                </v-dialog>
-                            </div>
-                        </div>
-                        <div class="card bg-light shadow p-3 mb-3 safety-card fade-in4" v-bind:class="animation">
-                            <div class="card-body text-center safety-card-content">
-                                <img src="@/assets/medkit.svg" class="safety-image" alt="Neperšlampama apranga">
-                                <p class="card-text">Vaistinėlė</p>
-                            </div>
-                        </div>
-                    </div>
+                            <v-card>
+                                <v-img :src="safety_img" max-height="550px" contain></v-img>
+                                <v-card-actions>
+                                    <v-spacer></v-spacer>
+                                    <v-btn
+                                            color="red darken-4"
+                                            text
+                                            @click="dialog = false"
+                                    >
+                                        Uždaryti
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
+                    </figure>
+                </div>
+                <div class="card bg-light shadow p-3 mb-3 safety-card fade-in4" v-bind:class="animation">
+                    <figure class="card-body text-center safety-card-content">
+                        <img src="@/assets/safety/medkit.svg" class="safety-image" alt="Neperšlampama apranga">
+                        <figcaption class="card-text">Vaistinėlė</figcaption>
+                    </figure>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </template>
 
 <script>
     export default {
         props: ['animation'],
         data: () => ({
-            safety_img: require('@/assets/aprangos.png'),
+            safety_img: require('@/assets/safety/outfits.png'),
             dialog: false,
         })
     }
@@ -216,6 +213,7 @@
             opacity: 1;
         }
     }
+
     @keyframes fade-in {
         0% {
             opacity: 0;
@@ -225,7 +223,7 @@
         }
     }
 
-    @media only screen and (max-width : 768px) {
+    @media only screen and (max-width: 768px) {
         * {
             /*CSS transitions*/
             -o-transition-property: none !important;

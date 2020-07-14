@@ -1,8 +1,8 @@
 <template>
     <div class="offer-container">
-        <b-navbar class="navbar navbar-expand-lg navbar-light fixed-top toolbar" toggleable="lg">
+        <b-navbar class="navbar navbar-expand-lg navbar-light toolbar" toggleable="lg">
             <b-navbar-brand class="navbar-brand toolbar-brand" href="/#home"><img class="toolbar-logo"
-                                                                                  src="../assets/sea_safari_logotipas.svg" alt="Plaukiantis laivas">
+                                                                                  src="../assets/home/sea_safari_logo.svg" alt="Plaukiantis laivas">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -20,18 +20,18 @@
                 </b-nav>
             </b-collapse>
         </b-navbar>
-        <div class="row">
-            <div class="col-md-6 offer-image"></div>
-            <div class="col-md-6 description-column">
+        <main class="row">
+            <section class="col-md-6 offer-image"></section>
+            <section class="col-md-6 description-column">
                 <h1 class="offer-header">Išvyka į Nidą</h1>
-                <div class="offer-description">
+                <article class="offer-description">
                     <p>Plaukdami Nidos pakrante pamatysite ne tik šį nuostabų gamtos kampelį, tačiau ir kitas savo
                         grožiu stebinančias vietas: Nerijos krantus, Preilą, Didžiąsias Nidos kopas.</p>
                     <p>Tai pasiplaukiojimas po Kuršių marias, stebint plačiai atsiveriantį Kuršių nerijos kraštovaizdį,
                         išskirtinę augmeniją, žvejų gyvenvietes. Išlipus į krantą, siūlytume paskanauti šviežios žuvies
                         patiekalų, pėsčiomis pasivaikščioti gyvenvietėje, aplankyti Parnidžio kopą. Atsižvelgiant į Jūsų
                         pageidavimus, išvykos trukmę ir maršrutą galima keisti.</p>
-                </div>
+                </article>
                 <div class="icon-column">
                     <div class="card bg-light shadow p-3 mb-3 icon-card" v-for="(detail, index) in details"
                          v-bind:key="index">
@@ -47,8 +47,8 @@
                     </div>
                 </div>
                 <res-form ref="dialog" destination="į Nidą"></res-form>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
 </template>
 
@@ -63,12 +63,12 @@
             return {
                 dialog: false,
                 details: [
-                    {title: 'Trukmė: 3-4val', icon: require('../assets/time.png')},
-                    {title: 'Kaina nuo: €300', icon: require('../assets/price.png')},
-                    {title: 'Apranga suteikiama', icon: require('../assets/shirt.png')},
-                    {title: 'Šiltuoju metų laiku', icon: require('../assets/season.png')},
-                    {title: 'Nuo 11-23 keleivių', icon: require('../assets/people.png')},
-                    {title: 'Būtina rezervacija', icon: require('../assets/info.png')},
+                    {title: 'Trukmė: 3-4val', icon: require('../assets/offer-icons/time.png')},
+                    {title: 'Kaina nuo: €300', icon: require('../assets/offer-icons/price.png')},
+                    {title: 'Apranga suteikiama', icon: require('../assets/offer-icons/shirt.png')},
+                    {title: 'Šiltuoju metų laiku', icon: require('../assets/offer-icons/season.png')},
+                    {title: 'Nuo 11-23 keleivių', icon: require('../assets/offer-icons/people.png')},
+                    {title: 'Būtina rezervacija', icon: require('../assets/offer-icons/info.png')},
                 ]
             }
         },
@@ -89,10 +89,8 @@
     }
 
     .offer-container {
-        height: 100%;
         min-height: 100vh;
-        padding-right: 2%;
-        overflow: hidden;
+        /*padding-right: 2%;*/
     }
 
     .toolbar-logo {
@@ -110,10 +108,7 @@
     .toolbar {
         background: white !important;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
-    }
-
-    .fixed-top {
-        z-index: 100;
+        width: 100vw;
     }
 
     .toolbar-item > a {
@@ -125,15 +120,14 @@
     }
 
     .offer-image {
-        background-image: url("../assets/nida.jpg");
+        background-image: url("../assets/offers/nida.jpg");
         background-size: cover;
         background-position: center;
-        min-height: 100vh;
-        height: 100%;
+        height: 100vh;
     }
 
     .description-column {
-        padding-top: 105px;
+        margin: auto 0;
         height: 100vh;
         align-content: center;
         display: grid;
