@@ -16,11 +16,6 @@ module.exports = {
                     'type': 'image/png',
                 },
                 {
-                    'src': 'static/favicons/apple-icon-180x180.png',
-                    'sizes': '180x180',
-                    'type': 'image/png',
-                },
-                {
                     'src': 'static/favicons/favicon-16x16.png',
                     'sizes': '16x16',
                     'type': 'image/png',
