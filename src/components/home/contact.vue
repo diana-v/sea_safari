@@ -9,13 +9,13 @@
                     <div class="container">
                         <div class="row">
                             <section class="col-sm-6 contact-column">
-                                <h5 class="contact-details-header">Adresas:</h5>
+                                <h4 class="contact-details-header">Adresas:</h4>
                                 <p class="contact-details-paragraph">Danės g. 5, Klaipėda</p>
 
-                                <h5 class="contact-details-header">El. Paštas:</h5>
+                                <h4 class="contact-details-header">El. Paštas:</h4>
                                 <p class="contact-details-paragraph">seasafari.lietuva@gmail.com</p>
 
-                                <h5 class="contact-details-header">Telefonas:</h5>
+                                <h4 class="contact-details-header">Telefonas:</h4>
                                 <p class="contact-details-paragraph">+37067572133</p>
 
                                 <figure class="social-media-container">
@@ -206,6 +206,7 @@
         text-align: start;
         margin-top: 5%;
         font-weight: bold;
+        font-size: 20px;
     }
 
     .contact-details-paragraph {
