@@ -127,7 +127,7 @@
     }
 
     .toolbar-item > a {
-        color: #7c7c7d !important;
+        color: #17486b !important;
     }
 
     .toolbar-item > a:hover {

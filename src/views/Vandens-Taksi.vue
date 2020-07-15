@@ -40,7 +40,7 @@
                                 <div class="icon-container">
                                     <img class="card-img icon-image"
                                          v-bind:src="detail.icon" alt="Išvykos aprašmymas">
-                                    <h5 class="icon-title">{{detail.title}}</h5>
+                                    <p class="icon-title">{{detail.title}}</p>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +123,7 @@
     }
 
     .toolbar-item > a {
-        color: #7c7c7d !important;
+        color: #17486b !important;
     }
 
     .toolbar-item > a:hover {
