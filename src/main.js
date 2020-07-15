@@ -14,6 +14,11 @@ Vue.use(vuetify);
 Vue.config.productionTip = false;
 
 import(/* webpackPreload: true */ "./views/Home");
+import(/* webpackPreload: true */ "./components/home/about");
+import(/* webpackPreload: true */ "./components/home/contact");
+import(/* webpackPreload: true */ "./components/home/offers");
+import(/* webpackPreload: true */ "./components/home/review");
+import(/* webpackPreload: true */ "./components/home/safety");
 import(/* webpackPreload: true */ "./views/Juodkrante");
 import(/* webpackPreload: true */ "./views/Jura");
 import(/* webpackPreload: true */ "./views/Minges-Kaimas");
