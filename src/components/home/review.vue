@@ -3,6 +3,8 @@
         <section>
             <h2 class="review-header ">Atsiliepimai</h2>
             <v-carousel
+                    delimeter-icon="fas fa-circle"
+                    style=""
                     :show-arrows="false"
                     height="350px"
                     class="review-carousel"
@@ -28,6 +30,7 @@
 
 <script>
     import { VCarousel, VCarouselItem } from 'vuetify/lib';
+    VCarousel.delimiter = 'fab fa-circle';
 
     export default {
         components: {
