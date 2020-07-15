@@ -9,13 +9,13 @@
                     <div class="container">
                         <div class="row">
                             <section class="col-sm-6 contact-column">
-                                <h4 class="contact-details-header">Adresas:</h4>
+                                <p class="contact-details-header">Adresas:</p>
                                 <p class="contact-details-paragraph">Danės g. 5, Klaipėda</p>
 
-                                <h4 class="contact-details-header">El. Paštas:</h4>
+                                <p class="contact-details-header">El. Paštas:</p>
                                 <p class="contact-details-paragraph">seasafari.lietuva@gmail.com</p>
 
-                                <h4 class="contact-details-header">Telefonas:</h4>
+                                <p class="contact-details-header">Telefonas:</p>
                                 <p class="contact-details-paragraph">+37067572133</p>
 
                                 <figure class="social-media-container">
