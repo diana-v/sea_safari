@@ -30,6 +30,12 @@ module.exports = {
                     'sizes': '96x96',
                     'type': 'image/png',
                 },
+                {
+                    "src": "static/favicons/maskable_icon.png",
+                    "sizes": "196x196",
+                    "type": "image/png",
+                    "purpose": "any maskable"
+                }
             ]
         }
     }

@@ -95,6 +95,7 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        max-width: 100vw;
     }
 
     .safety-column {
