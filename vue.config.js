@@ -1,8 +1,7 @@
 module.exports = {
     "transpileDependencies": [
         "vuetify"
-    ],
-    pwa: {
+    ],pwa: {
         manifestOptions: {
             icons: [
                 {

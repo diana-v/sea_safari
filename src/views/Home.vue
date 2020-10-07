@@ -24,6 +24,9 @@
 
         <div id="scrollspy-nested" data-offset="50" class="home-scroll">
             <div class="home-container" id="home">
+                <video playsinline autoplay muted loop preload poster="../assets/home/video-background.png" id="background-video">
+                    <source src="../assets/home/1080-video-background.mp4" type="video/mp4">
+                </video>
                 <div>
                     <h1 class="home-header">R.I.B. CHARTER EXPERIENCE</h1>
                 </div>
@@ -114,7 +117,7 @@
             const viewportMeta = document.createElement('meta');
             viewportMeta.name = 'viewport';
             viewportMeta.content = 'width=device-width, initial-scale=1';
-            document.head.appendChild(viewportMeta)
+            document.head.appendChild(viewportMeta);
         },
         methods: {
             onScroll() {
@@ -147,7 +150,7 @@
                 this.contact.offset = document.querySelector('#s_contact').offsetTop;
 
                 this.onScroll();
-            }
+            },
         },
     }
 </script>
@@ -181,7 +184,7 @@
     }
 
     .toolbar-item > a {
-        color: #17486b !important;
+        color: #ffffff !important;
     }
 
     .toolbar :hover {
@@ -206,14 +209,26 @@
     }
 
     .home-container {
+        /*width: 100%;*/
+        /*height: 100vh;*/
+        /*background-size: cover;*/
+        /*background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/home/home-background.jpg");*/
+        /*background-repeat: no-repeat;*/
+        /*position: relative;*/
+        /*background-position: top;*/
+        /*background-attachment: fixed;*/
+        /*object-fit: cover;*/
         width: 100%;
         height: 100vh;
-        background-size: cover;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/home/home-background.jpg");
-        background-repeat: no-repeat;
         position: relative;
-        background-position: top;
-        background-attachment: fixed;
+    }
+
+    video {
+        object-fit: cover;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
     }
 
     .home-header {
