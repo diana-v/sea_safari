@@ -26,6 +26,7 @@
             <div class="home-container" id="home">
                 <video playsinline autoplay muted loop preload poster="../assets/home/video-background.png" id="background-video">
                     <source src="../assets/home/1080-video-background.mp4" type="video/mp4">
+                    <source src="../assets/home/1080-video-background.webm" type="video/webm">
                 </video>
                 <div>
                     <h1 class="home-header">R.I.B. CHARTER EXPERIENCE</h1>
@@ -209,15 +210,6 @@
     }
 
     .home-container {
-        /*width: 100%;*/
-        /*height: 100vh;*/
-        /*background-size: cover;*/
-        /*background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), url("../assets/home/home-background.jpg");*/
-        /*background-repeat: no-repeat;*/
-        /*position: relative;*/
-        /*background-position: top;*/
-        /*background-attachment: fixed;*/
-        /*object-fit: cover;*/
         width: 100%;
         height: 100vh;
         position: relative;
