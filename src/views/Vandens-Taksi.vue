@@ -120,6 +120,7 @@
         background: white !important;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
         width: 100vw;
+        z-index: 50;
     }
 
     .toolbar-item > a {
