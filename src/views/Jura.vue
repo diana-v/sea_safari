@@ -32,8 +32,13 @@
             galybę, greitį, vėją ir vandens purslus! Tai pusvalandžio trukmės išvyka maršrutu Danės upė –
             Baltijos jūra – Danės upė, nenuvilianti net didžiausio adrenalino fanatiko. Ši pramoga puikiai
             tinka privatiems vakarėliams - mergvakariai, bernvakariai, gimtadieniai ar įmonių šventės.
-            Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti. 600 AG laivo kaina yra 20
-            eur/asm, 300 AG laivo kaina 15 eur/asm.</p>
+            Atsižvelgiant į Jūsų pageidavimus, išvykos trukmę ir maršrutą galima keisti.</p>
+          <ul>
+            <li>Privatus plaukimas su 600 AG (tik Jūsų kompanija) - 240€ (iki 10 keleivių, papildomas keleivis +20€)</li>
+            <li>Privatus plaukimas su 300 AG (tik jūsų kompanija) - 160€ (iki 10 keleivių)</li>
+            <li>Jei yra jungiama keleivių grupė (ne privatus plaukimas) - 25€/asm</li>
+          </ul>
+
         </article>
         <div class="icon-column">
           <div class="card bg-light shadow p-3 mb-3 icon-card" v-for="(detail, index) in details"
@@ -79,7 +84,7 @@ export default {
       dialog: false,
       details: [
         {title: 'Trukmė: 30min', icon: require('../assets/offer-icons/time.png')},
-        {title: 'Kaina nuo: €15/asm', icon: require('../assets/offer-icons/price.png')},
+        {title: 'Kaina: €25/asm', icon: require('../assets/offer-icons/price.png')},
         {title: 'Apranga suteikiama', icon: require('../assets/offer-icons/shirt.png')},
         {title: 'Šiltuoju metų laiku', icon: require('../assets/offer-icons/season.png')},
         {title: 'Nuo 11-23 keleivių', icon: require('../assets/offer-icons/people.png')},
@@ -140,12 +145,12 @@ html, body {
   background-image: url("../assets/offers/baltijos-jura.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .description-column {
   margin: auto 0;
-  height: 100vh;
+  min-height: 100vh;
   align-content: center;
   display: grid;
 }
