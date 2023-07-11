@@ -58,6 +58,9 @@
                 </div>
             </div>
         </section>
+        <section class="col-sm-12 safety-disclaimer slide-in-top" v-bind:class="animation">
+          <p>* Draudžiama nėsčiosioms, stuburo problemų turintiems asmenims ir vaikams iki 140 cm. ūgio</p>
+        </section>
     </main>
 </template>
 
@@ -142,6 +145,11 @@
     .safety-image {
         width: 60px;
         height: 60px;
+    }
+
+    .safety-disclaimer {
+      color: #91160d;
+      text-align: left;
     }
 
     @media screen and (max-width: 800px) {
